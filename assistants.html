@@ -1007,6 +1007,8 @@ button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visib
     font-size: 14px;
   }
 
+  .cap-mobile-break { display: none; }
+
   @media (max-width: 900px) {
     .cap-section { margin: 40px 16px; padding: 56px 20px 48px; border-radius: 22px; }
     .cap-stats { grid-template-columns: repeat(2, 1fr); gap: 16px; padding: 20px 0; }
@@ -1023,6 +1025,7 @@ button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visib
   @media (max-width: 560px) {
     .cap-section { margin: 32px 12px; padding: 44px 16px 40px; }
     .cap-head h2 { font-size: 34px; }
+    .cap-mobile-break { display: inline; }
     .cap-head p { font-size: 14.5px; }
     .cap-stats { margin: 28px auto 32px; gap: 12px; }
     .cap-stat-num { font-size: 30px; }
@@ -1037,9 +1040,90 @@ button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visib
     .cap-card-num { font-size: 10px; }
     .cap-cat-block { margin-top: 32px; padding: 0; }
     .cap-cat-head h3 { font-size: 18px; }
-    /* Hover popup is unusable on touch — hide it and let the card itself
-       carry the information (title + category chip is enough on mobile) */
+    /* Hover popup is unusable on touch — hide the inline one;
+       a tap-to-open modal takes its place (see .cap-modal below). */
     .cap-popup { display: none; }
+  }
+
+  /* Mobile tap-to-open modal */
+  .cap-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    display: none;
+    align-items: flex-end;
+    justify-content: center;
+    background: rgba(8, 4, 22, 0.72);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    opacity: 0;
+    transition: opacity .25s var(--ease);
+  }
+  .cap-modal.open { display: flex; opacity: 1; }
+  .cap-modal-card {
+    position: relative;
+    width: 100%;
+    max-width: 480px;
+    max-height: 88vh;
+    overflow-y: auto;
+    background: linear-gradient(180deg, #1a0d3a 0%, #0f0628 100%);
+    border: 1px solid rgba(201, 164, 245, 0.22);
+    border-top: 1px solid rgba(201, 164, 245, 0.4);
+    border-radius: 22px 22px 0 0;
+    color: #fff;
+    transform: translateY(20px);
+    transition: transform .3s var(--ease);
+    box-shadow: 0 -24px 60px -12px rgba(0,0,0,0.6);
+  }
+  .cap-modal.open .cap-modal-card { transform: none; }
+  .cap-modal-card .cap-popup-inner { padding: 24px 22px 18px; }
+  .cap-modal-card .cap-popup-deploy {
+    background: rgba(201, 164, 245, 0.08);
+    margin: 16px -22px -18px;
+    padding: 14px 22px;
+    border-radius: 0;
+    border-top: 1px solid rgba(201, 164, 245, 0.18);
+  }
+  .cap-modal-close {
+    position: sticky;
+    top: 12px;
+    margin-left: auto;
+    margin-right: 12px;
+    z-index: 2;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 1px solid rgba(255,255,255,0.18);
+    background: rgba(20, 12, 42, 0.86);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    flex-shrink: 0;
+    transition: background .2s var(--ease), border-color .2s var(--ease);
+  }
+  .cap-modal-close:hover { background: rgba(201, 164, 245, 0.18); border-color: rgba(201,164,245,0.5); }
+  .cap-modal-close svg { width: 16px; height: 16px; stroke: currentColor; fill: none; stroke-width: 2; stroke-linecap: round; }
+  .cap-modal-handle {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    padding: 8px 0 4px;
+    background: linear-gradient(180deg, #1a0d3a 80%, transparent 100%);
+    z-index: 1;
+  }
+  .cap-modal-handle::before {
+    content: "";
+    width: 36px;
+    height: 4px;
+    border-radius: 2px;
+    background: rgba(255,255,255,0.22);
+  }
+  body.cap-modal-open { overflow: hidden; }
+  @media (min-width: 561px) {
+    .cap-modal { display: none !important; }
   }
 
   /* CTA — flush on page, no background/shadow */
@@ -1453,7 +1537,7 @@ button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visib
 <section class="cap-section reveal" id="capabilities">
   <div class="cap-head">
     <span class="cap-eyebrow"><span class="dot"></span>Full capabilities library</span>
-    <h2>100 more assistants, <span class="accent">ON-DEMAND.</span></h2>
+    <h2>100 more assistants,<br class="cap-mobile-break"> <span class="accent">ON-DEMAND.</span></h2>
     <p>Beyond the featured library above, we can deliver 100 more production-grade capabilities — customer copilots, voice agents, risk analysts, legal assistants, smart-city command centers, industrial vision, and more. Each maps to the Arabic.AI product stack and ships with a real agentic delivery blueprint. Hover any tile to see how we deliver it.</p>
   </div>
 
@@ -1756,6 +1840,55 @@ button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visib
     } else if (center + popupWidth / 2 > window.innerWidth - margin) {
       card.classList.add('edge-right');
     }
+  });
+
+  // Mobile tap-to-open modal (only active <=560px)
+  const modal = document.createElement('div');
+  modal.className = 'cap-modal';
+  modal.setAttribute('role', 'dialog');
+  modal.setAttribute('aria-modal', 'true');
+  modal.setAttribute('aria-hidden', 'true');
+  modal.innerHTML = '\n    <div class="cap-modal-card">\n      <div class="cap-modal-handle" aria-hidden="true"></div>\n      <button class="cap-modal-close" type="button" aria-label="Close">\n        <svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6l-12 12"/></svg>\n      </button>\n      <div class="cap-modal-body"></div>\n    </div>';
+  document.body.appendChild(modal);
+  const modalBody = modal.querySelector('.cap-modal-body');
+  const modalCard = modal.querySelector('.cap-modal-card');
+  const modalClose = modal.querySelector('.cap-modal-close');
+
+  function isMobile() { return window.matchMedia('(max-width: 560px)').matches; }
+
+  function openModal(card) {
+    const popup = card.querySelector('.cap-popup');
+    if (!popup) return;
+    modalBody.innerHTML = '';
+    // Clone popup-inner so we keep all the structure & styles
+    const inner = popup.querySelector('.cap-popup-inner');
+    const deploy = popup.querySelector('.cap-popup-deploy');
+    if (inner) modalBody.appendChild(inner.cloneNode(true));
+    if (deploy) modalBody.appendChild(deploy.cloneNode(true));
+    modal.classList.add('open');
+    modal.setAttribute('aria-hidden', 'false');
+    document.body.classList.add('cap-modal-open');
+    modalCard.scrollTop = 0;
+  }
+  function closeModal() {
+    modal.classList.remove('open');
+    modal.setAttribute('aria-hidden', 'true');
+    document.body.classList.remove('cap-modal-open');
+  }
+
+  document.addEventListener('click', e => {
+    const card = e.target.closest('.cap-card');
+    if (card && isMobile()) {
+      e.preventDefault();
+      openModal(card);
+    }
+  });
+  modalClose.addEventListener('click', closeModal);
+  modal.addEventListener('click', e => {
+    if (e.target === modal) closeModal();
+  });
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape' && modal.classList.contains('open')) closeModal();
   });
 })();
 </script>

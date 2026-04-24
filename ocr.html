@@ -413,7 +413,7 @@ button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visib
     letter-spacing: -0.015em;
     margin: 0 0 20px;
     color: #fff;
-    max-width: 18ch;
+    max-width: 26ch;
   }
   .hero-card p {
     margin: 0;
@@ -725,6 +725,28 @@ button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visib
   }
   .panel-head-left { display: flex; align-items: center; gap: 8px; color: var(--purple); }
   .panel-head-right { color: var(--gray-400); font-size: 10.5px; }
+
+  [lang="ar"] {
+    font-family: var(--arabic);
+  }
+  [lang="ar"] strong {
+    font-weight: 700;
+  }
+  /* Tighten Arabic line-height a touch — Naskh ascenders are tall */
+  [lang="ar"] .doc-body { line-height: 1.7; font-size: 10.5px; }
+  [lang="ar"] .doc-meta-line { font-size: 10.5px; }
+  [lang="ar"] .doc-date { font-size: 10.5px; text-align: left; }
+  [lang="ar"] .doc-title { font-size: 13px; }
+  [lang="ar"] .doc-salutation { font-size: 10.5px; }
+  [lang="ar"] .doc-signature-line { font-family: var(--arabic); font-style: italic; font-size: 14px; }
+  [lang="ar"] .doc-signature-name { font-size: 10.5px; }
+  [lang="ar"] .doc-signature-title { font-size: 9.5px; }
+  [lang="ar"] .doc-letterhead-text small { font-size: 8.5px; }
+  [lang="ar"] .ext-h1 { font-size: 16px; }
+  [lang="ar"] .ext-meta,
+  [lang="ar"] .ext-p { font-size: 12.5px; line-height: 1.7; }
+  [lang="ar"] .ext-signoff strong { font-size: 12.5px; }
+  [lang="ar"] .ext-signoff small { font-size: 10.5px; }
 
   .document {
     background: #fff;
@@ -1729,7 +1751,7 @@ button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visib
         <span class="dot"></span>
         Powered by Arabic.AI OCR
       </span>
-      <h1>Turn any document into perfectly extracted text.</h1>
+      <h1>Turn any document into<br>perfectly extracted text.</h1>
       <p>Drop a PDF and we read handwritten and printed Arabic &amp; English with industry-leading accuracy, keeping the structure intact.</p>
     </div>
   </div>
@@ -1794,18 +1816,18 @@ button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visib
               <div class="panel-head">
                 <div class="panel-head-left">
                   <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>
-                  CEO-statement-letter.pdf
+                  خطاب-الرئيس-التنفيذي.pdf
                 </div>
-                <div class="panel-head-right">Page 1 of 1</div>
+                <div class="panel-head-right">صفحة 1 من 1</div>
               </div>
-              <div class="document" id="documentPreview">
+              <div class="document" id="documentPreview" dir="rtl" lang="ar">
                 <!-- Detection boxes (positioned absolutely over content) -->
-                <div class="detect-box" style="left: 52px; top: 28px; width: 70px; height: 20px;"></div>
-                <div class="detect-box" style="right: 32px; top: 74px; width: 90px; height: 14px;"></div>
+                <div class="detect-box" style="right: 52px; top: 28px; width: 70px; height: 20px;"></div>
+                <div class="detect-box" style="left: 32px; top: 74px; width: 90px; height: 14px;"></div>
                 <div class="detect-box" style="left: 50%; transform: translateX(-50%); top: 108px; width: 200px; height: 18px;"></div>
-                <div class="detect-box" style="left: 32px; top: 148px; width: 90px; height: 14px;"></div>
-                <div class="detect-box" style="left: 32px; top: 185px; right: 32px; height: 64px;"></div>
-                <div class="detect-box" style="left: 32px; bottom: 36px; width: 120px; height: 44px;"></div>
+                <div class="detect-box" style="right: 32px; top: 148px; width: 90px; height: 14px;"></div>
+                <div class="detect-box" style="right: 32px; top: 185px; left: 32px; height: 64px;"></div>
+                <div class="detect-box" style="right: 32px; bottom: 36px; width: 120px; height: 44px;"></div>
 
                 <!-- Scan line -->
                 <div class="scan-line"></div>
@@ -1815,36 +1837,36 @@ button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visib
                   <div class="doc-logo">a</div>
                   <div class="doc-letterhead-text">
                     ARABIC.AI
-                    <small>Dubai Design District &middot; Riyadh</small>
+                    <small>دبي ديزاين ديستركت &middot; الرياض</small>
                   </div>
                 </div>
 
                 <!-- Date -->
-                <div class="doc-date">15 January 2026</div>
+                <div class="doc-date">15 يناير 2026</div>
 
                 <!-- TO / FROM -->
-                <div class="doc-meta-line"><strong>TO:</strong> Board of Directors</div>
-                <div class="doc-meta-line"><strong>FROM:</strong> Office of the CEO</div>
+                <div class="doc-meta-line"><strong>إلى:</strong> مجلس الإدارة</div>
+                <div class="doc-meta-line"><strong>من:</strong> مكتب الرئيس التنفيذي</div>
 
                 <!-- Title -->
-                <div class="doc-title">Q4 2025 Strategic Review</div>
+                <div class="doc-title">المراجعة الاستراتيجية للربع الرابع 2025</div>
 
                 <!-- Salutation -->
-                <div class="doc-salutation">Dear Board Members,</div>
+                <div class="doc-salutation">أعضاء مجلس الإدارة الكرام،</div>
 
                 <!-- Body -->
                 <div class="doc-body">
-                  I am pleased to report that the past quarter has been transformative for our organization. Revenue grew 28% year-over-year, driven by sustained demand for sovereign Arabic AI across the MENA region. We closed the year at $42M ARR with 98% client retention and expanded into two new markets.
+                  يسرّني أن أُبلغكم بأن الربع المنصرم كان نقطة تحوّل لمؤسستنا. ارتفعت الإيرادات بنسبة 28% على أساس سنوي، مدفوعةً بالطلب المتواصل على الذكاء الاصطناعي العربي السيادي في منطقة الشرق الأوسط وشمال إفريقيا. وأقفلنا العام عند 42 مليون دولار من الإيرادات السنوية المتكررة، مع نسبة احتفاظ بالعملاء بلغت 98%، وتوسّعنا في سوقَين جديدَين.
                 </div>
                 <div class="doc-body">
-                  Looking forward to 2026, our priorities are threefold: deepen our enterprise platform, scale the agent factory, and ship the next generation of Pronoia. Detailed plans are attached.
+                  على صعيد عام 2026، تتمحور أولوياتنا حول ثلاثة محاور: تعميق منصّتنا المؤسسية، وتوسيع مصنع الوكلاء الذكية، وإطلاق الجيل القادم من Pronoia. تجدون الخطط التفصيلية مرفقةً طيّه.
                 </div>
 
                 <!-- Signature -->
                 <div class="doc-signature">
-                  <div class="doc-signature-line">Nour Al Hassan</div>
-                  <div class="doc-signature-name">Nour Al Hassan</div>
-                  <div class="doc-signature-title">Founder &amp; Chief Executive Officer</div>
+                  <div class="doc-signature-line">نور الحسن</div>
+                  <div class="doc-signature-name">نور الحسن</div>
+                  <div class="doc-signature-title">المؤسِّسة والرئيسة التنفيذية</div>
                 </div>
               </div>
             </div>
@@ -1867,34 +1889,34 @@ button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visib
                   <div>Extracted text will appear here<br><span style="font-size:11px; color:var(--gray-300);">Press Extract to begin</span></div>
                 </div>
 
-                <div class="output-extracted">
+                <div class="output-extracted" dir="rtl" lang="ar">
                   <div class="ext-line">
                     <span class="ext-tag">H1</span>
-                    <span class="ext-h1">Q4 2025 Strategic Review</span>
+                    <span class="ext-h1">المراجعة الاستراتيجية للربع الرابع 2025</span>
                   </div>
                   <div class="ext-line">
                     <span class="ext-tag">Meta</span>
-                    <span class="ext-meta">Date: <strong>15 January 2026</strong></span>
+                    <span class="ext-meta">التاريخ: <strong>15 يناير 2026</strong></span>
                   </div>
                   <div class="ext-line">
-                    <div class="ext-meta">To: <strong>Board of Directors</strong><br>From: <strong>Office of the CEO</strong></div>
+                    <div class="ext-meta">إلى: <strong>مجلس الإدارة</strong><br>من: <strong>مكتب الرئيس التنفيذي</strong></div>
                   </div>
                   <div class="ext-line">
-                    <div class="ext-p" style="margin-top:10px;">Dear Board Members,</div>
-                  </div>
-                  <div class="ext-line">
-                    <span class="ext-tag">P</span>
-                    <div class="ext-p" style="display:inline">I am pleased to report that the past quarter has been transformative for our organization. Revenue grew 28% year-over-year, driven by sustained demand for sovereign Arabic AI across the MENA region. We closed the year at $42M ARR with 98% client retention and expanded into two new markets.</div>
+                    <div class="ext-p" style="margin-top:10px;">أعضاء مجلس الإدارة الكرام،</div>
                   </div>
                   <div class="ext-line">
                     <span class="ext-tag">P</span>
-                    <div class="ext-p" style="display:inline">Looking forward to 2026, our priorities are threefold: deepen our enterprise platform, scale the agent factory, and ship the next generation of Pronoia. Detailed plans are attached.</div>
+                    <div class="ext-p" style="display:inline">يسرّني أن أُبلغكم بأن الربع المنصرم كان نقطة تحوّل لمؤسستنا. ارتفعت الإيرادات بنسبة 28% على أساس سنوي، مدفوعةً بالطلب المتواصل على الذكاء الاصطناعي العربي السيادي في منطقة الشرق الأوسط وشمال إفريقيا. وأقفلنا العام عند 42 مليون دولار من الإيرادات السنوية المتكررة، مع نسبة احتفاظ بالعملاء بلغت 98%، وتوسّعنا في سوقَين جديدَين.</div>
+                  </div>
+                  <div class="ext-line">
+                    <span class="ext-tag">P</span>
+                    <div class="ext-p" style="display:inline">على صعيد عام 2026، تتمحور أولوياتنا حول ثلاثة محاور: تعميق منصّتنا المؤسسية، وتوسيع مصنع الوكلاء الذكية، وإطلاق الجيل القادم من Pronoia. تجدون الخطط التفصيلية مرفقةً طيّه.</div>
                   </div>
                   <div class="ext-line">
                     <span class="ext-tag">Signature</span>
                     <div class="ext-signoff" style="display:inline-block">
-                      <strong>Nour Al Hassan</strong>
-                      <small>Founder &amp; Chief Executive Officer</small>
+                      <strong>نور الحسن</strong>
+                      <small>المؤسِّسة والرئيسة التنفيذية</small>
                     </div>
                   </div>
                   <div class="ext-line">
