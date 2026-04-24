@@ -1186,15 +1186,12 @@ button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visib
       gap: 14px;
     }
     .suite-expanded-content h3 {
-      font-size: 42px;                /* enlarged — was 32px */
-      line-height: 1;
+      font-size: 38px;                /* slightly reduced so long titles fit */
+      line-height: 1.05;
       letter-spacing: -0.02em;
       text-wrap: balance;             /* nicer line break distribution */
-      /* Cap at 2 lines to keep the title bold but contained */
-      display: -webkit-box;
-      -webkit-line-clamp: 2;
-      -webkit-box-orient: vertical;
-      overflow: hidden;
+      max-width: 100%;                /* allow full container width on mobile */
+      /* No line-clamp — titles must be fully visible */
     }
     .suite-expanded-content p { max-width: 100%; }
     /* Hide the expanded-state icon on mobile — it's redundant with the
@@ -1215,7 +1212,7 @@ button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visib
     .suite-item-collapsed { padding: 16px 20px; }
     .suite-item-collapsed .suite-name-vertical { font-size: 26px; }
     .suite-item.active .suite-item-expanded { padding: 22px 20px; }
-    .suite-expanded-content h3 { font-size: 36px; }       /* scaled down for narrow phones but still bold */
+    .suite-expanded-content h3 { font-size: 30px; max-width: 100%; }       /* scaled down for narrow phones but still bold */
     .suite-demo-canvas { aspect-ratio: 3 / 4; max-height: 520px; }   /* portrait on phones — more room for vertical demos */
   }
 
@@ -2260,7 +2257,7 @@ button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visib
   </div>
   <div class="nav-drawer-footer">
     <a href="login.html" class="btn btn-ghost">Sign in</a>
-    <a href="mailto:Contact.us@arabic.ai" class="btn btn-primary">Book a demo</a>
+    <a href="/cdn-cgi/l/email-protection#14577b7a607577603a616754756675767d773a757d" class="btn btn-primary">Book a demo</a>
   </div>
 </div>
 
@@ -3079,7 +3076,7 @@ button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visib
       <div>
         <p class="cta-body">A 30-minute call with our team, one executive in your business, and a concrete pilot proposal for the two workflows where Arabic AI pays back fastest.</p>
         <div class="cta-ctas">
-          <a href="mailto:Contact.us@arabic.ai" class="btn btn-light btn-lg">
+          <a href="/cdn-cgi/l/email-protection#2a6945445e4b495e045f596a4b584b484349044b43" class="btn btn-light btn-lg">
             Book a discovery call
             <svg class="arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
           </a>
@@ -3137,8 +3134,8 @@ button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visib
       </div>
       <div class="footer-col">
         <h4>Contact</h4>
-        <a href="mailto:Contact.us@arabic.ai">Contact.us@arabic.ai</a>
-        <a href="mailto:Partners@arabic.ai">Partners@arabic.ai</a>
+        <a href="/cdn-cgi/l/email-protection#a3e0cccdd7c2c0d78dd6d0e3c2d1c2c1cac08dc2ca"><span class="__cf_email__" data-cfemail="83c0ecedf7e2e0f7adf6f0c3e2f1e2e1eae0ade2ea">[email&#160;protected]</span></a>
+        <a href="/cdn-cgi/l/email-protection#f4a49586809a918687b4958695969d97da959d"><span class="__cf_email__" data-cfemail="7b2b1a090f151e09083b1a091a191218551a12">[email&#160;protected]</span></a>
         <a href="#">Dubai &middot; Riyadh</a>
         <a href="#">Amman &middot; Doha</a>
       </div>
@@ -3150,7 +3147,7 @@ button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visib
   </div>
 </footer>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
   // Scroll reveal
   const io = new IntersectionObserver((entries) => {
     entries.forEach(e => {
