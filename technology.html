@@ -556,11 +556,11 @@ button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visib
   }
   .hero-stats {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 24px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
     border-top: 1px solid var(--gray-200);
     padding-top: 32px;
-    max-width: 720px;
+    max-width: 560px;
   }
   .hero-stat-num {
     font-family: var(--display);
@@ -1531,14 +1531,6 @@ button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visib
             <div class="hero-stat-num">&lt;200<span class="suffix">ms</span></div>
             <div class="hero-stat-label">First-byte latency for Arabic text-to-speech</div>
           </div>
-          <div>
-            <div class="hero-stat-num">100<span class="suffix">%</span></div>
-            <div class="hero-stat-label">On-premises capable. Zero data exfiltration.</div>
-          </div>
-          <div>
-            <div class="hero-stat-num">22<span class="suffix">+</span></div>
-            <div class="hero-stat-label">Arabic dialects handled natively. No translation hop.</div>
-          </div>
         </div>
       </div>
 
@@ -2024,7 +2016,7 @@ button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visib
         io.unobserve(e.target);
       }
     });
-  }, { threshold: 0.1, rootMargin: '0px 0px -60px 0px' });
+  }, { threshold: 0, rootMargin: '0px 0px -60px 0px' });
   document.querySelectorAll('.reveal').forEach(el => io.observe(el));
 
   /* Animate benchmark bars when they come into view */

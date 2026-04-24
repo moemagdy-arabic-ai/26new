@@ -2488,7 +2488,7 @@ button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visib
         io.unobserve(e.target);
       }
     });
-  }, { threshold: 0.1, rootMargin: '0px 0px -60px 0px' });
+  }, { threshold: 0, rootMargin: '0px 0px -60px 0px' });
   document.querySelectorAll('.reveal').forEach(el => io.observe(el));
 
   /* =========== Widget state machine =========== */

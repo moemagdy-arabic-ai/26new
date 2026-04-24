@@ -1063,7 +1063,7 @@ button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visib
 <script>
   const io = new IntersectionObserver((entries) => {
     entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
-  }, { threshold: 0.1, rootMargin: '0px 0px -60px 0px' });
+  }, { threshold: 0, rootMargin: '0px 0px -60px 0px' });
   document.querySelectorAll('.reveal').forEach(el => io.observe(el));
 
   const benchIO = new IntersectionObserver((entries) => {
