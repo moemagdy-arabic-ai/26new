@@ -1,0 +1,4170 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Procurement AI — Arabic.AI Suite</title>
+<meta name="description" content="Smarter vendor evaluation and tender analysis. Upload an RFP, score every proposal against it, and get clear, Kuwait-law-grounded recommendations." />
+<!-- Favicon & canonical -->
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="canonical" href="https://arabic.ai/procurement.html">
+
+<!-- Open Graph / Facebook / LinkedIn -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Arabic.AI">
+<meta property="og:url" content="https://arabic.ai/procurement.html">
+<meta property="og:title" content="Procurement AI — Arabic.AI Suite">
+<meta property="og:description" content="Smarter vendor evaluation and tender analysis. Upload an RFP, score every proposal against it, and get clear, Kuwait-law-grounded recommendations.">
+<meta property="og:image" content="https://arabic.ai/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="en_US">
+
+<!-- Twitter / X -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Procurement AI — Arabic.AI Suite">
+<meta name="twitter:description" content="Smarter vendor evaluation and tender analysis. Upload an RFP, score every proposal against it, and get clear, Kuwait-law-grounded recommendations.">
+<meta name="twitter:image" content="https://arabic.ai/assets/og-image.png">
+
+<!-- Theme -->
+<meta name="theme-color" content="#3F1993">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800;900&amp;family=DM+Sans:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;family=Noto+Naskh+Arabic:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+
+<style>
+/* --- Accessibility: visible focus ring (injected) --- */
+:focus-visible { outline: 2px solid var(--purple, #3F1993); outline-offset: 3px; border-radius: 4px; }
+:focus:not(:focus-visible) { outline: none; }
+button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-visible {
+  outline: 2px solid var(--purple, #3F1993);
+  outline-offset: 3px;
+}
+.skip-to-content {
+  position: absolute; left: -9999px; top: 0;
+  background: var(--purple, #3F1993); color: #fff; padding: 8px 16px;
+  text-decoration: none; z-index: 10000; border-radius: 0 0 8px 0;
+}
+.skip-to-content:focus { left: 0; }
+
+  :root {
+    --purple: #3F1993;
+    --purple-deep: #2a0f66;
+    --purple-soft: #ede7f8;
+    --purple-softer: #f5f2fb;
+    --lilac: #C9A4F5;
+    --blush: #F8C8DC;
+    --charcoal: #09090A;
+    --ink: #1a1a1f;
+    --gray-700: #4a4a52;
+    --gray-500: #8a8a92;
+    --gray-400: #b4b4bb;
+    --gray-300: #d6d6dc;
+    --gray-200: #e3e3e8;
+    --gray-100: #eaeaee;
+    --gray-50: #f4f4f6;
+    --cream: #f6f4ef;
+    --paper: #ffffff;
+    --cosmic: #0D0521;
+    --panel-dark: #1a0f38;
+    --panel-dark-2: #2a1758;
+
+    /* Risk semantic colors */
+    --red-text: #991b1b;
+    --red-bg: #fef2f2;
+    --red-border: #fecaca;
+    --amber-text: #92400e;
+    --amber-bg: #fffbeb;
+    --amber-border: #fde68a;
+    --green-text: #065f46;
+    --green-bg: #ecfdf5;
+    --green-border: #a7f3d0;
+    --green-accent: #10b981;
+    --blue-text: #1e40af;
+    --blue-bg: #eff6ff;
+    --blue-border: #bfdbfe;
+
+    --display: "Big Shoulders Display", Impact, "Arial Black", sans-serif;
+    --sans: "DM Sans", -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
+    --arabic: "Noto Naskh Arabic", "DM Sans", sans-serif;
+    --mono: "JetBrains Mono", ui-monospace, Menlo, monospace;
+
+    --container: 1280px;
+    --radius: 14px;
+    --radius-lg: 22px;
+    --ease: cubic-bezier(.2,.7,.2,1);
+  }
+
+  *, *::before, *::after { box-sizing: border-box; }
+  html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
+  body {
+    margin: 0;
+    font-family: var(--sans);
+    color: var(--charcoal);
+    background: var(--cream);
+    line-height: 1.5;
+    font-size: 16px;
+    overflow-x: hidden;
+  }
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='180' height='180'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.035 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+    mix-blend-mode: multiply;
+  }
+
+  a { color: inherit; text-decoration: none; }
+  button { font: inherit; cursor: pointer; border: 0; background: none; color: inherit; }
+  img, svg { display: block; max-width: 100%; }
+
+  .container {
+    max-width: var(--container);
+    margin: 0 auto;
+    padding: 0 32px;
+    position: relative;
+    z-index: 1;
+  }
+
+  /* ---------- Nav ---------- */
+  .nav {
+    position: sticky; top: 0; z-index: 50;
+    backdrop-filter: saturate(140%) blur(12px);
+    -webkit-backdrop-filter: saturate(140%) blur(12px);
+    background: color-mix(in srgb, var(--cream) 78%, transparent);
+    border-bottom: 1px solid color-mix(in srgb, var(--charcoal) 8%, transparent);
+  }
+  .nav-inner { display: flex; align-items: center; justify-content: space-between; height: 68px; }
+  .nav-logo svg { height: 22px; width: auto; }
+  .nav-links { display: flex; gap: 26px; font-size: 14px; font-weight: 500; color: var(--ink); }
+  .nav-links a { opacity: 0.75; transition: opacity .2s var(--ease); position: relative; }
+  .nav-links a:hover { opacity: 1; }
+  .nav-links a.active { opacity: 1; color: var(--purple); }
+  .nav-links a.active::after {
+    content: ""; position: absolute; left: 50%; bottom: -22px;
+    transform: translateX(-50%); width: 4px; height: 4px;
+    background: var(--purple); border-radius: 50%;
+  }
+  .nav-actions { display: flex; gap: 10px; align-items: center; }
+
+  /* Hamburger menu trigger — circular, matches Sign in button height */
+  .nav-burger {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 4px;
+    width: 42px;
+    height: 42px;
+    padding: 0;
+    background: transparent;
+    border: 1px solid var(--gray-100);
+    border-radius: 50%;
+    cursor: pointer;
+    color: var(--charcoal);
+    flex-shrink: 0;
+    transition: background .2s var(--ease), border-color .2s var(--ease);
+  }
+  .nav-burger:hover {
+    background: var(--purple-softer);
+    border-color: color-mix(in srgb, var(--purple) 25%, transparent);
+  }
+  .nav-burger span {
+    display: block;
+    width: 16px;
+    height: 2px;
+    background: currentColor;
+    border-radius: 1px;
+    transition: transform .3s var(--ease), opacity .2s var(--ease);
+    transform-origin: center;
+  }
+  .nav-burger.open span:nth-child(1) { transform: translateY(6px) rotate(45deg); }
+  .nav-burger.open span:nth-child(2) { opacity: 0; }
+  .nav-burger.open span:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
+
+  /* Slide-in drawer — full-width on phones, right-aligned panel on tablet */
+  .nav-drawer {
+    position: fixed;
+    top: 0; right: 0; bottom: 0;
+    width: min(420px, 100%);
+    background: var(--cream);
+    box-shadow: -24px 0 48px -16px rgba(20, 10, 50, 0.18);
+    transform: translateX(100%);
+    transition: transform .35s cubic-bezier(0.2, 0.8, 0.2, 1);
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    visibility: hidden;
+  }
+  .nav-drawer.open {
+    transform: translateX(0);
+    visibility: visible;
+  }
+  .nav-drawer-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 24px;
+    border-bottom: 1px solid var(--gray-100);
+    min-height: 68px;
+  }
+  .nav-drawer-header .brand {
+    font-family: var(--mono);
+    font-size: 12px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--gray-500);
+  }
+  .nav-drawer-close {
+    width: 36px; height: 36px;
+    padding: 0;
+    background: none;
+    border: 0;
+    cursor: pointer;
+    color: var(--charcoal);
+    display: grid;
+    place-items: center;
+  }
+  .nav-drawer-close svg { width: 20px; height: 20px; }
+  .nav-drawer-body {
+    flex: 1;
+    overflow-y: auto;
+    padding: 8px 16px 24px;
+  }
+  .nav-drawer-body a {
+    display: block;
+    padding: 14px 16px;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--charcoal);
+    border-radius: 10px;
+    transition: background .2s var(--ease), color .2s var(--ease);
+  }
+  .nav-drawer-body a:hover {
+    background: var(--purple-softer);
+    color: var(--purple);
+  }
+  .nav-drawer-body a.active {
+    color: var(--purple);
+    background: var(--purple-softer);
+  }
+  .nav-drawer-section {
+    margin-top: 20px;
+    padding-top: 16px;
+    border-top: 1px solid var(--gray-100);
+  }
+  .nav-drawer-section h4 {
+    font-family: var(--mono);
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--gray-500);
+    margin: 0 16px 8px;
+  }
+  .nav-drawer-footer {
+    padding: 16px 24px 24px;
+    border-top: 1px solid var(--gray-100);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .nav-drawer-footer .btn { width: 100%; justify-content: center; }
+  .nav-drawer-backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(13, 5, 32, 0.4);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .3s var(--ease);
+    z-index: 999;
+  }
+  .nav-drawer-backdrop.open {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+
+  .btn {
+    display: inline-flex; align-items: center; gap: 10px;
+    padding: 12px 20px; border-radius: 999px;
+    font-size: 14px; font-weight: 600; letter-spacing: -0.005em;
+    transition: all .25s var(--ease); white-space: nowrap;
+  }
+  .btn-primary { background: var(--charcoal); color: #fff; border: 1px solid var(--charcoal); }
+  .btn-primary:hover { background: var(--purple); border-color: var(--purple); transform: translateY(-1px); }
+  .btn-primary .arrow { transition: transform .25s var(--ease); }
+  .btn-primary:hover .arrow { transform: translateX(3px); }
+  .btn-ghost {
+    background: transparent; color: var(--charcoal);
+    border: 1px solid color-mix(in srgb, var(--charcoal) 18%, transparent);
+  }
+  .btn-ghost:hover { border-color: var(--charcoal); background: color-mix(in srgb, var(--charcoal) 5%, transparent); }
+  .btn-lg { padding: 16px 28px; font-size: 15px; }
+
+  /* ---------- Breadcrumb ---------- */
+  .crumbs {
+    padding-top: 48px;
+    font-family: var(--mono);
+    font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase;
+    color: var(--gray-500); display: flex; gap: 10px; align-items: center;
+  }
+  .crumbs a { color: var(--gray-500); transition: color .2s var(--ease); }
+  .crumbs a:hover { color: var(--purple); }
+  .crumbs .sep { opacity: 0.5; }
+  .crumbs .current { color: var(--purple); }
+
+  /* ---------- Hero card ---------- */
+  .hero-card {
+    margin-top: 24px; position: relative;
+    background: linear-gradient(135deg, #2a0f66 0%, #4a22a8 50%, #6934c4 100%);
+    color: #fff; border-radius: 28px;
+    padding: 56px 72px; overflow: hidden;
+    box-shadow: 0 40px 80px -40px rgba(63, 25, 147, 0.4);
+  }
+  .hero-card::before {
+    content: ""; position: absolute; inset: 0;
+    background:
+      radial-gradient(ellipse 500px 300px at 85% 30%, color-mix(in srgb, var(--lilac) 30%, transparent), transparent 60%),
+      radial-gradient(ellipse 400px 250px at 15% 90%, color-mix(in srgb, var(--blush) 15%, transparent), transparent 55%);
+    pointer-events: none;
+  }
+  .hero-card::after {
+    content: ""; position: absolute; inset: 0;
+    background-image:
+      linear-gradient(to right, rgba(255,255,255,0.04) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(255,255,255,0.04) 1px, transparent 1px);
+    background-size: 56px 56px;
+    mask-image: radial-gradient(ellipse at 30% 50%, black 30%, transparent 80%);
+    -webkit-mask-image: radial-gradient(ellipse at 30% 50%, black 30%, transparent 80%);
+    pointer-events: none;
+  }
+  .hero-card-inner { position: relative; z-index: 1; max-width: 780px; }
+  .hero-pill {
+    display: inline-flex; align-items: center; gap: 10px;
+    padding: 8px 16px; border-radius: 999px;
+    background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15);
+    backdrop-filter: blur(8px);
+    font-family: var(--mono); font-size: 11px; font-weight: 500;
+    letter-spacing: 0.12em; text-transform: uppercase; color: #fff;
+    margin-bottom: 24px;
+  }
+  .hero-pill .dot {
+    width: 6px; height: 6px; border-radius: 50%;
+    background: var(--lilac); box-shadow: 0 0 12px var(--lilac);
+  }
+  .hero-card h1 {
+    font-family: var(--display); font-weight: 800;
+    font-size: clamp(40px, 5vw, 62px); line-height: 1;
+    letter-spacing: -0.015em; margin: 0 0 14px; color: #fff; max-width: 18ch;
+  }
+  .hero-card .hero-sub {
+    font-family: var(--sans);
+    font-size: 18px;
+    font-weight: 500;
+    color: rgba(255,255,255,0.88);
+    margin: 0 0 16px;
+  }
+  .hero-card p {
+    margin: 0; font-size: 16px; color: rgba(255,255,255,0.72);
+    line-height: 1.65; max-width: 58ch;
+  }
+
+  /* ---------- Widget section ---------- */
+  .widget-section { padding: 72px 0 48px; }
+  .widget-intro { text-align: center; margin-bottom: 36px; }
+  .widget-intro .eyebrow {
+    font-family: var(--mono); font-size: 12px;
+    letter-spacing: 0.12em; text-transform: uppercase;
+    color: var(--purple); margin-bottom: 14px;
+  }
+  .widget-intro h2 {
+    font-family: var(--display); font-weight: 800;
+    font-size: clamp(36px, 4.5vw, 60px); line-height: 0.95;
+    letter-spacing: -0.015em; margin: 0 auto 16px;
+    max-width: 22ch; color: var(--charcoal);
+  }
+  .widget-intro p {
+    font-size: 16px; color: var(--gray-700);
+    max-width: 60ch; margin: 0 auto;
+  }
+
+  /* ---------- Widget ---------- */
+  .widget {
+    background: var(--paper);
+    border: 1px solid color-mix(in srgb, var(--charcoal) 7%, transparent);
+    border-radius: var(--radius-lg);
+    position: relative;
+    box-shadow: 0 40px 80px -30px rgba(20, 10, 50, 0.18), 0 2px 8px -2px rgba(20, 10, 50, 0.06);
+    max-width: 1100px;
+    margin: 0 auto;
+    min-height: 600px;
+    overflow: hidden;
+  }
+  .widget-topbar {
+    height: 4px;
+    background: linear-gradient(90deg, var(--purple) 0%, var(--lilac) 50%, var(--purple) 100%);
+  }
+
+  /* ---------- Phase panels ---------- */
+  .phase {
+    padding: 24px;
+    display: none;
+  }
+  .widget[data-phase="upload"]   .phase[data-phase-panel="upload"]   { display: block; }
+  .widget[data-phase="dashboard"] .phase[data-phase-panel="dashboard"] { display: block; padding: 0; }
+
+  /* ==================== UPLOAD PHASE ==================== */
+  .upload-split {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    min-height: 520px;
+  }
+
+  /* Left: upload card */
+  .upload-card {
+    background: var(--paper);
+    border: 1px solid var(--gray-100);
+    border-radius: 16px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  .upload-card-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--purple);
+    margin: 0 0 4px;
+    letter-spacing: -0.005em;
+  }
+  .upload-card-sub {
+    font-size: 13px;
+    color: var(--gray-500);
+    margin: 0 0 20px;
+  }
+
+  .dropzone {
+    border: 1.5px dashed var(--purple);
+    border-radius: 12px;
+    padding: 32px 20px;
+    background: linear-gradient(135deg, var(--purple-softer) 0%, #f9f7fd 100%);
+    text-align: center;
+    min-height: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+    transition: all .3s var(--ease);
+  }
+  .widget.state-dragging .dropzone {
+    border-style: solid;
+    background: linear-gradient(135deg, var(--purple-soft) 0%, var(--purple-softer) 100%);
+  }
+  .dropzone-icon {
+    width: 46px; height: 46px;
+    background: var(--purple);
+    color: #fff;
+    border-radius: 11px;
+    display: grid;
+    place-items: center;
+    margin-bottom: 4px;
+    transition: transform .3s var(--ease);
+  }
+  .widget.state-dragging .dropzone-icon { transform: scale(1.08); }
+  .dropzone-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--charcoal);
+    margin: 0;
+  }
+  .dropzone-sub {
+    font-size: 13px;
+    color: var(--gray-700);
+    margin: 0;
+  }
+  .dropzone-sub .browse {
+    color: var(--purple);
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+  .dropzone-formats {
+    font-size: 11.5px;
+    color: var(--gray-500);
+    margin-top: 2px;
+  }
+
+  /* Floating file plunge */
+  .floating-file {
+    position: absolute;
+    top: -60px;
+    left: 50%;
+    transform: translateX(-50%) rotate(-5deg) scale(0.8);
+    width: 180px;
+    opacity: 0;
+    z-index: 5;
+    pointer-events: none;
+  }
+  .widget.state-dragging .floating-file {
+    animation: filePlunge 1.8s var(--ease) forwards;
+  }
+  @keyframes filePlunge {
+    0%   { transform: translate(-50%, -120%) rotate(-14deg) scale(0.7); opacity: 0; }
+    15%  { opacity: 1; }
+    55%  { transform: translate(-50%, 20%) rotate(-3deg) scale(1); }
+    85%  { transform: translate(-50%, 55%) rotate(0deg) scale(0.92); opacity: 1; }
+    100% { transform: translate(-50%, 90%) rotate(0deg) scale(0.4); opacity: 0; }
+  }
+  .floating-visual {
+    background: var(--paper);
+    border-radius: 8px;
+    box-shadow: 0 24px 48px -12px rgba(20, 10, 50, 0.3), 0 0 0 1px var(--gray-200);
+    padding: 14px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .floating-visual .doc-icon {
+    width: 28px; height: 36px;
+    background: #2B579A;
+    color: #fff;
+    border-radius: 3px;
+    display: grid;
+    place-items: center;
+    font-family: var(--mono);
+    font-size: 8.5px;
+    font-weight: 700;
+    flex-shrink: 0;
+  }
+  .floating-visual .doc-name {
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--charcoal);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  /* Loaded file card under dropzone */
+  .file-loaded-card {
+    display: none;
+    margin-top: 14px;
+    padding: 12px 14px;
+    background: var(--paper);
+    border: 1px solid var(--gray-200);
+    border-radius: 10px;
+    align-items: center;
+    gap: 12px;
+  }
+  .widget.state-loaded .file-loaded-card,
+  .widget.state-ready .file-loaded-card,
+  .widget.state-analyzing .file-loaded-card {
+    display: flex;
+  }
+  .file-loaded-icon {
+    width: 30px; height: 36px;
+    background: var(--paper);
+    border: 1px solid var(--gray-200);
+    border-radius: 4px;
+    display: grid;
+    place-items: center;
+    color: var(--gray-500);
+    flex-shrink: 0;
+  }
+  .file-loaded-info { flex: 1; min-width: 0; }
+  .file-loaded-name {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--charcoal);
+    margin-bottom: 2px;
+  }
+  .file-loaded-size {
+    font-size: 11.5px;
+    color: var(--gray-500);
+  }
+  .file-loaded-close {
+    width: 20px; height: 20px;
+    color: var(--gray-400);
+    display: grid;
+    place-items: center;
+    flex-shrink: 0;
+  }
+
+  /* Custom focus */
+  .custom-focus-label {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--charcoal);
+    margin: 20px 0 6px;
+  }
+  .focus-textarea {
+    padding: 12px 14px;
+    background: var(--paper);
+    border: 1px solid var(--gray-200);
+    border-radius: 10px;
+    font-size: 13px;
+    color: var(--gray-400);
+    min-height: 80px;
+    line-height: 1.5;
+  }
+  .focus-helper {
+    font-size: 11.5px;
+    color: var(--gray-500);
+    margin: 6px 0 20px;
+    line-height: 1.5;
+  }
+
+  /* Upload card buttons */
+  .upload-actions {
+    display: flex;
+    gap: 8px;
+    margin-top: auto;
+  }
+  .upload-btn-primary {
+    padding: 11px 20px;
+    background: color-mix(in srgb, var(--purple) 50%, var(--gray-200));
+    color: #fff;
+    border-radius: 10px;
+    font-size: 13.5px;
+    font-weight: 600;
+    transition: all .3s var(--ease);
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .widget.state-ready .upload-btn-primary,
+  .widget.state-analyzing .upload-btn-primary {
+    background: var(--purple);
+  }
+  .widget.state-ready .upload-btn-primary { animation: btnPulse 0.6s var(--ease); }
+  @keyframes btnPulse {
+    0%, 100% { transform: scale(1); box-shadow: 0 0 0 0 color-mix(in srgb, var(--purple) 40%, transparent); }
+    40% { transform: scale(0.97); box-shadow: 0 0 0 8px color-mix(in srgb, var(--purple) 0%, transparent); }
+  }
+  .upload-btn-ghost {
+    padding: 11px 20px;
+    background: var(--paper);
+    border: 1px solid var(--gray-200);
+    border-radius: 10px;
+    font-size: 13.5px;
+    font-weight: 600;
+    color: var(--charcoal);
+  }
+
+  /* Right: dark progress panel */
+  .progress-panel {
+    background: linear-gradient(135deg, var(--panel-dark) 0%, var(--panel-dark-2) 100%);
+    border-radius: 16px;
+    padding: 24px;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+  }
+  .progress-panel::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at 100% 100%, color-mix(in srgb, var(--purple) 45%, transparent), transparent 60%);
+    pointer-events: none;
+  }
+  .progress-panel-inner { position: relative; z-index: 1; }
+  .progress-title {
+    font-size: 15px;
+    font-weight: 700;
+    color: #fff;
+    margin: 0 0 18px;
+  }
+  .progress-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  .progress-step {
+    padding: 11px 14px;
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.05);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    transition: all .3s var(--ease);
+  }
+  .step-dot {
+    width: 14px; height: 14px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.15);
+    flex-shrink: 0;
+    transition: all .3s var(--ease);
+    position: relative;
+  }
+  .progress-step.active .step-dot {
+    background: var(--lilac);
+    animation: stepPulse 1.2s ease-in-out infinite;
+  }
+  @keyframes stepPulse {
+    0%, 100% { box-shadow: 0 0 0 0 color-mix(in srgb, var(--lilac) 50%, transparent); }
+    50% { box-shadow: 0 0 0 6px color-mix(in srgb, var(--lilac) 0%, transparent); }
+  }
+  .progress-step.done .step-dot {
+    background: var(--green-accent);
+  }
+  .progress-step.done .step-dot::after {
+    content: "";
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translate(-50%, -58%) rotate(-45deg);
+    width: 5px; height: 3px;
+    border-left: 1.5px solid #fff;
+    border-bottom: 1.5px solid #fff;
+  }
+  .step-label {
+    font-size: 13px;
+    color: rgba(255,255,255,0.6);
+    transition: color .3s var(--ease);
+  }
+  .progress-step.active .step-label,
+  .progress-step.done .step-label {
+    color: #fff;
+    font-weight: 500;
+  }
+
+  .progress-description {
+    margin-top: 18px;
+    font-size: 12.5px;
+    color: rgba(255,255,255,0.55);
+    line-height: 1.6;
+  }
+
+  /* ==================== DASHBOARD PHASE ==================== */
+  .dashboard {
+    background: var(--purple-softer);
+    min-height: 600px;
+  }
+
+  /* Dashboard top bar */
+  .dash-topbar {
+    padding: 12px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    background: color-mix(in srgb, var(--purple-softer) 90%, #fff);
+    border-bottom: 1px solid var(--gray-100);
+  }
+  .back-btn {
+    padding: 6px 12px;
+    background: var(--paper);
+    border: 1px solid var(--gray-200);
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--charcoal);
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .dash-updated {
+    font-size: 11.5px;
+    color: var(--gray-500);
+    font-family: var(--mono);
+  }
+
+  /* Dashboard header */
+  .dash-header {
+    padding: 14px 24px 0;
+  }
+  .dash-rfp-pill {
+    display: inline-block;
+    font-family: var(--mono);
+    font-size: 10px;
+    padding: 3px 8px;
+    background: var(--purple-soft);
+    color: var(--purple);
+    border-radius: 4px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    margin-right: 8px;
+  }
+  .dash-rfp-sub {
+    font-size: 12px;
+    color: var(--gray-500);
+  }
+  .dash-title {
+    font-family: var(--display);
+    font-size: 26px;
+    font-weight: 800;
+    color: var(--purple);
+    margin: 4px 0 12px;
+    letter-spacing: -0.01em;
+    line-height: 1.1;
+  }
+
+  /* Tabs */
+  .dash-tabs {
+    display: flex;
+    gap: 4px;
+    padding: 0 24px;
+    background: transparent;
+    border-bottom: none;
+  }
+  .dash-tab {
+    padding: 8px 14px;
+    border-radius: 10px;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--gray-500);
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    transition: all .3s var(--ease);
+    cursor: pointer;
+    border: 1.5px solid transparent;
+    background: transparent;
+  }
+  .dash-tab.active {
+    background: var(--paper);
+    color: var(--purple);
+    border-color: var(--purple);
+    font-weight: 600;
+  }
+  .dash-tab-count {
+    font-family: var(--mono);
+    font-size: 10px;
+    padding: 1px 6px;
+    background: var(--gray-100);
+    color: var(--gray-700);
+    border-radius: 999px;
+    font-weight: 600;
+    min-width: 16px;
+    text-align: center;
+  }
+  .dash-tab.active .dash-tab-count {
+    background: var(--purple);
+    color: #fff;
+  }
+
+  /* Tab panels */
+  .dash-body {
+    padding: 16px 24px 24px;
+    max-height: 560px;
+    overflow-y: auto;
+  }
+  .dash-tab-panel {
+    display: none;
+  }
+  .widget[data-tab="overview"]   .dash-tab-panel[data-tab-panel="overview"]   { display: block; }
+  .widget[data-tab="proposals"]  .dash-tab-panel[data-tab-panel="proposals"]  { display: block; }
+  .widget[data-tab="comparison"] .dash-tab-panel[data-tab-panel="comparison"] { display: block; }
+  .widget[data-tab="chat"]       .dash-tab-panel[data-tab-panel="chat"]       { display: block; }
+
+  /* ========== OVERVIEW TAB ========== */
+  .overview-summary-card {
+    background: var(--paper);
+    border: 1px solid var(--purple-soft);
+    border-radius: 14px;
+    padding: 16px 18px;
+    margin-bottom: 12px;
+    background: linear-gradient(135deg, var(--paper) 0%, var(--purple-softer) 100%);
+  }
+  .company-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 10px;
+    background: var(--purple-softer);
+    border-radius: 999px;
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--purple);
+    margin-bottom: 8px;
+  }
+  .company-pill::before {
+    content: "";
+    width: 5px; height: 5px;
+    background: var(--purple);
+    border-radius: 50%;
+  }
+  .overview-title {
+    font-family: var(--display);
+    font-weight: 800;
+    font-size: 22px;
+    color: var(--purple);
+    margin: 0 0 8px;
+    letter-spacing: -0.005em;
+    line-height: 1.15;
+  }
+  .overview-desc {
+    font-size: 12.5px;
+    color: var(--gray-700);
+    line-height: 1.65;
+    margin: 0 0 14px;
+  }
+  .overview-meta-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+  .meta-card {
+    padding: 10px 14px;
+    background: var(--paper);
+    border: 1px solid var(--gray-100);
+    border-radius: 10px;
+    border-top: 2px solid var(--purple);
+  }
+  .meta-card.amber { border-top-color: var(--amber-text); }
+  .meta-card.green { border-top-color: var(--green-accent); }
+  .meta-card.blue { border-top-color: var(--blue-text); }
+  .meta-card-label {
+    font-family: var(--mono);
+    font-size: 9px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--gray-500);
+    margin-bottom: 4px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  .meta-card-label svg { color: var(--purple); }
+  .meta-card.amber .meta-card-label svg { color: var(--amber-text); }
+  .meta-card.green .meta-card-label svg { color: var(--green-accent); }
+  .meta-card.blue .meta-card-label svg { color: var(--blue-text); }
+  .meta-card-value {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--charcoal);
+    line-height: 1.2;
+  }
+  .meta-card-hint {
+    font-size: 10.5px;
+    color: var(--gray-500);
+    margin-top: 2px;
+  }
+
+  /* Custom focus (overview) */
+  .focus-card {
+    background: var(--paper);
+    border: 1px solid color-mix(in srgb, var(--purple) 15%, transparent);
+    border-radius: 12px;
+    padding: 14px 16px;
+    margin-bottom: 12px;
+    display: grid;
+    grid-template-columns: 32px 1fr;
+    gap: 12px;
+  }
+  .focus-icon {
+    width: 28px; height: 28px;
+    background: var(--purple);
+    color: #fff;
+    border-radius: 7px;
+    display: grid;
+    place-items: center;
+  }
+  .focus-content h4 {
+    margin: 0 0 2px;
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--charcoal);
+  }
+  .focus-content p {
+    margin: 0 0 8px;
+    font-size: 11.5px;
+    color: var(--gray-500);
+    line-height: 1.5;
+  }
+  .focus-content .focus-input {
+    padding: 8px 10px;
+    background: var(--paper);
+    border: 1px solid var(--gray-200);
+    border-radius: 6px;
+    font-size: 11.5px;
+    color: var(--gray-400);
+    min-height: 32px;
+  }
+  .focus-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 8px;
+    padding-top: 8px;
+    border-top: 1px solid var(--gray-100);
+  }
+  .focus-footer-note {
+    font-size: 10.5px;
+    color: var(--gray-500);
+  }
+  .focus-footer-actions { display: flex; gap: 6px; }
+  .focus-btn {
+    padding: 5px 10px;
+    font-size: 11px;
+    font-weight: 600;
+    border-radius: 6px;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+  }
+  .focus-btn.ghost {
+    background: var(--gray-50);
+    color: var(--gray-500);
+    border: 1px solid var(--gray-100);
+  }
+  .focus-btn.primary {
+    background: var(--purple);
+    color: #fff;
+  }
+
+  /* Overview 2-column */
+  .overview-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 12px;
+  }
+  .overview-card {
+    background: var(--paper);
+    border: 1px solid var(--gray-100);
+    border-radius: 12px;
+    padding: 14px 16px;
+    position: relative;
+  }
+  .overview-card.border-left {
+    border-left: 3px solid var(--purple);
+  }
+  .card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  .card-head-left {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .card-head-icon {
+    width: 22px; height: 22px;
+    background: var(--purple-soft);
+    color: var(--purple);
+    border-radius: 5px;
+    display: grid;
+    place-items: center;
+    flex-shrink: 0;
+  }
+  .card-head-icon.amber { background: #fef3c7; color: var(--amber-text); }
+  .card-title {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--charcoal);
+    letter-spacing: -0.005em;
+  }
+  .card-count {
+    font-family: var(--mono);
+    font-size: 10px;
+    padding: 2px 7px;
+    background: var(--gray-100);
+    color: var(--gray-700);
+    border-radius: 999px;
+    font-weight: 600;
+  }
+
+  .exec-summary {
+    font-size: 12px;
+    color: var(--gray-700);
+    line-height: 1.75;
+    padding-left: 10px;
+    border-left: 2px solid var(--purple);
+  }
+
+  .req-list {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  .req-item {
+    display: flex;
+    gap: 8px;
+    align-items: flex-start;
+    font-size: 11.5px;
+    color: var(--charcoal);
+    line-height: 1.5;
+  }
+  .req-num {
+    flex-shrink: 0;
+    width: 18px; height: 18px;
+    background: var(--purple-soft);
+    color: var(--purple);
+    border-radius: 5px;
+    display: grid;
+    place-items: center;
+    font-family: var(--mono);
+    font-size: 9.5px;
+    font-weight: 700;
+    margin-top: 1px;
+  }
+
+  /* Evaluation criteria card */
+  .eval-criteria-card {
+    background: var(--paper);
+    border: 1px solid var(--gray-100);
+    border-radius: 12px;
+    padding: 14px 16px;
+    margin-bottom: 12px;
+  }
+  .eval-row {
+    padding: 10px 0;
+    border-bottom: 1px solid var(--gray-100);
+  }
+  .eval-row:last-child { border-bottom: 0; padding-bottom: 0; }
+  .eval-row:first-child { padding-top: 0; }
+  .eval-row-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 4px;
+  }
+  .eval-title {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--purple);
+  }
+  .eval-pct {
+    font-family: var(--sans);
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--charcoal);
+  }
+  .eval-desc {
+    font-size: 11px;
+    color: var(--gray-500);
+    line-height: 1.45;
+    margin-bottom: 6px;
+  }
+  .eval-bar {
+    height: 5px;
+    background: var(--gray-100);
+    border-radius: 999px;
+    overflow: hidden;
+  }
+  .eval-bar-fill {
+    height: 100%;
+    background: var(--purple);
+    border-radius: 999px;
+  }
+
+  /* Requirements breakdown */
+  .req-breakdown {
+    background: var(--paper);
+    border: 1px solid var(--gray-100);
+    border-radius: 12px;
+    padding: 14px 16px;
+    margin-bottom: 12px;
+  }
+  .req-breakdown-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    gap: 12px;
+  }
+  .req-tabs {
+    display: flex;
+    gap: 4px;
+  }
+  .req-tab {
+    padding: 5px 10px;
+    background: var(--gray-50);
+    color: var(--gray-500);
+    border-radius: 6px;
+    font-size: 11px;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+  }
+  .req-tab.active {
+    background: var(--paper);
+    border: 1px solid var(--purple);
+    color: var(--purple);
+    font-weight: 600;
+  }
+  .req-tab-count {
+    font-family: var(--mono);
+    font-size: 9.5px;
+    padding: 1px 5px;
+    background: color-mix(in srgb, var(--purple) 15%, transparent);
+    color: var(--purple);
+    border-radius: 999px;
+    font-weight: 700;
+  }
+  .req-tab.active .req-tab-count { background: var(--purple); color: #fff; }
+  .req-tab:not(.active) .req-tab-count { background: var(--gray-200); color: var(--gray-700); }
+
+  .req-row {
+    display: flex;
+    gap: 12px;
+    padding: 8px 0;
+    border-top: 1px solid var(--gray-100);
+    align-items: flex-start;
+  }
+  .req-row:first-of-type { border-top: 0; }
+  .req-row-num {
+    width: 24px; height: 24px;
+    background: var(--red-bg);
+    color: var(--red-text);
+    border-radius: 6px;
+    display: grid;
+    place-items: center;
+    font-family: var(--mono);
+    font-size: 10px;
+    font-weight: 700;
+    border-left: 2px solid var(--red-text);
+    flex-shrink: 0;
+    margin-top: 1px;
+  }
+  .req-row-body { flex: 1; min-width: 0; }
+  .req-row-title {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--purple);
+    margin-bottom: 2px;
+  }
+  .req-row-desc {
+    font-size: 11px;
+    color: var(--gray-500);
+    line-height: 1.5;
+  }
+  .req-row-tag {
+    font-family: var(--mono);
+    font-size: 9.5px;
+    padding: 3px 7px;
+    background: var(--gray-50);
+    color: var(--gray-500);
+    border-radius: 4px;
+    font-weight: 500;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+
+  /* Risks & gaps */
+  .risks-gaps {
+    background: color-mix(in srgb, var(--amber-bg) 30%, var(--paper));
+    border: 1px solid color-mix(in srgb, var(--amber-border) 60%, transparent);
+    border-radius: 12px;
+    padding: 14px 16px;
+  }
+  .risks-gaps-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 12px;
+    flex-wrap: wrap;
+  }
+  .risks-gaps-title {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--amber-text);
+  }
+  .risks-gaps-note {
+    font-size: 10.5px;
+    color: var(--gray-500);
+    max-width: 280px;
+    line-height: 1.45;
+  }
+  .risks-gaps-cols {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  .risks-col {
+    background: var(--paper);
+    border-radius: 10px;
+    padding: 10px 12px;
+  }
+  .risks-col-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--charcoal);
+  }
+  .risks-col-count {
+    font-family: var(--mono);
+    font-size: 9.5px;
+    padding: 1px 6px;
+    background: var(--gray-100);
+    color: var(--gray-700);
+    border-radius: 999px;
+  }
+  .risk-item {
+    padding: 8px 10px;
+    border-radius: 6px;
+    margin-bottom: 6px;
+    border-left: 2px solid var(--blue-text);
+    background: var(--blue-bg);
+  }
+  .risk-item.attention {
+    border-left-color: var(--amber-text);
+    background: var(--amber-bg);
+  }
+  .risk-item:last-child { margin-bottom: 0; }
+  .risk-item-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3px;
+  }
+  .risk-item-title {
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--charcoal);
+  }
+  .risk-item-badge {
+    font-family: var(--mono);
+    font-size: 8.5px;
+    font-weight: 700;
+    padding: 2px 6px;
+    border-radius: 3px;
+    letter-spacing: 0.08em;
+  }
+  .risk-item-badge.info { background: var(--blue-bg); color: var(--blue-text); border: 1px solid var(--blue-border); }
+  .risk-item-badge.attention { background: var(--amber-bg); color: var(--amber-text); border: 1px solid var(--amber-border); }
+  .risk-item-desc {
+    font-size: 10.5px;
+    color: var(--gray-700);
+    line-height: 1.5;
+  }
+
+  /* ========== PROPOSALS TAB ========== */
+  .proposals-empty {
+    background: var(--purple-softer);
+    border-radius: 12px;
+    padding: 14px 16px;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    transition: opacity .3s var(--ease);
+  }
+  .widget.state-scoring .proposals-empty,
+  .widget.state-scored .proposals-empty {
+    opacity: 0.5;
+  }
+  .proposals-empty-icon {
+    width: 36px; height: 36px;
+    background: var(--purple);
+    color: #fff;
+    border-radius: 9px;
+    display: grid;
+    place-items: center;
+    flex-shrink: 0;
+  }
+  .proposals-empty h4 {
+    margin: 0 0 2px;
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--purple);
+  }
+  .proposals-empty p {
+    margin: 0;
+    font-size: 11.5px;
+    color: var(--gray-700);
+    line-height: 1.5;
+  }
+
+  /* Upload proposals card */
+  .upload-proposals-card {
+    background: var(--paper);
+    border: 1px solid var(--gray-100);
+    border-radius: 12px;
+    padding: 16px;
+  }
+  .upload-proposals-head {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 14px;
+  }
+  .upload-proposals-icon {
+    width: 32px; height: 32px;
+    background: var(--purple);
+    color: #fff;
+    border-radius: 8px;
+    display: grid;
+    place-items: center;
+    flex-shrink: 0;
+  }
+  .upload-proposals-title {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--purple);
+    margin: 0 0 2px;
+  }
+  .upload-proposals-sub {
+    font-size: 11.5px;
+    color: var(--gray-500);
+    margin: 0;
+    line-height: 1.45;
+  }
+
+  .proposals-dropzone {
+    border: 1.5px dashed var(--purple);
+    border-radius: 10px;
+    padding: 22px 16px;
+    background: linear-gradient(135deg, var(--purple-softer) 0%, #fafafa 100%);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    position: relative;
+    transition: all .3s var(--ease);
+    min-height: 100px;
+    justify-content: center;
+  }
+  .widget.state-dragging-props .proposals-dropzone {
+    background: var(--purple-soft);
+  }
+  .proposals-dropzone-icon {
+    width: 36px; height: 36px;
+    background: var(--purple);
+    color: #fff;
+    border-radius: 9px;
+    display: grid;
+    place-items: center;
+  }
+  .proposals-dropzone-title {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--charcoal);
+  }
+  .proposals-dropzone-hint {
+    font-size: 11px;
+    color: var(--gray-500);
+  }
+
+  /* Floating proposals */
+  .floating-proposals {
+    position: absolute;
+    top: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 12px;
+    opacity: 0;
+    z-index: 5;
+    pointer-events: none;
+  }
+  .widget.state-dragging-props .floating-proposals {
+    animation: proposalsPlunge 2.2s var(--ease) forwards;
+  }
+  @keyframes proposalsPlunge {
+    0%   { transform: translate(-50%, -120%) scale(0.7); opacity: 0; }
+    15%  { opacity: 1; }
+    55%  { transform: translate(-50%, 20%) scale(1); }
+    85%  { transform: translate(-50%, 60%) scale(0.92); opacity: 1; }
+    100% { transform: translate(-50%, 100%) scale(0.5); opacity: 0; }
+  }
+  .floating-prop {
+    width: 52px; height: 64px;
+    border-radius: 4px;
+    box-shadow: 0 12px 28px -8px rgba(20, 10, 50, 0.3);
+    display: grid;
+    place-items: center;
+    font-family: var(--mono);
+    font-size: 9px;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 0.05em;
+    position: relative;
+    transform-origin: center;
+  }
+  .floating-prop.pdf { background: #DC2626; transform: rotate(-6deg); }
+  .floating-prop.docx { background: #2B579A; transform: rotate(2deg); }
+  .floating-prop.pptx { background: #B7472A; transform: rotate(8deg); }
+
+  /* Selected files */
+  .selected-files-label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 14px 0 8px;
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--gray-500);
+    font-weight: 600;
+  }
+  .selected-files-count {
+    font-size: 11px;
+    color: var(--gray-500);
+    text-transform: none;
+    letter-spacing: 0;
+  }
+  .selected-empty {
+    padding: 14px 16px;
+    background: var(--gray-50);
+    border: 1px solid var(--gray-100);
+    border-radius: 8px;
+    font-size: 11.5px;
+    color: var(--gray-500);
+    text-align: center;
+  }
+  .widget.state-dragging-props .selected-empty,
+  .widget.state-scoring .selected-empty,
+  .widget.state-scored .selected-empty {
+    display: none;
+  }
+
+  .selected-files-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    display: none;
+  }
+  .widget.state-scoring .selected-files-grid,
+  .widget.state-scored .selected-files-grid {
+    display: grid;
+  }
+  .selected-file {
+    padding: 10px 12px;
+    background: var(--paper);
+    border: 1px solid var(--gray-100);
+    border-radius: 8px;
+  }
+  .selected-file-top {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 6px;
+  }
+  .sf-icon {
+    width: 28px; height: 36px;
+    border-radius: 3px;
+    display: grid;
+    place-items: center;
+    font-family: var(--mono);
+    font-size: 8px;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 0.05em;
+    flex-shrink: 0;
+  }
+  .sf-icon.pdf { background: #DC2626; }
+  .sf-icon.docx { background: #2B579A; }
+  .sf-icon.pptx { background: #B7472A; }
+  .sf-meta { flex: 1; min-width: 0; }
+  .sf-name {
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--charcoal);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 1px;
+  }
+  .sf-size {
+    font-size: 10px;
+    color: var(--gray-500);
+  }
+  .sf-input {
+    font-family: var(--mono);
+    font-size: 9.5px;
+    color: var(--gray-500);
+    margin-top: 4px;
+    letter-spacing: 0.05em;
+  }
+  .sf-vendor {
+    padding: 5px 8px;
+    background: var(--gray-50);
+    border: 1px solid var(--gray-100);
+    border-radius: 5px;
+    font-size: 10.5px;
+    color: var(--gray-400);
+  }
+
+  .proposals-footer {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 14px;
+    padding-top: 12px;
+    border-top: 1px solid var(--gray-100);
+  }
+  .score-btn {
+    padding: 9px 18px;
+    background: color-mix(in srgb, var(--purple) 50%, var(--gray-200));
+    color: #fff;
+    border-radius: 8px;
+    font-size: 12.5px;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    transition: all .3s var(--ease);
+  }
+  .widget.state-scoring .score-btn {
+    background: var(--purple);
+  }
+  .widget.state-scoring .score-btn { animation: btnPulse 0.6s var(--ease); }
+  .score-btn.scoring {
+    background: var(--purple);
+  }
+  .score-btn .spinner {
+    display: none;
+    width: 11px; height: 11px;
+    border: 1.5px solid rgba(255,255,255,0.3);
+    border-top-color: #fff;
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  .widget.state-scoring .score-btn .spinner { display: block; }
+
+  /* Scored result */
+  .scored-result {
+    display: none;
+    margin-top: 14px;
+  }
+  .widget.state-scored .scored-result {
+    display: block;
+    animation: scoredFadeIn 0.5s var(--ease) forwards;
+  }
+  @keyframes scoredFadeIn {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: none; }
+  }
+  .scored-row {
+    padding: 14px 16px;
+    background: var(--paper);
+    border: 1px solid var(--gray-100);
+    border-radius: 12px;
+    border-left: 3px solid var(--red-text);
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+  }
+  .score-badge {
+    width: 44px; height: 44px;
+    border-radius: 50%;
+    background: var(--paper);
+    border: 2px solid var(--gray-300);
+    display: grid;
+    place-items: center;
+    font-family: var(--display);
+    font-size: 18px;
+    font-weight: 800;
+    color: var(--gray-500);
+    flex-shrink: 0;
+  }
+  .scored-body { flex: 1; min-width: 0; }
+  .scored-head-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 4px;
+    flex-wrap: wrap;
+  }
+  .scored-vendor {
+    font-size: 13.5px;
+    font-weight: 700;
+    color: var(--purple);
+  }
+  .scored-label {
+    font-family: var(--mono);
+    font-size: 9.5px;
+    font-weight: 700;
+    padding: 3px 7px;
+    border-radius: 4px;
+    letter-spacing: 0.08em;
+    background: var(--red-bg);
+    color: var(--red-text);
+    border: 1px solid var(--red-border);
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+  }
+  .scored-label::before {
+    content: "";
+    width: 4px; height: 4px;
+    background: var(--red-text);
+    border-radius: 50%;
+  }
+  .scored-desc {
+    font-size: 11.5px;
+    color: var(--gray-700);
+    line-height: 1.55;
+    margin: 0 0 8px;
+  }
+  .scored-metrics {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    font-size: 11px;
+    color: var(--gray-500);
+  }
+  .scored-metric {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+  }
+  .scored-metric svg { color: var(--gray-400); }
+  .scored-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    flex-shrink: 0;
+  }
+  .scored-action-btn {
+    padding: 5px 10px;
+    background: var(--paper);
+    border: 1px solid var(--gray-200);
+    border-radius: 6px;
+    font-size: 10.5px;
+    font-weight: 600;
+    color: var(--charcoal);
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+  }
+  .scored-action-btn.delete {
+    color: var(--red-text);
+    border-color: color-mix(in srgb, var(--red-text) 30%, var(--gray-200));
+  }
+  .scored-action-btn.primary {
+    background: var(--purple);
+    color: #fff;
+    border-color: var(--purple);
+  }
+
+  /* ========== COMPARISON TAB ========== */
+  .comparison-empty {
+    padding: 40px 24px;
+    background: var(--paper);
+    border: 1.5px dashed var(--gray-300);
+    border-radius: 14px;
+    text-align: center;
+    min-height: 260px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background: linear-gradient(135deg, var(--purple-softer) 0%, #fafafa 100%);
+    position: relative;
+    transition: all .3s var(--ease);
+  }
+  .widget.state-comp-filled .comparison-empty {
+    display: none;
+  }
+  .comparison-icon {
+    width: 42px; height: 42px;
+    background: var(--purple);
+    color: #fff;
+    border-radius: 10px;
+    display: grid;
+    place-items: center;
+    margin-bottom: 4px;
+  }
+  .comparison-title {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--charcoal);
+    margin: 0;
+  }
+  .comparison-sub {
+    font-size: 12px;
+    color: var(--gray-500);
+    margin: 0;
+    line-height: 1.5;
+    max-width: 44ch;
+  }
+
+  /* Floating comparison files */
+  .floating-comparison {
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 20px;
+    opacity: 0;
+    z-index: 5;
+    pointer-events: none;
+  }
+  .widget.state-comp-dragging .floating-comparison {
+    animation: compPlunge 2s var(--ease) forwards;
+  }
+  @keyframes compPlunge {
+    0%   { transform: translate(-50%, -120%) scale(0.7); opacity: 0; }
+    15%  { opacity: 1; }
+    55%  { transform: translate(-50%, 20%) scale(1); }
+    100% { transform: translate(-50%, 100%) scale(0.5); opacity: 0; }
+  }
+
+  /* Comparison matrix */
+  .comparison-matrix {
+    display: none;
+  }
+  .widget.state-comp-filled .comparison-matrix {
+    display: block;
+    animation: scoredFadeIn 0.5s var(--ease) forwards;
+  }
+  .matrix-header {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  .matrix-head-label {
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--gray-500);
+    font-weight: 600;
+    padding: 8px 12px;
+  }
+  .matrix-vendor-card {
+    padding: 10px 14px;
+    background: var(--paper);
+    border: 1px solid var(--gray-100);
+    border-radius: 10px;
+    border-top: 3px solid var(--purple);
+  }
+  .matrix-vendor-card.second {
+    border-top-color: var(--amber-text);
+  }
+  .matrix-vendor-name {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--purple);
+    margin-bottom: 2px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .matrix-vendor-card.second .matrix-vendor-name {
+    color: var(--amber-text);
+  }
+  .matrix-vendor-file {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    font-family: var(--mono);
+    font-size: 9.5px;
+    color: var(--gray-500);
+  }
+  .matrix-file-icon {
+    width: 16px; height: 20px;
+    border-radius: 2px;
+    display: grid;
+    place-items: center;
+    font-family: var(--mono);
+    font-size: 6.5px;
+    font-weight: 700;
+    color: #fff;
+  }
+  .matrix-file-icon.pdf { background: #DC2626; }
+  .matrix-file-icon.docx { background: #2B579A; }
+  .matrix-vendor-score {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-top: 6px;
+  }
+  .matrix-score-num {
+    font-family: var(--display);
+    font-size: 22px;
+    font-weight: 800;
+    color: var(--charcoal);
+    line-height: 1;
+  }
+  .matrix-score-label {
+    font-size: 10px;
+    color: var(--gray-500);
+  }
+
+  .matrix-row {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr 1fr;
+    gap: 10px;
+    padding: 10px 0;
+    border-top: 1px solid var(--gray-100);
+    align-items: center;
+  }
+  .matrix-criterion {
+    font-size: 11.5px;
+    font-weight: 600;
+    color: var(--charcoal);
+    padding: 0 12px;
+  }
+  .matrix-criterion-sub {
+    font-size: 10px;
+    color: var(--gray-500);
+    margin-top: 1px;
+    font-weight: 400;
+  }
+  .matrix-cell {
+    padding: 8px 12px;
+    background: var(--paper);
+    border: 1px solid var(--gray-100);
+    border-radius: 8px;
+    font-size: 11px;
+    color: var(--charcoal);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .matrix-cell.win {
+    background: color-mix(in srgb, var(--green-bg) 60%, var(--paper));
+    border-color: var(--green-border);
+  }
+  .matrix-status {
+    width: 14px; height: 14px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    display: grid;
+    place-items: center;
+  }
+  .matrix-status.pass {
+    background: var(--green-accent);
+  }
+  .matrix-status.pass::after {
+    content: "";
+    width: 5px; height: 3px;
+    border-left: 1.5px solid #fff;
+    border-bottom: 1.5px solid #fff;
+    transform: rotate(-45deg) translate(0.5px, -0.5px);
+  }
+  .matrix-status.fail {
+    background: var(--red-text);
+  }
+  .matrix-status.fail::after {
+    content: "×";
+    color: #fff;
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 0;
+  }
+  .matrix-status.partial {
+    background: var(--amber-text);
+  }
+  .matrix-status.partial::after {
+    content: "";
+    width: 5px; height: 2px;
+    background: #fff;
+  }
+  .matrix-cell-text { flex: 1; }
+
+  /* ========== CHAT TAB ========== */
+  .chat-card {
+    background: var(--paper);
+    border: 1px solid var(--gray-100);
+    border-radius: 12px;
+    overflow: hidden;
+    min-height: 440px;
+    display: flex;
+    flex-direction: column;
+  }
+  .chat-card-head {
+    padding: 12px 16px;
+    background: var(--purple-softer);
+    border-bottom: 1px solid var(--gray-100);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .chat-card-head-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .chat-icon-box {
+    width: 28px; height: 28px;
+    background: var(--purple);
+    color: #fff;
+    border-radius: 7px;
+    display: grid;
+    place-items: center;
+    flex-shrink: 0;
+  }
+  .chat-card-title {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--purple);
+    margin: 0 0 1px;
+  }
+  .chat-card-sub {
+    font-size: 11px;
+    color: var(--gray-500);
+    margin: 0;
+  }
+  .new-chat-btn-s {
+    padding: 5px 10px;
+    background: var(--paper);
+    border: 1px solid var(--gray-200);
+    border-radius: 6px;
+    font-size: 11px;
+    font-weight: 500;
+    color: var(--charcoal);
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .chat-card-body {
+    flex: 1;
+    padding: 20px 20px 14px;
+    overflow-y: auto;
+  }
+
+  /* Chat empty state */
+  .chat-empty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+  }
+  .widget.state-chat-sent .chat-empty,
+  .widget.state-chat-replied .chat-empty {
+    display: none;
+  }
+  .chat-empty-icon {
+    width: 42px; height: 42px;
+    background: var(--purple-soft);
+    color: var(--purple);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    margin-bottom: 14px;
+  }
+  .chat-empty-title {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--charcoal);
+    margin: 0 0 4px;
+  }
+  .chat-empty-sub {
+    font-size: 12px;
+    color: var(--gray-500);
+    text-align: center;
+    margin: 0 0 16px;
+  }
+  .chat-starters {
+    width: 100%;
+    max-width: 420px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  .chat-starter {
+    padding: 8px 14px;
+    background: var(--purple-softer);
+    border: 1px solid transparent;
+    border-radius: 999px;
+    font-size: 12px;
+    color: var(--purple);
+    text-align: center;
+    transition: all .2s var(--ease);
+  }
+  .chat-starter.hover {
+    background: color-mix(in srgb, var(--purple) 10%, var(--purple-softer));
+    border-color: var(--purple);
+  }
+
+  /* Chat messages */
+  .chat-messages {
+    display: none;
+    flex-direction: column;
+    gap: 14px;
+  }
+  .widget.state-chat-sent .chat-messages,
+  .widget.state-chat-replied .chat-messages {
+    display: flex;
+  }
+  .chat-msg {
+    display: flex;
+    gap: 8px;
+    max-width: 85%;
+    align-items: flex-start;
+  }
+  .chat-msg.user {
+    align-self: flex-end;
+    flex-direction: row-reverse;
+  }
+  .chat-msg.ai {
+    align-self: flex-start;
+  }
+  .chat-msg-avatar {
+    flex-shrink: 0;
+  }
+  .chat-msg.user .chat-msg-avatar {
+    font-size: 10px;
+    color: var(--gray-500);
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-top: 11px;
+  }
+  .chat-msg.ai .chat-msg-avatar {
+    width: 26px; height: 26px;
+    background: var(--paper);
+    border: 1px solid var(--gray-200);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-family: var(--mono);
+    font-size: 9px;
+    font-weight: 700;
+    color: var(--charcoal);
+    margin-top: 3px;
+  }
+  .chat-msg-bubble {
+    padding: 10px 14px;
+    border-radius: 12px;
+    max-width: 100%;
+  }
+  .chat-msg.user .chat-msg-bubble {
+    background: var(--purple);
+    color: #fff;
+    border-bottom-right-radius: 4px;
+    font-size: 12.5px;
+  }
+  .chat-msg.ai .chat-msg-bubble {
+    background: var(--gray-50);
+    color: var(--charcoal);
+    border-bottom-left-radius: 4px;
+    font-size: 12px;
+    line-height: 1.75;
+  }
+  .chat-typing {
+    padding: 12px 16px;
+    background: var(--gray-50);
+    border-radius: 12px;
+    border-bottom-left-radius: 4px;
+    display: inline-flex;
+    gap: 3px;
+    align-items: center;
+  }
+  .widget.state-chat-replied .chat-typing-wrap { display: none; }
+  .chat-typing span {
+    width: 6px; height: 6px;
+    background: var(--gray-400);
+    border-radius: 50%;
+    animation: chatTypingBounce 1.2s ease-in-out infinite;
+  }
+  .chat-typing span:nth-child(2) { animation-delay: 0.15s; }
+  .chat-typing span:nth-child(3) { animation-delay: 0.3s; }
+  @keyframes chatTypingBounce {
+    0%, 80%, 100% { transform: translateY(0); opacity: 0.5; }
+    40% { transform: translateY(-4px); opacity: 1; }
+  }
+
+  .chat-msg.ai .chat-msg-bubble p {
+    margin: 0 0 8px;
+  }
+  .chat-msg.ai .chat-msg-bubble p:last-child { margin-bottom: 0; }
+  .chat-msg.ai .chat-msg-bubble strong {
+    font-weight: 700;
+    color: var(--charcoal);
+  }
+
+  .chat-reply-block {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  .widget.state-chat-replied .chat-reply-block {
+    animation: chatReplyFade 0.35s var(--ease) forwards;
+  }
+  @keyframes chatReplyFade {
+    to { opacity: 1; transform: none; }
+  }
+  .widget.state-chat-replied .chat-reply-block:nth-child(1) { animation-delay: 0.1s; }
+  .widget.state-chat-replied .chat-reply-block:nth-child(2) { animation-delay: 0.4s; }
+  .widget.state-chat-replied .chat-reply-block:nth-child(3) { animation-delay: 0.7s; }
+  .widget.state-chat-replied .chat-reply-block:nth-child(4) { animation-delay: 1.0s; }
+
+  /* Chat input */
+  .chat-card-input {
+    padding: 10px 14px;
+    border-top: 1px solid var(--gray-100);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--paper);
+  }
+  .chat-input-box {
+    flex: 1;
+    padding: 9px 14px;
+    background: var(--paper);
+    border: 1px solid var(--gray-200);
+    border-radius: 999px;
+    font-size: 12px;
+    line-height: 1.5;
+    color: var(--charcoal);
+    min-height: 32px;
+    transition: border-color .3s var(--ease);
+  }
+  .chat-input-box.focused {
+    border-color: var(--purple);
+  }
+  .chat-input-box.empty { color: var(--gray-400); }
+  .chat-input-box .caret {
+    display: inline-block;
+    width: 1.5px;
+    height: 1em;
+    background: var(--purple);
+    vertical-align: text-bottom;
+    animation: blink 1s step-end infinite;
+    opacity: 0;
+    margin-inline: 1px;
+  }
+  .widget.state-chat-typing .chat-input-box .caret { opacity: 1; }
+  @keyframes blink {
+    0%, 49% { opacity: 1; }
+    50%, 100% { opacity: 0; }
+  }
+  .chat-send-btn {
+    width: 32px; height: 32px;
+    border-radius: 50%;
+    background: color-mix(in srgb, var(--purple) 40%, var(--gray-200));
+    color: #fff;
+    display: grid;
+    place-items: center;
+    flex-shrink: 0;
+    transition: all .3s var(--ease);
+  }
+  .widget.state-chat-typing .chat-send-btn,
+  .widget.state-chat-sent .chat-send-btn,
+  .widget.state-chat-replied .chat-send-btn {
+    background: var(--purple);
+  }
+  .chat-send-btn svg { transform: rotate(0deg); }
+
+  /* ---------- Section shell ---------- */
+  section.sec { padding: 100px 0; }
+  .section-head {
+    display: grid;
+    grid-template-columns: 160px 1fr;
+    gap: 48px;
+    align-items: start;
+    margin-bottom: 64px;
+  }
+  .section-index {
+    font-family: var(--mono);
+    font-size: 12px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--purple);
+    padding-top: 8px;
+  }
+  .section-title {
+    font-family: var(--display);
+    font-weight: 800;
+    font-size: clamp(36px, 5vw, 68px);
+    line-height: 0.95;
+    letter-spacing: -0.015em;
+    color: var(--charcoal);
+    max-width: 18ch;
+    margin: 0;
+  }
+  .section-intro {
+    margin-top: 20px;
+    font-size: 17px;
+    color: var(--gray-700);
+    max-width: 58ch;
+  }
+
+  /* Workflow */
+  .workflow {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+    background: color-mix(in srgb, var(--charcoal) 10%, transparent);
+    border: 1px solid color-mix(in srgb, var(--charcoal) 10%, transparent);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+  }
+  .workflow-step {
+    background: var(--paper);
+    padding: 32px 24px;
+    min-height: 220px;
+    display: flex;
+    flex-direction: column;
+  }
+  .workflow-num {
+    font-family: var(--display);
+    font-size: 56px;
+    font-weight: 800;
+    line-height: 0.8;
+    color: var(--purple);
+    margin-bottom: 18px;
+    letter-spacing: -0.03em;
+  }
+  .workflow-step h3 {
+    font-family: var(--display);
+    font-size: 22px;
+    font-weight: 800;
+    margin: 0 0 8px;
+    letter-spacing: -0.005em;
+    color: var(--charcoal);
+    line-height: 1;
+  }
+  .workflow-step p {
+    font-size: 13.5px;
+    color: var(--gray-700);
+    line-height: 1.55;
+    margin: 0;
+  }
+
+  /* Capabilities */
+  .capabilities {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+  .cap-card {
+    background: var(--paper);
+    border: 1px solid var(--gray-100);
+    border-radius: 14px;
+    padding: 28px;
+    transition: all .3s var(--ease);
+  }
+  .cap-card:hover {
+    border-color: var(--purple);
+    transform: translateY(-2px);
+  }
+  .cap-icon {
+    width: 40px; height: 40px;
+    background: var(--purple-soft);
+    color: var(--purple);
+    border-radius: 10px;
+    display: grid;
+    place-items: center;
+    margin-bottom: 16px;
+  }
+  .cap-card h4 {
+    font-family: var(--sans);
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: -0.005em;
+    margin: 0 0 8px;
+    color: var(--charcoal);
+  }
+  .cap-card p {
+    margin: 0;
+    font-size: 13.5px;
+    color: var(--gray-500);
+    line-height: 1.55;
+  }
+
+  /* Features two-up */
+  .features-two {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+  .feature-box {
+    background: var(--paper);
+    border: 1px solid var(--gray-100);
+    border-radius: var(--radius-lg);
+    padding: 40px 36px;
+  }
+  .feature-box.dark {
+    background: var(--cosmic);
+    border-color: var(--cosmic);
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+  }
+  .feature-box.dark::before {
+    content: "";
+    position: absolute; inset: 0;
+    background: radial-gradient(ellipse at 100% 0%, color-mix(in srgb, var(--purple) 50%, transparent), transparent 60%);
+    pointer-events: none;
+  }
+  .feature-inner { position: relative; z-index: 1; }
+  .feature-eyebrow {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--purple);
+    margin-bottom: 16px;
+    font-weight: 600;
+  }
+  .feature-box.dark .feature-eyebrow { color: var(--lilac); }
+  .feature-box h3 {
+    font-family: var(--display);
+    font-weight: 800;
+    font-size: 34px;
+    letter-spacing: -0.01em;
+    line-height: 0.98;
+    margin: 0 0 16px;
+    color: var(--charcoal);
+    max-width: 14ch;
+  }
+  .feature-box.dark h3 { color: #fff; }
+  .feature-box p {
+    font-size: 15px;
+    line-height: 1.55;
+    color: var(--gray-700);
+    margin: 0 0 24px;
+  }
+  .feature-box.dark p { color: rgba(255,255,255,0.72); }
+  .feature-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .feature-list-item {
+    display: grid;
+    grid-template-columns: 18px 1fr;
+    gap: 12px;
+    font-size: 13.5px;
+    line-height: 1.5;
+    color: var(--charcoal);
+  }
+  .feature-box.dark .feature-list-item { color: rgba(255,255,255,0.85); }
+  .feature-list-item svg { color: var(--purple); margin-top: 4px; }
+  .feature-box.dark .feature-list-item svg { color: var(--lilac); }
+
+  /* Enterprise strip */
+  .enterprise {
+    background: var(--cosmic);
+    color: #fff;
+    border-radius: 28px;
+    margin: 0 32px;
+    padding: 80px 64px;
+    position: relative;
+    overflow: hidden;
+  }
+  .enterprise::before {
+    content: "";
+    position: absolute; inset: 0;
+    background:
+      radial-gradient(circle at 90% 20%, color-mix(in srgb, var(--purple) 50%, transparent), transparent 50%),
+      radial-gradient(circle at 10% 80%, color-mix(in srgb, var(--lilac) 15%, transparent), transparent 55%);
+    pointer-events: none;
+  }
+  .enterprise-inner {
+    position: relative; z-index: 1;
+    max-width: var(--container);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 64px;
+    align-items: center;
+  }
+  .enterprise h2 {
+    font-family: var(--display);
+    font-size: clamp(40px, 5vw, 64px);
+    line-height: 0.95;
+    letter-spacing: -0.015em;
+    margin: 0 0 20px;
+    color: #fff;
+  }
+  .enterprise p {
+    font-size: 16px;
+    color: rgba(255,255,255,0.72);
+    margin: 0;
+    max-width: 44ch;
+  }
+  .enterprise-pills {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+  }
+  .ent-pill {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 12px;
+    padding: 18px 20px;
+    backdrop-filter: blur(8px);
+  }
+  .ent-pill h4 {
+    font-family: var(--sans);
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0 0 4px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .ent-pill h4 svg { color: var(--lilac); }
+  .ent-pill p {
+    font-size: 12.5px;
+    color: rgba(255,255,255,0.6);
+    line-height: 1.45;
+    margin: 0;
+  }
+
+  /* Sisters */
+  .sisters {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+  .sister {
+    background: var(--paper);
+    border: 1px solid var(--gray-100);
+    border-radius: 16px;
+    padding: 28px;
+    transition: all .3s var(--ease);
+    display: block;
+  }
+  .sister:hover {
+    border-color: var(--charcoal);
+    transform: translateY(-3px);
+    box-shadow: 0 20px 40px -20px rgba(20,10,50,0.2);
+  }
+  .sister-icon {
+    width: 44px; height: 44px;
+    background: var(--purple);
+    color: #fff;
+    border-radius: 11px;
+    display: grid;
+    place-items: center;
+    margin-bottom: 20px;
+  }
+  .sister h4 {
+    font-family: var(--display);
+    font-size: 26px;
+    font-weight: 800;
+    margin: 0 0 8px;
+    color: var(--charcoal);
+    letter-spacing: -0.005em;
+  }
+  .sister p {
+    font-size: 14px;
+    color: var(--gray-500);
+    margin: 0 0 20px;
+    line-height: 1.5;
+  }
+  .sister-link {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--charcoal);
+    display: inline-flex;
+    gap: 8px;
+    align-items: center;
+    transition: color .2s var(--ease), gap .2s var(--ease);
+  }
+  .sister:hover .sister-link { color: var(--purple); gap: 12px; }
+
+  /* CTA */
+  .cta {
+    background: var(--cosmic);
+    color: #fff;
+    border-radius: 28px;
+    margin: 0 32px 80px;
+    padding: 80px 64px;
+    position: relative;
+    overflow: hidden;
+  }
+  .cta::before {
+    content: "";
+    position: absolute; inset: 0;
+    background:
+      radial-gradient(ellipse 600px 400px at 20% 20%, color-mix(in srgb, var(--purple) 55%, transparent), transparent 60%),
+      radial-gradient(ellipse 500px 300px at 90% 80%, color-mix(in srgb, var(--blush) 25%, transparent), transparent 55%);
+    pointer-events: none;
+  }
+  .cta-inner {
+    position: relative; z-index: 1;
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    gap: 64px;
+    align-items: end;
+    max-width: var(--container);
+    margin: 0 auto;
+  }
+  .cta h2 {
+    font-family: var(--display);
+    font-size: clamp(44px, 5.5vw, 80px);
+    line-height: 0.88;
+    letter-spacing: -0.02em;
+    color: #fff;
+    margin: 0;
+    max-width: 14ch;
+  }
+  .cta h2 span { color: var(--lilac); }
+  .cta-body {
+    font-size: 16px;
+    color: rgba(255,255,255,0.72);
+    line-height: 1.55;
+    margin: 0 0 28px;
+  }
+  .cta-ctas { display: flex; gap: 12px; flex-wrap: wrap; }
+  .btn-light { background: #fff; color: var(--charcoal); border: 1px solid #fff; }
+  .btn-light:hover { background: var(--blush); border-color: var(--blush); transform: translateY(-1px); }
+  .btn-outline-light {
+    background: transparent;
+    color: #fff;
+    border: 1px solid rgba(255,255,255,0.3);
+  }
+  .btn-outline-light:hover { border-color: #fff; background: rgba(255,255,255,0.08); }
+
+  /* Footer */
+  footer { padding: 80px 0 48px; border-top: 1px solid var(--gray-100); background: var(--cream); }
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 48px;
+    margin-bottom: 72px;
+  }
+  .footer-brand svg { height: 26px; margin-bottom: 20px; }
+  .footer-brand p { font-size: 14px; color: var(--gray-700); max-width: 34ch; line-height: 1.55; margin: 0; }
+  .footer-col h4 {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--gray-500);
+    margin: 0 0 20px;
+    font-weight: 500;
+  }
+  .footer-col a {
+    display: block;
+    font-size: 14px;
+    color: var(--charcoal);
+    margin-bottom: 12px;
+    transition: color .2s var(--ease);
+  }
+  .footer-col a:hover { color: var(--purple); }
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 32px;
+    border-top: 1px solid var(--gray-100);
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--gray-500);
+  }
+
+  /* Reveal */
+  .reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity .8s var(--ease), transform .8s var(--ease);
+  }
+  .reveal.in { opacity: 1; transform: none; }
+
+  /* Responsive */
+  @media (max-width: 1200px) {
+    .nav-links { display: none; }
+    .nav-burger { display: inline-flex; }
+  }
+  @media (max-width: 860px) {
+    .nav-actions > .btn-ghost { display: none; }
+  }
+  @media (max-width: 1024px) {
+    .hero-card { padding: 48px 40px; }
+    .upload-split { grid-template-columns: 1fr; }
+    .progress-panel { min-height: 200px; }
+    .overview-meta-grid { grid-template-columns: repeat(2, 1fr); }
+    .overview-grid { grid-template-columns: 1fr; }
+    .selected-files-grid { grid-template-columns: 1fr; }
+    .risks-gaps-cols { grid-template-columns: 1fr; }
+    .matrix-header, .matrix-row { grid-template-columns: 1fr; }
+    .workflow { grid-template-columns: repeat(2, 1fr); }
+    .capabilities { grid-template-columns: 1fr; }
+    .features-two { grid-template-columns: 1fr; }
+    .enterprise { padding: 56px 40px; margin: 0 16px; }
+    .enterprise-inner { grid-template-columns: 1fr; gap: 40px; }
+    .sisters { grid-template-columns: 1fr; }
+    .cta { padding: 56px 40px; margin: 0 16px 48px; }
+    .cta-inner { grid-template-columns: 1fr; }
+    .section-head { grid-template-columns: 1fr; gap: 16px; }
+  }
+  @media (max-width: 720px) {
+    .container { padding: 0 20px; }
+    .hero-card { padding: 36px 24px; border-radius: 20px; }
+    section.sec { padding: 64px 0; }
+    .phase { padding: 16px; }
+    .dash-body { padding: 14px 16px; }
+    .dash-topbar, .dash-header, .dash-tabs { padding-left: 16px; padding-right: 16px; }
+    .overview-meta-grid { grid-template-columns: 1fr; }
+    .workflow { grid-template-columns: 1fr; }
+    .footer-grid { grid-template-columns: 1fr 1fr; gap: 32px; }
+    .footer-brand { grid-column: 1 / -1; }
+  }
+
+  /* Solutions mega-dropdown (injected for nav consistency) */
+  .nav-dropdown { position: relative; }
+  .nav-trigger { display: inline-flex; align-items: center; gap: 5px; font: inherit; color: inherit; background: none; border: 0; padding: 0; cursor: pointer; opacity: 0.75; transition: opacity .2s var(--ease); }
+  .nav-trigger:hover, .nav-dropdown:hover .nav-trigger, .nav-dropdown.open .nav-trigger { opacity: 1; }
+  .nav-trigger .chev { width: 10px; height: 10px; transition: transform .25s var(--ease); margin-top: 1px; }
+  .nav-dropdown:hover .nav-trigger .chev, .nav-dropdown.open .nav-trigger .chev { transform: rotate(180deg); }
+  .nav-mega {
+    position: absolute; top: calc(100% + 16px); right: 0; left: auto;
+    width: 820px; max-width: calc(100vw - 48px);
+    background: var(--paper, #fff); color: var(--charcoal);
+    border: 1px solid var(--gray-100); border-radius: 18px;
+    padding: 28px 32px 32px;
+    opacity: 0; visibility: hidden; pointer-events: none;
+    transform: translateY(-6px);
+    transition: opacity .2s var(--ease), transform .2s var(--ease), visibility 0s linear .2s;
+    z-index: 50;
+    box-shadow: 0 30px 60px -20px rgba(20, 10, 50, 0.22), 0 8px 16px -8px rgba(20, 10, 50, 0.08);
+  }
+  .nav-mega::before { content: ""; position: absolute; top: -16px; left: 0; right: 0; height: 16px; }
+  .nav-dropdown:hover .nav-mega, .nav-dropdown.open .nav-mega {
+    opacity: 1; visibility: visible; pointer-events: auto; transform: translateY(0);
+    transition: opacity .25s var(--ease), transform .25s var(--ease), visibility 0s;
+  }
+  .nav-mega-inner { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 24px; }
+  .nav-mega-col h4 { font-family: var(--sans); font-size: 11px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--gray-500); margin: 0 0 14px; padding-bottom: 12px; border-bottom: 1px solid var(--gray-100); }
+  .nav-mega-item { display: block; padding: 10px 12px; margin: 0 -12px 4px; border-radius: 10px; transition: background .2s var(--ease); text-decoration: none; }
+  .nav-mega-item:hover { background: var(--purple-softer, #f5f2fb); }
+  .nav-mega-logo {
+    display: flex;
+    align-items: center;
+    height: 31px; margin-bottom: 6px; }
+  .nav-mega-logo svg {
+    height: 100%;
+    width: auto;
+    max-width: 208px;
+  }
+  .nav-mega-logo.xs { height: 25px; }
+  .nav-mega-logo.xs svg { max-height: 25px; max-width: 166px; }
+  .nav-mega-logo.ureed-sm { height: 28px; }
+  .nav-mega-logo.ureed-sm svg { max-height: 28px; max-width: 187px; }
+  .nav-mega-logo.tall { height: 31px; }
+  .nav-mega-logo.tall svg { max-height: 31px; }
+  .nav-mega-logo.tall.sm { height: 14.4px; }
+  .nav-mega-logo.tall.sm svg { max-height: 14.4px; }
+  .nav-mega-logo.tall.lg { height: 33px; }
+  .nav-mega-logo.tall.lg svg { max-height: 33px; max-width: 192px; }
+  .nav-mega-logo.llm-mark { height: 28px; }
+  .nav-mega-logo.llm-mark svg { max-width: 64px; }
+  .nav-mega-logo.llm-mark.lg { height: 34px; }
+  .nav-mega-logo.llm-mark.lg svg { max-width: 77px; }
+  /* Enlarged dropdown logos (Tarjama & Media Services at 1.5x) */
+  .nav-mega-logo.xl { height: 32px; }
+  .nav-mega-logo.xl svg { max-height: 32px; max-width: 180px; }
+  .nav-mega-logo.xl.sm { height: 19.2px; }
+  .nav-mega-logo.xl.sm svg { max-height: 19.2px; max-width: 108px; }
+  .nav-mega-logo.xl.xxl { height: 38.4px; }
+  .nav-mega-logo.xl.xxl svg { max-height: 38.4px; max-width: 216px; }
+
+  .nav-mega-logo .st0 { fill: #09090A; }
+  .nav-mega-item p { margin: 0; font-size: 12.5px; color: var(--gray-500); line-height: 1.5; max-width: 46ch; }
+  .nav-mega-item:hover p { color: var(--gray-700); }
+  /* 5-column footer override */
+  .footer-grid { grid-template-columns: 1.6fr 1fr 1fr 1fr 1fr !important; gap: 48px !important; }
+  @media (max-width: 1024px) {
+    .footer-grid { grid-template-columns: 1fr 1fr 1fr !important; }
+    .footer-brand { grid-column: 1 / -1; }
+  }
+  @media (max-width: 720px) {
+    .footer-grid { grid-template-columns: 1fr 1fr !important; }
+  }
+
+</style>
+</head>
+<body>
+
+<!-- ===================== NAV ===================== -->
+<header class="nav">
+  <div class="container nav-inner">
+    <a href="index.html" class="nav-logo" aria-label="Arabic.AI">
+      <svg viewBox="0 0 323.09 57.94" xmlns="http://www.w3.org/2000/svg">
+        <g>
+          <path fill="#09090a" d="M54.26,56.73h10.07v-24.93c0-5.48,4.44-9.91,9.91-9.91h6.63v-9.35h-10.07c-9.13,0-16.54,7.4-16.54,16.54v27.65Z"/>
+          <rect fill="#09090a" x="188.87" y="12.55" width="10.07" height="44.11"/>
+          <path fill="#09090a" d="M226.89,20.46c4.48,0,8.15,1.76,10.63,4.55l6.47-6.63c-4.23-4.47-10.39-7.35-17.1-7.35-13.02,0-23.57,10.47-23.57,23.41s10.55,23.49,23.57,23.49c6.47,0,12.31-2.56,16.54-6.87l-6.47-6.55c-2.48,2.48-5.83,4-10.07,4-7.51,0-13.5-6.07-13.5-14.06s5.99-13.98,13.5-13.98Z"/>
+          <path fill="#09090a" d="M119.8,15.27c-3.65-2.54-8.06-4.07-12.83-4.2-.22-.01-.44-.03-.66-.03-.07,0-.14,0-.2.01-.13,0-.25-.01-.38-.01-13.02,0-23.57,10.47-23.57,23.41s10.19,23.1,22.9,23.46c.22,0,.44.03.66.03.07,0,.14,0,.2-.01.13,0,.25.01.38.01,5.03,0,9.68-1.57,13.5-4.23v2.95h10.07V12.55h-10.07v2.72ZM115.81,44.53l-.02-.03c-2.42,2.42-5.68,3.91-9.76,3.98-3.78-.06-6.97-1.38-9.34-3.52-.02-.02-.05-.05-.07-.07-.26-.24-.51-.5-.75-.76-2.26-2.49-3.65-5.87-3.65-9.7s1.52-7.5,3.99-10.01l.02.03c2.42-2.42,5.68-3.91,9.76-3.98,3.78.06,6.97,1.38,9.34,3.52.02.02.05.04.07.07.26.24.51.5.75.77,2.26,2.49,3.65,5.87,3.65,9.7s-1.52,7.5-3.99,10.01Z"/>
+          <path fill="#09090a" d="M296.14,15.27c-3.65-2.54-8.06-4.07-12.83-4.2-.22-.01-.44-.03-.66-.03-.07,0-.14,0-.2.01-.13,0-.25-.01-.38-.01-13.02,0-23.57,10.47-23.57,23.41s10.19,23.1,22.9,23.46c.22,0,.44.03.66.03.07,0,.14,0,.2-.01.13,0,.25.01.38.01,5.03,0,9.68-1.57,13.5-4.23v2.95h10.07V12.55h-10.07v2.72ZM292.15,44.53l-.02-.03c-2.42,2.42-5.68,3.91-9.76,3.98-3.78-.06-6.97-1.38-9.34-3.52-.02-.02-.05-.05-.07-.07-.26-.24-.51-.5-.75-.76-2.26-2.49-3.65-5.87-3.65-9.7s1.52-7.5,3.99-10.01l.02.03c2.42-2.42,5.68-3.91,9.76-3.98,3.78.06,6.97,1.38,9.34,3.52.02.02.05.04.07.07.26.24.51.5.75.77,2.26,2.49,3.65,5.87,3.65,9.7s-1.52,7.5-3.99,10.01Z"/>
+          <path fill="#09090a" d="M160.55,11.03c-.13,0-.25,0-.38.01-.07,0-.14-.01-.2-.01-.22,0-.44.03-.66.03-4.77.13-9.18,1.67-12.83,4.2V.04h-10.07v56.62h10.07v-2.95c3.83,2.66,8.48,4.23,13.5,4.23.13,0,.25,0,.38-.01.07,0,.14.01.2.01.22,0,.44-.03.66-.03,12.71-.36,22.9-10.66,22.9-23.46s-10.55-23.41-23.57-23.41ZM170.41,44.14c-.24.26-.49.52-.75.76-.02.02-.05.05-.07.07-2.36,2.14-5.56,3.46-9.34,3.52-4.09-.07-7.35-1.57-9.76-3.98l-.02.03c-2.47-2.51-3.99-6.03-3.99-10.01s1.39-7.21,3.65-9.7c.24-.26.49-.52.75-.77.02-.02.05-.04.07-.07,2.36-2.14,5.56-3.46,9.34-3.52,4.09.07,7.35,1.57,9.76,3.98l.02-.03c2.47,2.51,3.99,6.03,3.99,10.01s-1.39,7.21-3.65,9.7Z"/>
+          <path fill="#09090a" d="M193.9,10.04c2.77,0,4.99-2.28,4.99-5.06s-2.22-4.99-4.99-4.99-5.06,2.22-5.06,4.99,2.29,5.06,5.06,5.06Z"/>
+          <rect fill="#09090a" x="313.02" y="12.55" width="10.07" height="44.11"/>
+          <path fill="#09090a" d="M318.05,10.04c2.77,0,4.99-2.28,4.99-5.06s-2.22-4.99-4.99-4.99-5.06,2.22-5.06,4.99,2.29,5.06,5.06,5.06Z"/>
+          <path fill="#09090a" d="M248.17,51.68c0-2.77,2.29-4.99,5.06-4.99s4.99,2.22,4.99,4.99-2.22,5.06-4.99,5.06-5.06-2.28-5.06-5.06Z"/>
+          <path fill="#3f1993" d="M37.66,12.55v2.72c-3.66-2.53-8.07-4.06-12.83-4.2-.22-.01-.44-.03-.66-.03-.07,0-.14.01-.2.01-.14-.01-.26-.01-.38-.01C10.55,11.03,0,21.5,0,34.44s10.18,23.1,22.9,23.46c.23,0,.44.03.67.03.07,0,.14-.01.2-.01.12,0,.25.01.38.01,5.02,0,9.68-1.57,13.5-4.23v2.95h10.07V12.55h-10.07ZM32.26,23.23c.32.24.63.49.93.76l.07.07c.26.25.51.5.76.77,1.92,2.13,3.23,4.9,3.55,8.06-6.63-.22-11.97-5.6-12.12-12.26,1.39.14,2.73.46,3.96,1,.66.27,1.27.58,1.84.93.35.2.68.43,1.01.68ZM14.07,24.43l.02.02c.72-.72,1.51-1.36,2.38-1.9.23-.14.46-.27.7-.4.68-.37,1.42-.67,2.19-.92.93-.3,1.9-.51,2.91-.61-.14,6.65-5.49,12.05-12.12,12.26.34-3.35,1.77-6.28,3.92-8.45ZM18.68,47.51l-.58-.24c-.58-.26-1.13-.54-1.64-.86-.69-.43-1.32-.91-1.92-1.45l-.07-.07c-.27-.24-.52-.5-.76-.76-1.94-2.13-3.23-4.92-3.55-8.08,6.65.2,11.99,5.64,12.12,12.32-1.28-.15-2.49-.44-3.6-.87ZM33.67,44.54l-.02-.03c-.91.91-1.94,1.69-3.08,2.31-.29.16-.6.3-.91.45-.29.13-.59.25-.89.37-1.03.37-2.14.63-3.32.76.1-6.69,5.47-12.12,12.13-12.32-.34,3.35-1.78,6.29-3.92,8.48Z"/>
+        </g>
+      </svg>
+    </a>
+    <nav class="nav-links">
+      <a href="index.html#suite">The Suite</a>
+      <a href="assistants.html" class="active">Assistants</a>
+      <a href="translate.html">Translate</a>
+      <a href="ocr.html">OCR</a>
+      <a href="speech.html">Speech</a>
+      <a href="technology.html">Technology</a>
+      <a href="integrations.html">Integrations</a>
+      <div class="nav-dropdown">
+        <button class="nav-trigger" aria-haspopup="true">
+          Solutions
+          <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="nav-mega" role="menu">
+          <div class="nav-mega-inner">
+            <div class="nav-mega-col">
+              <h4>AI &amp; Agentic Tech</h4>
+              <a href="llm.html" class="nav-mega-item">
+                <div class="nav-mega-logo llm-mark lg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 83 60"> <path class="st0" d="M28.7,9.1h0c-.4-.4-1.1-.7-1.8-.7-.8,0-1.4.3-1.9.7-.5.5-.8,1.1-.8,1.9s.3,1.3.7,1.8c0,0,0,0,.1.1h0c.4.4,1.1.7,1.8.7.8,0,1.4-.3,1.9-.7.5-.5.8-1.1.8-1.9s-.3-1.4-.7-1.8c0,0,0,0-.1-.1Z"/> <path class="st0" d="M37.3,8.4c-.7,0-1.3.3-1.8.7h0c0,0,0,.1-.1.2-.4.5-.7,1.1-.7,1.8s.3,1.4.8,1.9c.5.5,1.1.7,1.9.7.7,0,1.3-.3,1.8-.7h0c0,0,0-.1.1-.2.4-.5.7-1.1.7-1.8s-.3-1.4-.8-1.9c-.5-.5-1.1-.7-1.9-.7Z"/> <path class="st0" d="M11.6,13.6c.2,0,.4,0,.6-.1,0,0,.1,0,.2,0h.2c.2-.2.4-.3.6-.5.4-.4.7-1,.7-1.6-1.3,0-2.3,1-2.3,2.3Z"/> <path class="st0" d="M8.7,11.3c0,.6.3,1.1.7,1.5,0,0,0,0,.1.2h0c.1,0,.2.2.4.3,0,0,.2.1.3.2h.1s0,0,0,0h0c.2,0,.4.1.7.2,0-1.2-1-2.3-2.3-2.3Z"/> <path class="st0" d="M13.9,10.7c0-.6-.3-1.1-.7-1.5,0,0,0,0-.1-.2h0c0,0-.1,0-.2-.1h0c0,0-.1,0-.2-.1-.1,0-.2-.1-.4-.2-.2,0-.5-.2-.8-.2,0,1.2,1,2.2,2.3,2.3Z"/> <path class="st0" d="M11,8.4s0,0,0,0c-.2,0-.3,0-.5,0-.1,0-.3.1-.4.2,0,0-.1,0-.1,0-.2.1-.3.2-.5.4h0c-.4.4-.7.9-.7,1.6,1.3,0,2.3-1,2.3-2.3,0,0,0,0,0,0,0,0,0,0,0,0Z"/> <path class="st0" d="M62.4,9.1h0c-.4-.4-1.1-.7-1.8-.7-.8,0-1.4.3-1.9.7-.5.5-.8,1.1-.8,1.9s.3,1.3.7,1.8c0,0,0,0,.1.1h0c.4.4,1.1.7,1.8.7.8,0,1.4-.3,1.9-.7.5-.5.8-1.1.8-1.9s-.3-1.4-.7-1.8c0,0,0,0-.1-.1Z"/> <path class="st0" d="M75.9,17.3V3.5c0-1.9-1.6-3.5-3.5-3.5H3.5C1.6,0,0,1.5,0,3.5v13.8c0,1.9,1.6,3.5,3.5,3.5h68.8c2,0,3.5-1.5,3.5-3.5ZM43.7,4.6c.5,0,.9.4.9.9s-.4.9-.9.9-1-.4-1-.9.4-.9,1-.9ZM15.8,15.1h-1.9v-.5c-.7.5-1.6.8-2.6.8h-.2c-2.4,0-4.4-2-4.4-4.4s2-4.4,4.5-4.4h.2c.9,0,1.8.3,2.4.8v-.5h1.9v8.2ZM22.2,8.7h-1.3c-1,0-1.9.8-1.9,1.8v4.6h-1.9v-5.1c0-1.7,1.4-3.1,3.2-3.1h1.9v1.7ZM31.5,15.1h-1.9v-.6c-.7.5-1.6.8-2.6.8h-.2c-2.4,0-4.4-2-4.4-4.4s2-4.4,4.5-4.4h.2c.9,0,1.8.3,2.4.8v-.5h1.9v8.2ZM37.5,15.3h-.2c-1,0-1.9-.3-2.6-.8v.6h-1.9V4.6h1.9v2.8c.7-.5,1.5-.8,2.4-.8h.2c2.5,0,4.5,2,4.5,4.3s-1.9,4.3-4.4,4.4ZM44.7,15.1h-1.9V6.9h1.9v8.2ZM50,13.6c.8,0,1.5-.3,1.9-.7l1.2,1.2c-.8.8-1.9,1.3-3.2,1.3-2.5,0-4.5-2-4.5-4.4s2-4.4,4.5-4.4,2.5.5,3.3,1.4l-1.2,1.2c-.5-.5-1.2-.9-2-.9h0c-1.4,0-2.6,1.1-2.6,2.6s1.1,2.6,2.6,2.6ZM55,15.1c-.5,0-1-.4-1-.9s.4-.9,1-.9.9.4.9.9-.4.9-.9.9ZM65.1,15.1h-1.9v-.6c-.7.5-1.6.8-2.6.8h-.2c-2.4,0-4.4-2-4.4-4.4s2-4.4,4.5-4.4h.2c.9,0,1.8.3,2.4.8v-.5h1.9v8.2ZM67.4,4.6c.5,0,.9.4.9.9s-.4.9-.9.9-1-.4-1-.9.4-.9,1-.9ZM68.3,15.1h-1.9V6.9h1.9v8.2Z"/> <path class="st0" d="M49.9,41.3c.6-.2,1.2-.3,1.9-.3h-1.3c-.2,0-.4.2-.6.3Z"/> <path class="st0" d="M17.8,54.8c-3,0-5.5-1.1-5.5-6.8v-7.3h0v-11.4h-5.6v21.6c0,3.7,2.3,6.9,5.6,8.3,1.1.5,2.3.7,3.6.7h5.6v-5.1h-3.7Z"/> <path class="st0" d="M33.5,54.8c-3,0-5.5-1.1-5.5-6.8v-7.3h0v-11.4h-5.6v21.6c0,3.7,2.3,6.9,5.6,8.3,1.1.5,2.3.7,3.6.7h5.6v-5.1h-3.7Z"/> <path class="st0" d="M73.4,35.9h0s-9.4,0-9.4,0v4.9c-1.5-2.9-4.6-4.9-8.2-4.9h-5.9c-.3,0-.5,0-.8,0-1,0-1.9.3-2.8.7v-.7h-5.6v23.9h5.6s0,0,0,0v-12.2c0,0,0,.1,0,.2,0,0,0-.1,0-.2v-1.3c0-2.3,1.5-4.3,3.6-5,0,0,0,0,0,0,0,0,0,0,0,0,.2-.1.4-.2.6-.3h1.3s0,0,0,0h2c3.1,0,5.5,2.4,5.5,5.4v13.5h5.6v-15c0-1.4-.3-2.7-.9-3.9h7.4c3.1,0,5.5,2.4,5.5,5.4v13.5h5.6v-15c0-5-4.1-9-9.2-9Z"/> </svg></div>
+                <p>The sovereign Arabic-first language model powering national-scale AI innovation.</p>
+              </a>
+              <a href="agentic-studio.html" class="nav-mega-item">
+                <div class="nav-mega-logo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 291 58"> <path class="st0" d="M43.5,32.4c-1.5-1-3.4-1.7-5.4-1.7h0c0,0-.2,0-.3,0s0,0,0,0c0,0-.1,0-.2,0-5.4,0-9.9,4.3-9.9,9.6s4.3,9.5,9.6,9.6h0c0,0,.2,0,.3,0h.2c2.1,0,4-.6,5.6-1.7v1.7c0,2.2-1.9,4.1-4.1,4.1h-2.8v3.8h4.2c3.8,0,6.9-3,6.9-6.8v-19.7h-4.2v1.1ZM41.8,44.4h0s0,0,0,0c-1,1-2.4,1.6-4.1,1.6-1.6,0-2.9-.6-3.9-1.4,0,0,0,0,0,0-.1,0-.2-.2-.3-.3-.9-1-1.5-2.4-1.5-4s.6-3.1,1.7-4.1h0c1-1,2.4-1.6,4.1-1.6,1.6,0,2.9.6,3.9,1.4,0,0,0,0,0,0,.1,0,.2.2.3.3.9,1,1.5,2.4,1.5,4s-.6,3.1-1.7,4.1Z"/> <path class="st0" d="M83.2,31.3c-1.1-.4-2.3-.6-3.5-.6h-.5c-2,0-3.8.7-5.3,1.7v-1.1h-4.2v18h4.2v-9c0-1.6.6-3,1.5-4,.1-.1.2-.2.3-.3h0c.7-.7,1.7-1.1,2.7-1.3.4,0,.8-.1,1.2-.1.9,0,1.6.2,2.3.4.3.1.6.3.8.4.3.2.7.5.9.7,1,1,1.7,2.5,1.7,4.1v9.1h4.2v-9.1c0-4.1-2.6-7.5-6.3-8.9Z"/> <rect class="st0" x="108.3" y="31.3" width="4.2" height="18"/> <path class="st0" d="M124.1,34.5h0c1.9,0,3.4.7,4.4,1.9l2.7-2.7c-1.8-1.8-4.3-3-7.1-3-5.4,0-9.8,4.3-9.8,9.6s4.4,9.6,9.8,9.6,5.1-1,6.9-2.8l-2.7-2.7c-1,1-2.4,1.6-4.2,1.6-3.1,0-5.6-2.5-5.6-5.7s2.5-5.7,5.6-5.7Z"/> <path class="st0" d="M110.4,30.3c1.2,0,2.1-.9,2.1-2.1s-.9-2-2.1-2-2.1.9-2.1,2,1,2.1,2.1,2.1Z"/> <path class="st0" d="M22.4,31.3v1.1c-1.5-1-3.4-1.7-5.3-1.7h-.5c-5.4,0-9.8,4.3-9.8,9.6s4.2,9.4,9.5,9.6h.5c2.1,0,4-.6,5.6-1.7v1.2h4.2v-18h-4.2,0ZM14.5,45.5h0,0s-.2-.1-.2-.1c-.2-.1-.5-.2-.7-.4-.3-.2-.6-.4-.8-.6h0c-.1-.1-.2-.2-.3-.3-.8-.9-1.3-2-1.5-3.3,2.8,0,5,2.3,5,5-.5,0-1-.2-1.5-.4ZM11,39.6c.2-1.4.7-2.6,1.6-3.5h0c.3-.3.6-.5,1-.8,0,0,.2-.1.3-.2.3-.1.6-.3.9-.4.4-.1.8-.2,1.2-.2,0,2.7-2.3,4.9-5,5ZM20.8,44.3h0c-.4.4-.8.7-1.3.9l-.4.2c-.1,0-.2.1-.4.1-.4.1-.9.2-1.4.3,0-2.7,2.3-4.9,5-5-.2,1.4-.7,2.6-1.6,3.5ZM17.3,34.6c.6,0,1.1.2,1.6.4.3.1.5.2.8.4.2,0,.3.2.4.3h0c.1.1.3.2.4.3h0c.1.1.2.2.3.3.8.9,1.3,2,1.5,3.3-2.8,0-5-2.3-5-5Z"/> <path class="st0" d="M98.4,26.2h-4.2v4.5h-4.6v4.1h4.6v2.7h0v5.1c0,3.7,3.1,6.8,6.9,6.8h4.2v-3.8h-2.8c-2.3,0-4.1-.8-4.1-5.1v-5.5h6.9v-4.1h-7v-4.5Z"/> <path class="st0" d="M58.7,30.8c-5.6,0-9.7,4.1-9.7,9.5s3.9,9.3,9.3,9.5h0s.4,0,.4,0c3.6,0,6.7-1.7,8.4-4.5l.4-.7-3.5-2-.4.7c-.8,1.2-2.3,2.7-4.9,2.7s-4.8-1.9-5.4-3.7h13.8c1.2,0,1.2-1.4,1.2-2,0-4.5-3.4-9.4-9.7-9.4ZM53.3,38.3c.6-1.8,2.5-3.5,5.4-3.5s4.6,1.7,5.3,3.5h-10.6Z"/> <path class="st0" d="M37.3,8.4c-.7,0-1.3.3-1.8.7h0c0,0,0,.1-.1.2-.4.5-.7,1.1-.7,1.8s.3,1.4.8,1.9c.5.5,1.1.7,1.9.8.7,0,1.3-.3,1.8-.7h0c0,0,0-.1.1-.2.4-.5.7-1.1.7-1.8s-.3-1.4-.8-1.9c-.5-.5-1.1-.7-1.9-.8Z"/> <path class="st0" d="M13.9,10.7c0-.6-.3-1.1-.7-1.5,0,0,0,0-.1-.2h0c0,0-.1,0-.2-.1h0c0,0-.1,0-.2-.1-.1,0-.2-.1-.4-.2-.2,0-.5-.2-.8-.2,0,1.3,1,2.3,2.3,2.3Z"/> <path class="st0" d="M75.9,17.4V3.5c0-1.9-1.6-3.5-3.5-3.5H3.5C1.6,0,0,1.6,0,3.5v13.9c0,1.9,1.6,3.5,3.5,3.5h68.8c2,0,3.5-1.6,3.5-3.5ZM43.7,4.6c.5,0,.9.4.9.9s-.4.9-.9.9-1-.4-1-.9.4-.9,1-.9ZM15.8,15.2h-1.9v-.5c-.7.5-1.6.8-2.6.8h-.2c-2.4,0-4.4-2-4.4-4.4s2-4.4,4.5-4.4h.2c.9,0,1.8.3,2.4.8v-.5h1.9v8.3ZM22.2,8.7h-1.3c-1,0-1.9.8-1.9,1.9v4.7h-1.9v-5.2c0-1.7,1.4-3.1,3.2-3.1h1.9v1.7ZM31.5,15.2h-1.9v-.6c-.7.5-1.6.8-2.6.8h-.2c-2.4,0-4.4-2-4.4-4.4s2-4.4,4.5-4.4h.2c.9,0,1.8.3,2.4.8v-.5h1.9v8.3ZM37.5,15.4h-.2c-1,0-1.9-.3-2.6-.8v.6h-1.9V4.6h1.9v2.9c.7-.5,1.5-.8,2.4-.8h.2c2.5,0,4.5,2,4.5,4.4s-1.9,4.3-4.4,4.4ZM44.7,15.2h-1.9V6.9h1.9v8.3ZM50,13.7c.8,0,1.5-.3,1.9-.8l1.2,1.2c-.8.8-1.9,1.3-3.2,1.3-2.5,0-4.5-2-4.5-4.4s2-4.4,4.5-4.4,2.5.5,3.3,1.4l-1.2,1.2c-.5-.5-1.2-.9-2-.9h0c-1.4,0-2.6,1.1-2.6,2.6s1.1,2.6,2.6,2.6ZM55,15.2c-.5,0-1-.4-1-.9s.4-.9,1-.9.9.4.9.9-.4.9-.9.9ZM65.1,15.2h-1.9v-.6c-.7.5-1.6.8-2.6.8h-.2c-2.4,0-4.4-2-4.4-4.4s2-4.4,4.5-4.4h.2c.9,0,1.8.3,2.4.8v-.5h1.9v8.3ZM67.4,4.6c.5,0,.9.4.9.9s-.4.9-.9.9-1-.4-1-.9.4-.9,1-.9ZM68.4,15.2h-1.9V6.9h1.9v8.3Z"/> <path class="st0" d="M11.6,13.6c.2,0,.4,0,.6-.1,0,0,.1,0,.2,0h.2c.2-.2.4-.3.6-.5.4-.4.7-1,.7-1.6-1.3,0-2.3,1.1-2.3,2.3Z"/> <path class="st0" d="M62.4,9.1h0c-.4-.4-1.1-.7-1.8-.7-.8,0-1.4.3-1.9.7-.5.5-.8,1.2-.8,1.9s.3,1.3.7,1.8c0,0,0,0,.1.1h0c.4.4,1.1.7,1.8.7.8,0,1.4-.3,1.9-.7.5-.5.8-1.2.8-1.9s-.3-1.4-.7-1.8c0,0,0,0-.1-.1Z"/> <path class="st0" d="M28.7,9.1h0c-.4-.4-1.1-.7-1.8-.7-.8,0-1.4.3-1.9.7-.5.5-.8,1.2-.8,1.9s.3,1.3.7,1.8c0,0,0,0,.1.1h0c.4.4,1.1.7,1.8.7.8,0,1.4-.3,1.9-.7.5-.5.8-1.2.8-1.9s-.3-1.4-.7-1.8c0,0,0,0-.1-.1Z"/> <path class="st0" d="M8.7,11.3c0,.6.3,1.1.7,1.5,0,0,0,0,.1.2h0c.1,0,.2.2.4.3,0,0,.2.1.3.2h.1s0,0,0,0h0c.2,0,.4.1.7.2,0-1.2-1-2.3-2.3-2.3Z"/> <path class="st0" d="M11,8.4s0,0,0,0c-.2,0-.3,0-.5,0-.1,0-.3.1-.4.2,0,0-.1,0-.1,0-.2.1-.3.2-.5.4h0c-.4.4-.7,1-.7,1.6,1.3,0,2.3-1,2.3-2.3,0,0,0,0,0,0,0,0,0,0,0,0Z"/> <path class="st0" d="M242.2,33h0s0,0,0,0c-.3-.3-.6-.5-1-.7h0c-.5-.3-1.1-.6-1.7-.9,0,0-.2,0-.3-.1,0,0-.1,0-.2,0-1.1-.4-2.3-.6-3.7-.6-1.4,0-2.7.3-3.8.7-3.6,1.4-6.1,4.9-6.1,8.9s0,.2,0,.3c0,.1,0,.2,0,.3,0,.2,0,.5,0,.7,0,0,0,.1,0,.2.5,3,2.3,5.4,4.8,6.8,0,0,.2,0,.3.1,0,0,.1,0,.2,0,1.3.6,2.9,1,4.6,1,1.5,0,2.8-.3,4-.8,0,0,0,0,0,0,.2,0,.4-.2.6-.3.4-.2.8-.4,1.2-.7h0c.5-.3.9-.6,1.3-1h0c1.8-1.7,2.9-4.2,2.9-6.8s-1-4.9-2.6-6.6c-.2-.2-.4-.4-.5-.5ZM239.5,44.3h0c-1,1-2.4,1.6-4.1,1.6-1.6,0-2.9-.6-3.9-1.4,0,0,0,0,0,0-.1,0-.2-.2-.3-.3-.9-1-1.5-2.4-1.5-4s.6-3.1,1.7-4.1h0c1-1,2.4-1.6,4.1-1.6,1.6,0,2.9.6,3.9,1.4,0,0,0,0,0,0,.1,0,.2.2.3.3.9,1,1.5,2.4,1.5,4s-.6,3.1-1.7,4.1Z"/> <path class="st0" d="M284.1,31.1h-7.1v3.7c-1.1-2.2-3.5-3.7-6.1-3.7h-4.4c-.2,0-.4,0-.6,0-.7,0-1.5.2-2.1.5v-.5h-4.2v18.1h4.2v-9.1s0,0,0-.1v-1c0-1.8,1.1-3.2,2.7-3.8.2,0,.3-.2.5-.3h2.5c2.3,0,4.1,1.8,4.1,4.1v10.2h4.2v-11.3c0-1.1-.3-2.1-.7-2.9h5.6c2.3,0,4.1,1.8,4.1,4.1v10.2h4.2v-11.3c0-3.7-3.1-6.8-6.9-6.8Z"/> <path class="st0" d="M203.1,26.1h-4.2v4.5h-4.6v4.1h4.6v2.7h0v5.1c0,3.7,3.1,6.8,6.9,6.8h4.2v-3.8h-2.8c-2.3,0-4.1-.8-4.1-5.1v-5.5h6.9v-4.1h-7v-4.5Z"/> <path class="st0" d="M150.6,29.9c0,0-.2,0-.3,0s0,0,0,0c0,0-.1,0-.2,0-2.1,0-4,.6-5.6,1.7v-1.2h-4.2v23.2h4.2v-6.2c1.5,1,3.4,1.7,5.4,1.7,0,0,.2,0,.3,0s0,0,0,0c0,0,.1,0,.2,0,5.4,0,9.9-4.3,9.9-9.6s-4.3-9.5-9.6-9.6ZM156,39.6c0,1.6-.6,3.1-1.7,4.1h0c-1,1-2.4,1.6-4.1,1.6-1.6,0-2.9-.6-3.9-1.4,0,0,0,0,0,0-.1,0-.2-.2-.3-.3-.9-1-1.5-2.4-1.5-4s.6-3.1,1.7-4.1h0c1-1,2.4-1.6,4.1-1.6,1.6,0,2.9.6,3.9,1.4,0,0,0,0,0,0,.1,0,.2.2.3.3.9,1,1.5,2.4,1.5,4h0Z"/> <path class="st0" d="M246.6,37.9v11.3h4.2v-10.2c0-2.3,1.8-4.1,4.1-4.1h2.8v-3.8h-4.2c-3.8,0-6.9,3-6.9,6.8Z"/> <path class="st0" d="M188.4,32.2c-1.5-1-3.4-1.7-5.4-1.7h-.5c-5.4,0-9.8,4.3-9.8,9.6s4.2,9.5,9.6,9.6h.5c2.1,0,4-.7,5.6-1.7v1.2h4.2v-18.1h-4.2v1.1ZM186.7,44.2c-1,1-2.4,1.6-4.1,1.6-1.6,0-2.9-.6-3.9-1.5h0c-.1-.1-.2-.2-.3-.3-.9-1-1.5-2.4-1.5-4s.6-3.1,1.7-4.1c1-1,2.4-1.6,4.1-1.6,1.6,0,2.9.6,3.9,1.5h0c.1.1.2.2.3.3.9,1,1.5,2.4,1.5,4s-.6,3.1-1.7,4.1Z"/> <path class="st0" d="M165.7,40.2v-5.5h0v-8.6h-4.2v16.3c0,2.8,1.7,5.2,4.2,6.2.8.3,1.7.5,2.7.5h4.2v-3.8h-2.8c-2.3,0-4.1-.8-4.1-5.1Z"/> <path class="st0" d="M217.3,26.6h0c-2.5,1-4.2,3.4-4.2,6.2v16.3h4.2v-8.6h0v-.9h6.9v-4.1h-6.9v-.5c0-4.3,1.9-5.1,4.1-5.1h2.8v-3.8h-4.2c-1,0-1.9.2-2.7.5Z"/> </svg></div>
+                <p>A platform to build, deploy, and manage enterprise-grade AI agents and workflows.</p>
+              </a>
+              <a href="data-services.html" class="nav-mega-item">
+                <div class="nav-mega-logo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 225 54"> <path fill="#09090A" d="M10.9,8.5s0,0,0,0c-.2,0-.3,0-.5,0-.1,0-.3.1-.4.2,0,0,0,0-.1,0-.2.1-.3.2-.4.4h0c-.4.4-.7,1-.7,1.6,1.3,0,2.3-1.1,2.3-2.3,0,0,0,0,0,0,0,0,0,0,0,0Z"/> <path fill="#09090A" d="M8.6,11.5c0,.6.3,1.1.7,1.5,0,0,0,0,.1.2h0c.1,0,.2.2.4.3,0,0,.2.1.3.2h.1s0,0,0,0h0c.2,0,.4.1.7.2,0-1.3-1-2.3-2.3-2.3Z"/> <path fill="#09090A" d="M62,9.2h0c-.4-.4-1.1-.7-1.8-.7-.8,0-1.4.3-1.8.7-.5.5-.8,1.2-.8,1.9s.3,1.4.7,1.8c0,0,0,0,.1.1h0c.4.4,1.1.7,1.8.7.8,0,1.4-.3,1.8-.7.5-.5.8-1.2.8-1.9s-.3-1.4-.7-1.8c0,0,0,0-.1-.1Z"/> <path fill="#09090A" d="M37.1,8.5c-.7,0-1.3.3-1.8.7h0c0,0,0,.1-.1.2-.4.5-.7,1.1-.7,1.8s.3,1.4.8,1.9c.5.5,1.1.7,1.8.8.7,0,1.3-.3,1.8-.7h0c0,0,0-.1.1-.2.4-.5.7-1.1.7-1.8s-.3-1.4-.8-1.9c-.5-.5-1.1-.8-1.8-.8Z"/> <path fill="#09090A" d="M28.6,9.2h0c-.4-.4-1.1-.7-1.8-.7-.8,0-1.4.3-1.8.7-.5.5-.8,1.2-.8,1.9s.3,1.4.7,1.8c0,0,0,0,.1.1h0c.4.4,1.1.7,1.8.7.8,0,1.4-.3,1.8-.7.5-.5.8-1.2.8-1.9s-.3-1.4-.7-1.8c0,0,0,0-.1-.1Z"/> <path fill="#09090A" d="M11.5,13.8c.2,0,.4,0,.6-.1,0,0,.1,0,.2,0h.2c.2-.2.4-.3.6-.5.4-.4.7-1,.7-1.6-1.3,0-2.3,1.1-2.3,2.3Z"/> <path fill="#09090A" d="M13.8,10.9c0-.6-.3-1.1-.7-1.5,0,0,0,0-.1-.2h0c0,0-.1,0-.2-.1h0c0,0-.1,0-.2-.1-.1,0-.2-.1-.3-.2-.2,0-.5-.2-.7-.2,0,1.3,1,2.3,2.3,2.3Z"/> <path fill="#09090A" d="M75.4,17.6V3.5c0-1.9-1.6-3.5-3.5-3.5H3.5C1.6,0,0,1.6,0,3.5v14c0,1.9,1.6,3.5,3.5,3.5h68.4c1.9,0,3.5-1.6,3.5-3.5ZM43.5,4.6c.5,0,.9.4.9.9s-.4,1-.9,1-1-.4-1-1,.4-.9,1-.9ZM15.8,15.4h-1.9v-.6c-.7.5-1.6.8-2.6.8h-.2c-2.4,0-4.3-2-4.3-4.4s2-4.4,4.5-4.4h.2c.9,0,1.7.3,2.4.8v-.5h1.9v8.3ZM22,8.8h-1.3c-1,0-1.9.8-1.9,1.9v4.7h-1.9v-5.2c0-1.7,1.4-3.1,3.1-3.1h1.9v1.8ZM31.3,15.4h-1.9v-.6c-.7.5-1.6.8-2.6.8h-.2c-2.4,0-4.3-2-4.3-4.4s2-4.4,4.5-4.4h.2c.9,0,1.7.3,2.4.8v-.5h1.9v8.3ZM37.3,15.6h-.2c-1,0-1.8-.3-2.6-.8v.6h-1.9V4.6h1.9v2.9c.7-.5,1.5-.8,2.4-.8h.2c2.5,0,4.5,2,4.5,4.4s-1.9,4.4-4.3,4.4ZM44.4,15.4h-1.9V7h1.9v8.3ZM49.7,13.8c.8,0,1.4-.3,1.9-.8l1.2,1.2c-.8.8-1.9,1.3-3.1,1.3-2.5,0-4.5-2-4.5-4.4s2-4.4,4.5-4.4,2.4.5,3.2,1.4l-1.2,1.3c-.5-.5-1.2-.9-2-.9h0c-1.4,0-2.6,1.1-2.6,2.6s1.1,2.7,2.6,2.7ZM54.7,15.4c-.5,0-1-.4-1-1s.4-.9,1-.9.9.4.9.9-.4,1-.9,1ZM64.8,15.4h-1.9v-.6c-.7.5-1.6.8-2.6.8h-.2c-2.4,0-4.3-2-4.3-4.4s2-4.4,4.5-4.4h.2c.9,0,1.7.3,2.4.8v-.5h1.9v8.3ZM67,4.6c.5,0,.9.4.9.9s-.4,1-.9,1-1-.4-1-1,.4-.9,1-.9ZM68,15.4h-1.9V7h1.9v8.3Z"/> <path fill="#09090A" d="M43.2,36c-1.5-1-3.3-1.7-5.3-1.7h-.5c-5.4,0-9.8,4.3-9.8,9.7s4.2,9.6,9.5,9.7h.5c2.1,0,4-.7,5.6-1.7v1.2h4.2v-18.3h-4.2v1.1ZM41.6,48.1c-1,1-2.3,1.6-4.1,1.6-1.6,0-2.9-.6-3.9-1.5h0c-.1-.1-.2-.2-.3-.3-.9-1-1.5-2.4-1.5-4s.6-3.1,1.7-4.1c1-1,2.3-1.6,4.1-1.6,1.6,0,2.9.6,3.9,1.5h0c.1.1.2.2.3.3.9,1,1.5,2.4,1.5,4s-.6,3.1-1.7,4.1Z"/> <path fill="#09090A" d="M22.3,36c-1.5-1.1-3.3-1.7-5.3-1.7,0,0-.2,0-.3,0s0,0,0,0c0,0-.1,0-.2,0-5.4,0-9.8,4.3-9.8,9.7,0,5.3,4.2,9.6,9.5,9.7,0,0,.2,0,.3,0h.2c2.1,0,4-.7,5.6-1.8v1.2h4.2v-23.5h-4.2v6.3ZM20.6,48.1h0c-1,1-2.4,1.6-4.1,1.6-1.6,0-2.9-.6-3.9-1.5,0,0,0,0,0,0-.1,0-.2-.2-.3-.3-.9-1-1.5-2.4-1.5-4h0c0-1.7.6-3.1,1.7-4.2h0c1-1,2.4-1.6,4.1-1.6,1.6,0,2.9.6,3.9,1.5,0,0,0,0,0,0,.1,0,.2.2.3.3.9,1,1.5,2.4,1.5,4s-.6,3.1-1.7,4.1Z"/> <polygon fill="#09090A" points="6.6 43.9 6.6 43.9 6.6 43.9 6.6 43.9"/> <path fill="#09090A" d="M57.6,29.8h-4.2v4.6h-4.6v4.2h4.6v2.7h0v5.1c0,3.8,3.1,6.9,6.9,6.9h4.2v-3.9h-2.8c-2.2,0-4.1-.8-4.1-5.2v-5.6h6.9v-4.2h-6.9v-4.6Z"/> <path fill="#09090A" d="M80.2,36c-1.5-1-3.3-1.7-5.3-1.7h-.5c-5.4,0-9.8,4.3-9.8,9.7s4.2,9.6,9.5,9.7h.5c2.1,0,4-.7,5.6-1.7v1.2h4.2v-18.3h-4.2v1.1ZM72.3,49.3h-.3c-.2-.2-.5-.3-.7-.5-.3-.2-.6-.4-.8-.6h0c-.1-.1-.2-.2-.3-.3-.8-.9-1.3-2-1.5-3.3,2.8,0,5,2.3,5,5.1-.5,0-1-.2-1.5-.4ZM68.8,43.3c.1-1.4.7-2.6,1.6-3.5h0c.3-.3.6-.5,1-.8,0,0,.2-.1.3-.2.3-.1.6-.3.9-.4.4-.1.8-.2,1.2-.3,0,2.8-2.3,5-5,5.1ZM78.5,48.1c-.4.4-.8.7-1.3.9l-.4.2c-.1,0-.2.1-.4.1-.4.1-.9.3-1.4.3,0-2.8,2.3-5,5-5.1-.1,1.4-.7,2.6-1.6,3.5ZM75.1,38.2c.6,0,1.1.2,1.6.4.3.1.5.2.8.4.1,0,.3.2.4.3h0c.1.1.3.2.4.3h0c.1.1.2.2.3.3.8.9,1.3,2,1.5,3.3-2.8,0-5-2.3-5-5.1Z"/> <polygon fill="#09090A" points="70.4 39.8 70.4 39.8 70.4 39.8 70.4 39.8"/> <path fill="#09090A" d="M131.7,41.7v11.4h4.2v-10.3c0-2.3,1.8-4.1,4.1-4.1h2.8v-3.9h-4.2c-3.8,0-6.9,3.1-6.9,6.8Z"/> <path fill="#09090A" d="M177.9,38.1h0c1.9,0,3.4.7,4.4,1.9l2.7-2.7c-1.8-1.8-4.3-3-7.1-3-5.4,0-9.8,4.3-9.8,9.7s4.4,9.7,9.8,9.7,5.1-1.1,6.9-2.9l-2.7-2.7c-1,1-2.4,1.7-4.2,1.7-3.1,0-5.6-2.5-5.6-5.8s2.5-5.8,5.6-5.8Z"/> <rect fill="#09090A" x="162.3" y="34.8" width="4.2" height="18.3"/> <path fill="#09090A" d="M164.4,33.8c1.2,0,2.1-.9,2.1-2.1s-.9-2.1-2.1-2.1-2.1.9-2.1,2.1,1,2.1,2.1,2.1Z"/> <polygon fill="#09090A" points="152.2 49.3 147.6 34.9 143.7 34.9 149.6 53.1 151 53.1 153.5 53.1 154.8 53.1 160.8 34.9 156.9 34.9 152.2 49.3"/> <path fill="#09090A" d="M120.8,34.4c-5.6,0-9.6,4.2-9.6,9.6s3.9,9.4,9.2,9.6h0s.4,0,.4,0c3.6,0,6.7-1.7,8.4-4.6l.4-.7-3.4-2.1-.4.7c-.8,1.2-2.3,2.7-4.9,2.7s-4.7-1.9-5.3-3.8h13.7c1.2,0,1.2-1.4,1.2-2,0-4.6-3.4-9.5-9.6-9.5ZM115.4,42c.6-1.8,2.5-3.6,5.3-3.6s4.6,1.8,5.2,3.6h-10.6Z"/> <path fill="#09090A" d="M195.3,34.4c-5.6,0-9.6,4.2-9.6,9.6s3.9,9.4,9.2,9.6h0s.4,0,.4,0c3.6,0,6.7-1.7,8.4-4.6l.4-.7-3.4-2.1-.4.7c-.8,1.2-2.3,2.7-4.9,2.7s-4.7-1.9-5.3-3.8h13.7c1.2,0,1.2-1.4,1.2-2,0-4.6-3.4-9.5-9.6-9.5ZM190,42c.6-1.8,2.5-3.6,5.3-3.6s4.6,1.8,5.2,3.6h-10.6Z"/> <path fill="#09090A" d="M109.4,44.1c-1.4-2-3.3-2.4-4.6-2.4h-7.4c-.2,0-.4,0-.6-.1-.2,0-.4-.2-.6-.4-.1-.1-.3-.3-.4-.5,0-.2-.1-.4-.1-.7s0-.5.1-.7c0-.2.2-.4.4-.5.2-.2.3-.3.5-.4.2,0,.4-.1.6-.1h5.9s5.3,0,5.3,0v-4h-11.3c-.8,0-1.5.2-2.2.5-.7.3-1.3.7-1.8,1.2-.5.5-.9,1.1-1.2,1.8-.3.7-.5,1.4-.5,2.2s.2,1.8.6,2.5c.1.2.3.5.5.8,1.4,2,3.3,2.4,4.6,2.4h7.4c.2,0,.4,0,.6.1.2,0,.4.2.6.4.2.1.3.3.4.5,0,.2.1.4.1.7s0,.5-.1.7c0,.2-.2.4-.4.5-.2.2-.3.3-.5.4-.2,0-.4.1-.6.1h-3.5s-8.3,0-8.3,0v4h11.8c.8,0,1.5-.2,2.2-.5.7-.3,1.3-.7,1.8-1.2.5-.5.9-1.1,1.2-1.8.3-.7.5-1.4.5-2.2s-.2-1.8-.6-2.6c-.1-.2-.3-.5-.5-.8Z"/> <path fill="#09090A" d="M224.3,44.9c-.1-.2-.3-.5-.5-.8-1.4-2-3.3-2.4-4.6-2.4h-7.4c-.2,0-.4,0-.6-.1-.2,0-.4-.2-.6-.4-.2-.1-.3-.3-.4-.5,0-.2-.1-.4-.1-.7s0-.5.1-.7c0-.2.2-.4.4-.5.2-.2.3-.3.5-.4.2,0,.4-.1.6-.1h5.9s5.3,0,5.3,0v-4h-11.3c-.8,0-1.5.2-2.2.5-.7.3-1.3.7-1.8,1.2-.5.5-.9,1.1-1.2,1.8-.3.7-.5,1.4-.5,2.2s.2,1.8.6,2.5c.1.2.3.5.5.8,1.4,2,3.3,2.4,4.6,2.4h7.4c.2,0,.4,0,.6.1.2,0,.4.2.6.4.1.1.3.3.4.5,0,.2.1.4.1.7s0,.5-.1.7c0,.2-.2.4-.4.5-.2.2-.3.3-.5.4-.2,0-.4.1-.6.1h-3.5s-8.3,0-8.3,0v4h11.8c.8,0,1.5-.2,2.2-.5.7-.3,1.3-.7,1.8-1.2.5-.5.9-1.1,1.2-1.8.3-.7.5-1.4.5-2.2s-.2-1.8-.6-2.6Z"/> </svg></div>
+                <p>End-to-end data collection, labeling, and annotation services for AI training.</p>
+              </a>
+            </div>
+            <div class="nav-mega-col">
+              <h4>Language &amp; Content</h4>
+              <a href="https://tarjama.com/" target="_blank" rel="noopener" class="nav-mega-item">
+                <div class="nav-mega-logo tall xl xxl"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 270"> <path fill="#09090A" d="M14.47,112.11H0v81.55c0,3.23.61,6.24,1.85,9.02,1.24,2.78,2.92,5.24,5.05,7.35,2.13,2.12,4.64,3.79,7.49,5.01,2.87,1.23,5.92,1.84,9.18,1.84h-.01s12.91-.01,12.91-.01v-14.37h-12.91c-2.58,0-4.73-.86-6.47-2.59s-2.6-3.82-2.6-6.27v-46.95h22.46v-14.2H14.47v-20.38Z"/> <path fill="#09090A" d="M121.71,142.93c-3.98-3.95-8.66-7.07-14.05-9.36-5.39-2.28-11.11-3.43-17.17-3.43s-11.72,1.14-17,3.43c-5.28,2.28-9.9,5.4-13.88,9.36-3.98,3.95-7.13,8.58-9.43,13.87s-3.45,10.94-3.45,16.96,1.16,11.67,3.45,16.96,5.44,9.89,9.43,13.78c3.98,3.9,8.6,6.99,13.88,9.27,5.28,2.28,10.94,3.43,17,3.43,5.72,0,11.07-.97,16.07-2.92,4.98-1.95,9.45-4.65,13.38-8.1v9.36h14.65v-41.77c0-6.02-1.16-11.67-3.45-16.96-2.3-5.29-5.44-9.91-9.43-13.87ZM117.67,185.12c-1.5,3.56-3.59,6.66-6.22,9.27-2.65,2.62-5.75,4.71-9.34,6.27-3.59,1.56-7.57,2.34-11.61,2.34s-7.85-.78-11.45-2.34c-3.59-1.56-6.71-3.65-9.34-6.27-2.63-2.62-4.73-5.71-6.31-9.27-1.57-3.56-2.35-7.35-2.35-11.36s.78-7.8,2.35-11.36,3.68-6.68,6.31-9.36c2.63-2.67,5.75-4.76,9.34-6.27,3.59-1.5,7.41-2.26,11.45-2.26s8.02.75,11.61,2.26c3.59,1.5,6.71,3.59,9.34,6.27,2.63,2.67,4.71,5.79,6.22,9.36s2.27,7.35,2.27,11.36-.75,7.8-2.27,11.36Z"/> <path fill="#09090A" d="M197.87,130.33c-6.5,0-12.59,1.14-18.25,3.43-5.67,2.28-10.64,5.37-14.9,9.27s-7.63,8.52-10.09,13.87c-2.46,5.35-3.7,11.03-3.7,17.04v41.77h14.47v-41.77c0-4.01.85-7.8,2.53-11.36,1.67-3.56,4.01-6.68,6.98-9.36,2.98-2.67,6.43-4.76,10.36-6.27,3.91-1.5,8.13-2.26,12.61-2.26v-14.37Z"/> <path fill="#09090A" d="M210.48,246.62c0,2.56-1.18,4.73-3.54,6.52-2.35,1.78-5.21,2.67-8.58,2.67h-8.81v14.19h8.81c3.69,0,7.14-.61,10.35-1.84,3.19-1.23,6-2.9,8.41-5.01s4.32-4.59,5.72-7.44c1.41-2.84,2.1-5.88,2.1-9.11v-116.46h-14.47v116.47Z"/> <path fill="#09090A" d="M312.89,142.93c-3.98-3.95-8.66-7.07-14.05-9.36-5.39-2.28-11.11-3.43-17.17-3.43s-11.72,1.14-17,3.43c-5.28,2.28-9.9,5.4-13.88,9.36-3.98,3.95-7.13,8.58-9.43,13.87-2.3,5.29-3.45,10.94-3.45,16.96s1.16,11.67,3.45,16.96c2.3,5.29,5.44,9.89,9.43,13.78,3.98,3.9,8.6,6.99,13.88,9.27,5.28,2.28,10.94,3.43,17,3.43,5.72,0,11.07-.97,16.07-2.92,4.98-1.95,9.45-4.65,13.38-8.1v9.36h14.65v-41.77c0-6.02-1.16-11.67-3.45-16.96-2.3-5.29-5.44-9.91-9.43-13.87ZM308.85,185.12c-1.5,3.56-3.59,6.66-6.22,9.27-2.65,2.62-5.75,4.71-9.34,6.27-3.59,1.56-7.57,2.34-11.61,2.34s-7.85-.78-11.45-2.34c-3.59-1.56-6.71-3.65-9.34-6.27-2.63-2.62-4.73-5.71-6.31-9.27-1.57-3.56-2.35-7.35-2.35-11.36s.78-7.8,2.35-11.36c1.57-3.56,3.68-6.68,6.31-9.36,2.63-2.67,5.75-4.76,9.34-6.27,3.59-1.5,7.41-2.26,11.45-2.26s8.02.75,11.61,2.26c3.59,1.5,6.71,3.59,9.34,6.27,2.63,2.67,4.71,5.79,6.22,9.36s2.27,7.35,2.27,11.36-.75,7.8-2.27,11.36Z"/> <path fill="#09090A" d="M553.23,142.93c-3.98-3.95-8.66-7.07-14.05-9.36-5.39-2.28-11.11-3.43-17.17-3.43s-11.72,1.14-17,3.43c-5.28,2.28-9.9,5.4-13.88,9.36-3.98,3.95-7.13,8.58-9.43,13.87-2.3,5.29-3.45,10.94-3.45,16.96s1.16,11.67,3.45,16.96c2.3,5.29,5.44,9.89,9.43,13.78,3.98,3.9,8.61,6.99,13.88,9.27,5.28,2.28,10.94,3.43,17,3.43,5.72,0,11.07-.97,16.07-2.92,4.98-1.95,9.45-4.65,13.38-8.1v9.36h14.65v-41.77c0-6.02-1.16-11.67-3.45-16.96-2.3-5.29-5.44-9.91-9.43-13.87ZM549.19,185.12c-1.5,3.56-3.59,6.66-6.22,9.27-2.65,2.62-5.75,4.71-9.34,6.27-3.59,1.56-7.57,2.34-11.61,2.34s-7.85-.78-11.45-2.34c-3.59-1.56-6.71-3.65-9.34-6.27-2.63-2.62-4.73-5.71-6.31-9.27-1.57-3.56-2.35-7.35-2.35-11.36s.78-7.8,2.35-11.36c1.57-3.56,3.68-6.68,6.31-9.36,2.63-2.67,5.75-4.76,9.34-6.27,3.59-1.5,7.41-2.26,11.45-2.26s8.02.75,11.61,2.26c3.59,1.5,6.71,3.59,9.34,6.27,2.63,2.67,4.71,5.79,6.22,9.36,1.52,3.56,2.27,7.35,2.27,11.36s-.75,7.8-2.27,11.36Z"/> <path fill="#09090A" d="M452.5,140.18c-3.02-3.01-6.59-5.4-10.68-7.18-4.11-1.78-8.45-2.67-13.05-2.67-5.5,0-10.5,1.17-14.98,3.51-4.48,2.34-8.35,5.51-11.61,9.52-3.15-4.01-6.99-7.18-11.53-9.52-4.55-2.34-9.5-3.51-14.88-3.51-4.6,0-8.94.89-13.02,2.67-4.09,1.78-7.66,4.18-10.69,7.18-3.04,3.01-5.44,6.54-7.24,10.61-1.8,4.07-2.7,8.38-2.7,12.95v51.96h14.3v-51.96c0-2.67.52-5.15,1.52-7.44,1.02-2.28,2.38-4.29,4.12-6.02s3.79-3.09,6.14-4.09c2.35-1,4.89-1.5,7.57-1.5s5.19.5,7.49,1.5c2.3,1,4.34,2.37,6.14,4.09,1.8,1.73,3.2,3.73,4.2,6.02,1.02,2.28,1.52,4.76,1.52,7.44v51.96h14.3v-51.96c0-2.67.51-5.15,1.52-7.44,1.02-2.28,2.38-4.29,4.12-6.02s3.79-3.09,6.14-4.09c2.35-1,4.87-1.5,7.57-1.5s5.19.5,7.49,1.5,4.32,2.37,6.06,4.09,3.12,3.73,4.12,6.02c1.02,2.28,1.52,4.76,1.52,7.44v51.96h14.48v-51.96c0-4.57-.91-8.88-2.7-12.95-1.8-4.07-4.2-7.6-7.24-10.61Z"/> <path fill="#09090A" d="M375.76,130.32s.01,0,.02,0c0,0,.01,0,.02,0h-.04Z"/> <path fill="#09090A" d="M708.68,101.43h-86.88c-10.11,0-18.37,8.27-18.37,18.37v86.88c0,10.11,8.27,18.37,18.37,18.37h86.88c10.11,0,18.37-8.27,18.37-18.37v-86.88c0-10.11-8.27-18.37-18.37-18.37ZM692.92,210.57l-6.86-8.84c-4.02,3.45-8.45,6.1-13.26,7.96-4.8,1.85-9.89,2.78-15.23,2.78-6.79,0-13.02-1.35-18.67-4.05-5.64-2.7-10.12-6.56-13.46-11.6-3.33-5.03-5-10.87-5-17.54,0-4.66.95-9.18,2.85-13.53,1.91-4.36,4.62-8.19,8.16-11.49,3.54-3.31,7.62-5.75,12.24-7.34l-12.85-16.6v-15.3h60.3v17.2h-38.42l32.9,42.63c2.45-6.17,3.75-13.12,3.87-20.87l16.58-.07c.14,6.35-.61,12.55-2.24,18.6-1.63,6.04-4.01,11.61-7.14,16.69l16.46,21.34h.03s-20.26.01-20.26.01Z"/> <path fill="#09090A" d="M645.43,162.33c-2.2,1.7-3.87,3.77-5,6.22s-1.7,4.98-1.7,7.62c0,4.12.93,7.6,2.81,10.44,1.88,2.83,4.4,4.97,7.55,6.39,3.15,1.43,6.66,2.14,10.5,2.14,6.29,0,11.84-2.06,16.58-6.18h.01s-22.9-29.66-22.9-29.66c-3.04.32-5.65,1.32-7.85,3.02Z"/> </svg></div>
+                <p>Premium enterprise language services covering translation, localization, and content.</p>
+              </a>
+              <a href="https://cleverso.tarjama.com/" target="_blank" rel="noopener" class="nav-mega-item">
+                <div class="nav-mega-logo xs"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 190.68 48.17"> <g> <g> <polygon fill="#09090A" points="41.72 36.13 20.86 48.17 20.86 24.09 41.72 36.13"/> <polygon fill="#09090A" points="20.86 0 20.86 24.09 0 12.05 20.86 0"/> <polygon fill="#09090A" points="20.86 24.09 20.86 48.17 0 36.13 0 12.05 20.86 24.09"/> <polygon fill="#09090A" points="41.72 12.05 20.86 24.09 20.86 0 41.72 12.05"/> <g> <g> <polygon fill="#09090A" points="108.93 16.64 104.06 32.27 98.99 16.64 94.77 16.64 101.78 35.74 106.26 35.74 112.91 16.64 108.93 16.64"/> <path fill="#09090A" d="M141.8,16.76c-1.32.53-2.49,1.26-3.49,2.17-1,.92-1.79,2.01-2.36,3.24-.57,1.24-.86,2.59-.86,4v9.79h3.6v-9.79c0-.9.19-1.77.57-2.57.39-.82.92-1.53,1.59-2.13.66-.61,1.46-1.09,2.36-1.43.9-.34,1.87-.51,2.87-.51h.12v-3.57h-.12c-1.52,0-2.95.27-4.27.8Z"/> <rect fill="#09090A" x="68.58" y="11.75" width="3.6" height="24.22"/> <path fill="#09090A" d="M59.47,35.95c-5.9,0-10.17-4.28-10.17-10.17s4.28-10.17,10.17-10.17c2.68,0,4.28.66,6.14,1.79l.19.12v4.06c-1.14-.95-3.85-2.47-6.33-2.47-3.86,0-6.67,2.81-6.67,6.67s2.8,6.67,6.67,6.67c1.93,0,4.71-.93,6.33-2.36v3.88l-.16.12c-1.17.87-2.93,1.86-6.17,1.86Z"/> <path fill="#09090A" d="M84.99,35.97c-5.9,0-10.17-4.28-10.17-10.17s4.28-10.17,10.17-10.17c6.61,0,10.17,5.17,10.17,10.04,0,.9-.11,1.73-.91,1.73h-15.75l.06.25c.61,2.33,2.63,4.83,6.43,4.83,2.46,0,4.41-1.08,5.79-3.2l.24-.37,3.04,1.82-.22.39c-1.76,3.04-5.06,4.86-8.84,4.86ZM84.99,19.12c-3.64,0-5.88,2.41-6.42,4.65l-.06.24h12.89l-.07-.25c-.64-2.31-2.85-4.65-6.34-4.65Z"/> <path fill="#09090A" d="M122.67,36.42c-5.9,0-10.17-4.28-10.17-10.17s4.28-10.17,10.17-10.17c6.61,0,10.17,5.17,10.17,10.04,0,.9-.11,1.73-.91,1.73h-15.75l.06.25c.61,2.33,2.63,4.83,6.43,4.83,2.46,0,4.41-1.08,5.79-3.2l.24-.37,3.04,1.82-.22.39c-1.76,3.04-5.06,4.86-8.84,4.86ZM122.67,19.58c-3.64,0-5.88,2.41-6.42,4.65l-.06.24h12.89l-.07-.25c-.64-2.31-2.85-4.65-6.34-4.65Z"/> </g> <path fill="#09090A" d="M180.85,35.51c-.3,0-.6-.01-.88-.04-.9-.08-1.77-.28-2.6-.59l-.13-.05c-.2-.08-.4-.17-.6-.26h0s-.22-.1-.29-.14c-.14-.07-.28-.15-.42-.23-.14-.08-.29-.17-.43-.26-.1-.07-.2-.13-.31-.2-.16-.11-.31-.22-.46-.34-.09-.07-.17-.13-.25-.2-.25-.21-.43-.37-.59-.53-.88-.86-1.59-1.9-2.11-3.08-.51-1.18-.76-2.46-.76-3.8s.26-2.61.77-3.79c.52-1.18,1.23-2.23,2.11-3.1.88-.88,1.94-1.58,3.14-2.1,1.19-.5,2.47-.76,3.81-.76,1.34,0,2.62.26,3.81.76,1.21.51,2.27,1.22,3.14,2.09.89.88,1.6,1.92,2.11,3.1.51,1.18.77,2.45.77,3.79s-.26,2.62-.77,3.8c-.52,1.18-1.23,2.22-2.11,3.08-.21.2-.42.39-.59.53-.08.07-.17.14-.25.2-.15.12-.3.23-.46.34-.1.07-.2.14-.3.2-.14.09-.28.18-.43.26-.14.08-.28.16-.42.23-.07.04-.14.07-.21.1-.29.13-.49.23-.69.31l-.07.02c-.87.33-1.73.53-2.63.61-.32.03-.61.04-.91.04h0ZM180.81,18.7c-.98,0-1.92.18-2.77.55-.88.37-1.63.87-2.27,1.52-.65.66-1.14,1.4-1.52,2.26-.38.86-.57,1.79-.57,2.76s.19,1.91.57,2.77c.38.86.9,1.62,1.53,2.25.64.64,1.38,1.13,2.27,1.52.87.37,1.8.56,2.78.56h.07c.99,0,1.93-.19,2.79-.56.88-.39,1.62-.88,2.27-1.52.63-.63,1.15-1.39,1.53-2.25.38-.86.57-1.79.57-2.77s-.19-1.9-.57-2.76c-.38-.86-.88-1.6-1.52-2.26-.65-.66-1.39-1.15-2.27-1.52-.86-.36-1.79-.55-2.78-.55h-.08Z"/> <path fill="#09090A" d="M151.96,35.51v-2.64h8.34l.67-.03h3.24c.4,0,.76-.07,1.09-.22.34-.15.63-.35.88-.6.25-.25.46-.55.6-.89.15-.35.22-.7.22-1.09s-.07-.76-.22-1.11c-.15-.35-.35-.65-.6-.9-.25-.25-.55-.45-.89-.61-.34-.15-.7-.22-1.08-.22h-8.27c-1.26,0-3.04-.4-4.4-2.29-.21-.29-.35-.52-.47-.74-.38-.73-.57-1.56-.57-2.44,0-.75.15-1.46.44-2.12.28-.66.68-1.24,1.17-1.74.48-.49,1.06-.88,1.73-1.18.65-.29,1.36-.44,2.11-.44h11.7v2.64h-5.07l-.67.03h-5.96c-.4,0-.75.07-1.09.22-.34.15-.63.35-.88.6-.25.25-.45.55-.6.89-.15.35-.22.7-.22,1.09s.07.76.22,1.11c.15.35.35.65.6.9.25.25.54.45.89.61.34.15.7.22,1.08.22h8.27c1.26,0,3.04.4,4.4,2.29.21.29.35.52.47.74.38.73.57,1.56.57,2.44,0,.74-.15,1.46-.44,2.12-.28.65-.67,1.24-1.17,1.74-.48.49-1.06.88-1.73,1.18-.65.29-1.36.44-2.11.44h-12.26Z"/> </g> </g> </g> </svg></div>
+                <p>An AI-powered Translation Management System for scalable localization operations.</p>
+              </a>
+              <a href="https://screens.tv/" target="_blank" rel="noopener" class="nav-mega-item">
+                <div class="nav-mega-logo tall xl sm"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 189.23 38.81"><path fill="#09090A" d="M158.76,12.29s0,0,0,0c-.73-.92-1.57-1.7-2.52-2.34-.23-.15-.46-.29-.7-.42-.03-.02-.06-.04-.09-.06-.3-.16-.6-.31-.92-.45-.31-.14-.63-.25-.95-.36-.04-.01-.09-.03-.13-.04-.28-.09-.56-.16-.85-.22-.14-.03-.28-.05-.42-.07-.21-.04-.42-.07-.64-.1-.37-.04-.75-.06-1.14-.06s-.76.03-1.13.06c-.3.03-.59.08-.88.13-.04,0-.08.01-.13.02-.68.14-1.34.35-1.98.63-.64.28-1.24.6-1.8.98-.1.07-.2.15-.3.22-.17.12-.35.24-.51.38-.28.23-.54.47-.79.72-.15.15-.3.32-.44.48-.08.09-.16.17-.24.26-.63.76-1.16,1.62-1.57,2.57-.57,1.28-.85,2.64-.85,4.08v16.42h4.5v-16.42c0-.84.16-1.62.48-2.35.33-.71.76-1.35,1.3-1.9s1.2-.98,1.94-1.29c.74-.31,1.54-.48,2.4-.48s1.64.16,2.37.48c.72.31,1.37.74,1.94,1.29.56.55,1,1.19,1.33,1.9.31.73.48,1.51.48,2.35v16.42h4.5v-16.42c0-1.44-.28-2.8-.85-4.08-.38-.87-.86-1.65-1.41-2.36Z"/><path fill="#09090A" d="M81.64,8.18c-2.05,0-3.98.36-5.76,1.08-1.79.72-3.36,1.7-4.71,2.93-1.34,1.23-2.41,2.69-3.19,4.38-.78,1.69-1.16,3.49-1.16,5.39v13.19h4.57v-13.19c0-1.27.27-2.47.79-3.58.54-1.13,1.27-2.12,2.21-2.96.93-.85,2.02-1.51,3.27-1.99,1.23-.47,2.57-.71,3.98-.71v-4.54Z"/><path fill="#09090A" d="M55.45,30.57c-5.02,0-8.67-3.65-8.67-8.67s3.65-8.67,8.67-8.67c3.23,0,5.49,1.48,6.97,2.72l1.26-4.79-.24-.15c-2.41-1.48-4.49-2.33-7.98-2.33-7.66,0-13.23,5.56-13.23,13.22s5.56,13.22,13.23,13.22c4.22,0,6.51-1.29,8.03-2.42l.2-.15-1.28-4.78c-2.1,1.86-4.44,2.8-6.95,2.8Z"/><path fill="#09090A" d="M94.87,8.68c-7.66,0-13.23,5.56-13.23,13.22s5.56,13.22,13.23,13.22c4.91,0,9.21-2.36,11.49-6.32l.29-.51-3.95-2.37-.31.48c-1.79,2.76-4.32,4.15-7.53,4.15-4.94,0-7.56-3.24-8.36-6.28l-.08-.32h20.48c1.04,0,1.19-1.08,1.19-2.25,0-6.32-4.64-13.05-13.22-13.05ZM86.44,19.6l.08-.31c.7-2.91,3.61-6.05,8.35-6.05s7.41,3.03,8.24,6.04l.09.32h-16.76Z"/><path fill="#09090A" d="M123.78,8.68c-7.66,0-13.23,5.56-13.23,13.22s5.56,13.22,13.23,13.22c4.92,0,9.21-2.36,11.49-6.32l.29-.51-3.94-2.37-.31.48c-1.23,1.89-3.54,4.15-7.53,4.15-4.94,0-7.56-3.24-8.36-6.28l-.08-.32h20.48c1.04,0,1.18-1.08,1.18-2.25,0-6.32-4.63-13.05-13.22-13.05ZM115.35,19.6l.08-.31c.7-2.91,3.61-6.05,8.35-6.05s7.41,3.03,8.24,6.04l.09.32h-16.76Z"/><path fill="#09090A" d="M188.42,23.83c-.17-.32-.37-.64-.65-1.03-1.91-2.67-4.42-3.23-6.2-3.23h-10.74c-.42,0-.81-.08-1.16-.23-.38-.17-.71-.4-.98-.67-.27-.27-.49-.6-.65-.98-.16-.38-.24-.78-.24-1.22s.08-.81.24-1.19c.16-.37.38-.7.66-.98.27-.27.59-.5.96-.66.36-.16.74-.24,1.17-.24h7.77l.85-.04h7.18v-4.62h-15.8c-1.05,0-2.06.21-2.98.62-.93.41-1.75.97-2.42,1.65-.69.7-1.24,1.52-1.64,2.43-.41.94-.62,1.95-.62,3,0,1.25.27,2.41.81,3.45.17.32.37.64.65,1.04,1.91,2.67,4.42,3.23,6.2,3.23h10.74c.42,0,.81.08,1.16.23.38.17.71.4.98.67.27.27.49.6.65.98.16.38.24.78.24,1.22s-.08.81-.24,1.19c-.16.37-.38.7-.66.98-.27.27-.59.49-.96.66-.35.16-.74.23-1.17.23h-4.24l-.85.04h-11.43v4.61h16.53c1.05,0,2.06-.21,2.98-.62.93-.41,1.75-.97,2.42-1.65.69-.7,1.24-1.52,1.64-2.44.41-.94.62-1.95.62-3,0-1.25-.27-2.41-.81-3.45Z"/><path fill="#09090A" d="M33.05,0H5.77C2.6,0,0,2.6,0,5.77v27.28c0,3.17,2.6,5.77,5.77,5.77h27.28c3.17,0,5.77-2.6,5.77-5.77V5.77c0-3.17-2.6-5.77-5.77-5.77ZM34.31,29.66c-.46,1.07-1.1,2.02-1.91,2.84-.78.8-1.73,1.44-2.82,1.92-1.07.48-2.23.72-3.44.72H6.14v-4.35h13.61l1.1-.05h5.29c.65,0,1.22-.12,1.76-.35.55-.24,1.03-.57,1.43-.98.41-.41.74-.89.97-1.44.24-.56.36-1.14.36-1.77s-.12-1.23-.36-1.8c-.24-.56-.56-1.05-.97-1.46-.4-.4-.88-.73-1.43-.98-.55-.24-1.14-.35-1.76-.35h-13.47c-2.06,0-4.97-.65-7.19-3.74-.33-.47-.57-.84-.77-1.21-.62-1.2-.93-2.54-.93-3.99,0-1.22.24-2.39.72-3.47.46-1.07,1.1-2.02,1.91-2.83.78-.79,1.73-1.44,2.82-1.92,1.07-.48,2.23-.72,3.45-.72h19.09v4.35h-8.28l-1.1.05h-9.71c-.64,0-1.22.12-1.76.36-.55.24-1.03.57-1.43.98-.41.41-.74.89-.97,1.44-.24.56-.36,1.14-.36,1.77s.12,1.23.36,1.8c.24.56.56,1.05.97,1.46.4.4.88.73,1.44.98.55.24,1.14.35,1.75.35h13.47c2.06,0,4.97.65,7.19,3.75.33.46.57.84.77,1.21.62,1.2.93,2.55.93,3.99,0,1.22-.24,2.39-.72,3.47Z"/></svg></div>
+                <p>Professional media localization, subtitling, dubbing, and broadcast services.</p>
+              </a>
+              <a href="https://contentlab.tarjama.com/" target="_blank" rel="noopener" class="nav-mega-item">
+                <div class="nav-mega-logo tall lg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 270"> <path fill="#09090A" d="M13.08,131.7H0v-20.38h54.1v20.38h-13.08v112.98H13.08v-112.98Z"/> <path fill="#09090A" d="M64.17,111.32h27.93v58.63h15.1v-58.63h27.93v133.36h-27.93v-54.6h-15.1v54.6h-27.93V111.32Z"/> <path fill="#09090A" d="M150.24,111.32h48.31v20.38h-20.63v35.98h15.6v20.38h-15.6v36.23h21.14v20.38h-48.82V111.32Z"/> <path fill="#09090A" d="M302.49,184.54v28.43c0,23.15-11.32,34.22-33.47,34.22s-34.22-11.58-34.22-34.22v-69.95c0-20.63,14.09-34.22,35.73-34.22,20.38,0,31.96,12.33,31.96,34.22v25.67l-25.16,4.03v-33.21c0-6.04-2.26-9.31-7.55-9.31s-7.55,3.53-7.55,9.31v77.25c0,5.28,1.26,9.31,7.55,9.31,5.29,0,7.55-2.77,7.55-9.31v-34.72l25.16,2.52Z"/> <path fill="#09090A" d="M308.78,143.02c0-20.88,14.34-34.22,35.73-34.22s34.22,12.83,34.22,34.22v69.95c0,22.4-12.08,34.22-34.98,34.22s-34.98-11.58-34.98-34.22v-69.95ZM336.21,139.5v77.25c0,5.28,1.26,9.31,7.55,9.31,5.29,0,7.55-2.77,7.55-9.31v-77.25c0-6.04-2.26-9.31-7.55-9.31s-7.55,3.53-7.55,9.31Z"/> <path fill="#09090A" d="M390.07,111.32h25.41l22.65,92.6h1.26c-3.02-23.15-6.04-49.07-6.29-70.71l-.25-21.89h26.92v133.36h-25.41l-22.65-90.08h-1.26c2.77,18.62,5.54,46.55,6.04,67.43l.5,22.65h-26.92V111.32Z"/> <path fill="#09090A" d="M482.93,131.7h-13.08v-20.38h54.1v20.38h-13.08v112.98h-27.93v-112.98Z"/> <path fill="#09090A" d="M534.02,111.32h48.31v20.38h-20.63v35.98h15.6v20.38h-15.6v36.23h21.14v20.38h-48.82V111.32Z"/> <path fill="#09090A" d="M592.91,111.32h25.41l22.65,92.6h1.26c-3.02-23.15-6.04-49.07-6.29-70.71l-.25-21.89h26.92v133.36h-25.41l-22.65-90.08h-1.26c2.77,18.62,5.54,46.55,6.04,67.43l.5,22.65h-26.92V111.32Z"/> <path fill="#09090A" d="M685.77,131.7h-13.08v-20.38h54.1v20.38h-13.08v112.98h-27.93v-112.98Z"/> <path fill="#09090A" d="M766.3,111.32h27.68v112.98h18.62v20.38h-46.3V111.32Z"/> <path fill="#09090A" d="M868.47,111.32l20.38,133.36h-28.69l-2.52-26.17h-14.85l-1.76,26.17h-24.66l22.9-133.36h29.19ZM844.06,200.9h11.83l-6.04-62.65h-1.26l-4.53,62.65Z"/> <path fill="#09090A" d="M965.35,151.33c0,12.58-4.53,19.88-14.6,23.15v1.26c10.07,1.76,16.1,9.56,16.1,20.38v22.65c0,16.1-13.34,25.92-31.96,25.92h-37.24V111.32h38.25c17.87,0,29.44,10.82,29.44,27.68v12.33ZM925.34,166.68h3.27c5.54,0,9.06-1.76,9.06-8.56v-19.63c0-6.54-3.02-8.56-8.81-8.56h-3.52v36.74ZM925.34,226.06h4.78c5.54,0,9.06-1.76,9.06-8.56v-23.4c0-6.8-3.52-8.56-9.06-8.56h-4.78v40.51Z"/> </svg></div>
+                <p>A creative studio for storytelling, copywriting, scripts, and campaign content.</p>
+              </a>
+            </div>
+            <div class="nav-mega-col">
+              <h4>Professional Services</h4>
+              <a href="https://ureed.com/" target="_blank" rel="noopener" class="nav-mega-item">
+                <div class="nav-mega-logo ureed-sm"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 127.29 39.43"> <path fill="#09090A" d="M24.78,14.91v5.18c0,2.56-.51,4.95-1.51,7.17-1.01,2.21-2.4,4.15-4.18,5.81-1.78,1.67-3.87,2.97-6.26,3.93-.16.06-.31.12-.47.17-.15-.05-.31-.11-.46-.17-2.37-.96-4.44-2.27-6.21-3.93-1.78-1.66-3.17-3.6-4.18-5.81-1.01-2.21-1.51-4.6-1.51-7.17V0l24.78,14.91Z"/> <path fill="#09090A" d="M39.43,6.41v14.2c0,2.63-.52,5.08-1.56,7.35s-2.48,4.25-4.32,5.96c-1.84,1.71-4,3.05-6.48,4.03-2.48.99-5.13,1.48-7.95,1.48-.37,0-.72,0-1.09-.03,1.25-.8,2.42-1.7,3.49-2.7,2.2-2.06,3.95-4.48,5.24-7.26,1.28-2.78,1.92-5.73,1.92-8.83V0l10.75,6.41Z"/> <path fill="#09090A" d="M48.44,21.75v-12.73h3.69v12.61c0,3.34,1.84,5.52,5.34,5.52s5.31-2.18,5.31-5.52v-12.61h3.69v12.7c0,5.23-2.97,8.7-9,8.7s-9.03-3.5-9.03-8.67Z"/> <path fill="#09090A" d="M70.97,30.41v-15.42h3.16v2.27c1.08-1.47,2.83-2.62,4.72-2.62v3.32c-.27-.06-.6-.1-.99-.1-1.32,0-3.1.96-3.73,2.04v10.5h-3.16Z"/> <path fill="#09090A" d="M86.85,17.32c-2.94,0-4.28,2.15-4.44,3.98h8.88c-.06-1.77-1.34-3.98-4.44-3.98ZM78.86,22.51c0-4.35,3.33-7.87,8-7.87s7.77,3.45,7.77,8.18v.78h-12.18c.26,2.27,2.06,4.14,5.03,4.14,1.53,0,3.36-.59,4.47-1.65l1.57,2.15c-1.57,1.43-3.89,2.18-6.4,2.18-4.73,0-8.26-3.14-8.26-7.9h0Z"/> <path fill="#09090A" d="M103.75,17.32c-2.94,0-4.28,2.15-4.44,3.98h8.88c-.06-1.77-1.34-3.98-4.44-3.98ZM95.75,22.51c0-4.35,3.33-7.87,8-7.87s7.77,3.45,7.77,8.18v.78h-12.18c.26,2.27,2.06,4.14,5.03,4.14,1.53,0,3.36-.59,4.47-1.65l1.57,2.15c-1.57,1.43-3.89,2.18-6.4,2.18-4.73,0-8.26-3.14-8.26-7.9h0Z"/> <path fill="#09090A" d="M124.05,25.47v-6.05c-.74-1.13-2.31-2.05-3.85-2.05-2.56,0-4.19,2.11-4.19,5.07s1.63,5.04,4.19,5.04c1.54,0,3.11-.88,3.85-2.02h0ZM124.05,30.04v-2.08c-1.14,1.51-2.87,2.46-4.78,2.46-3.82,0-6.63-2.96-6.63-7.97s2.77-8.01,6.63-8.01c1.85,0,3.58.88,4.78,2.49v-7.91h3.24v21.02s-3.24,0-3.24,0Z"/> <path fill="#09090A" d="M24.78,14.91v5.18c0,2.56-.51,4.95-1.51,7.17-1.01,2.21-2.4,4.15-4.18,5.81-1.78,1.67-3.87,2.97-6.26,3.93-.16.06-.31.12-.47.17-.15-.05-.31-.11-.46-.17-2.37-.96-4.44-2.27-6.21-3.93-1.78-1.66-3.17-3.6-4.18-5.81-1.01-2.21-1.51-4.6-1.51-7.17V0l24.78,14.91Z"/> <path fill="#09090A" d="M39.43,6.41v14.2c0,2.63-.52,5.08-1.56,7.35s-2.48,4.25-4.32,5.96c-1.84,1.71-4,3.05-6.48,4.03-2.48.99-5.13,1.48-7.95,1.48-.37,0-.72,0-1.09-.03,1.25-.8,2.42-1.7,3.49-2.7,2.2-2.06,3.95-4.48,5.24-7.26,1.28-2.78,1.92-5.73,1.92-8.83V0l10.75,6.41Z"/> </svg></div>
+                <p>The region&rsquo;s largest freelance marketplace for hiring specialized talent.</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="nav-actions">
+      <button class="nav-burger" aria-label="Open menu" aria-expanded="false" aria-controls="navDrawer">
+        <span></span><span></span><span></span>
+      </button>
+      <a href="login.html" class="btn btn-ghost">Sign in</a>
+      <a href="#cta" class="btn btn-primary">
+        Book a demo
+        <svg class="arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </div>
+</header>
+
+<div class="nav-drawer-backdrop" id="navBackdrop" aria-hidden="true"></div>
+<div class="nav-drawer" id="navDrawer" aria-hidden="true" aria-label="Main navigation">
+  <div class="nav-drawer-header">
+    <span class="brand">Menu</span>
+    <button class="nav-drawer-close" aria-label="Close menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6L6 18M6 6l12 12"/></svg>
+    </button>
+  </div>
+  <div class="nav-drawer-body">
+    <a href="index.html#suite">The Suite</a>
+    <a href="assistants.html">Assistants</a>
+    <a href="translate.html">Translate</a>
+    <a href="ocr.html">OCR</a>
+    <a href="speech.html">Speech</a>
+    <a href="technology.html">Technology</a>
+    <a href="integrations.html">Integrations</a>
+
+    <div class="nav-drawer-section">
+      <h4>AI &amp; Agentic Tech</h4>
+      <a href="llm.html">Sovereign LLM</a>
+      <a href="agentic-studio.html">Agentic Studio</a>
+      <a href="data-services.html">Data Services</a>
+    </div>
+
+    <div class="nav-drawer-section">
+      <h4>Language &amp; Content</h4>
+      <a href="https://tarjama.com/" target="_blank" rel="noopener">Tarjama</a>
+      <a href="https://cleverso.tarjama.com/" target="_blank" rel="noopener">CleverSo</a>
+      <a href="https://screens.tv/" target="_blank" rel="noopener">Screens.tv</a>
+      <a href="https://contentlab.tarjama.com/" target="_blank" rel="noopener">ContentLab</a>
+    </div>
+
+    <div class="nav-drawer-section">
+      <h4>Professional Services</h4>
+      <a href="https://ureed.com/" target="_blank" rel="noopener">Ureed</a>
+    </div>
+  </div>
+  <div class="nav-drawer-footer">
+    <a href="login.html" class="btn btn-ghost">Sign in</a>
+    <a href="mailto:Contact.us@arabic.ai" class="btn btn-primary">Book a demo</a>
+  </div>
+</div>
+
+<!-- ===================== HERO ===================== -->
+<div class="container">
+  <div class="crumbs">
+    <a href="index.html">Arabic.AI Suite</a>
+    <span class="sep">/</span>
+    <a href="index.html#assistants">Assistants</a>
+    <span class="sep">/</span>
+    <span class="current">Procurement AI</span>
+  </div>
+
+  <div class="hero-card">
+    <div class="hero-card-inner">
+      <span class="hero-pill">
+        <span class="dot"></span>
+        Grounded in Kuwait Public Tenders Law 49/2016
+      </span>
+      <h1>Procurement AI Assistant</h1>
+      <p class="hero-sub">Smarter vendor evaluation and tender analysis</p>
+      <p>Upload an RFP, score every proposal against it, and get clear, Kuwait-law-grounded recommendations.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ===================== ANIMATED WIDGET ===================== -->
+<section class="widget-section">
+  <div class="container">
+    <div class="widget-intro reveal">
+      <div class="eyebrow">&mdash; Live preview &mdash;</div>
+      <h2>Watch it analyze an ERP tender.</h2>
+      <p>A Kuwaiti holding company's RFP for a cloud ERP implementation &mdash; parsed, scored, compared, and questioned across four tabs.</p>
+    </div>
+
+    <div class="widget reveal" id="widget" data-phase="upload" data-tab="overview">
+      <div class="widget-topbar"></div>
+
+      <!-- ===== PHASE 1: Upload ===== -->
+      <div class="phase" data-phase-panel="upload">
+        <div class="upload-split">
+          <!-- Left: upload card -->
+          <div class="upload-card">
+            <h3 class="upload-card-title">New procurement evaluation</h3>
+            <p class="upload-card-sub">Upload the RFP, RFI, or RFQ you want to score proposals against.</p>
+
+            <div class="dropzone" id="dropzone">
+              <div class="dropzone-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                  <polyline points="17 8 12 3 7 8"/>
+                  <line x1="12" y1="3" x2="12" y2="15"/>
+                </svg>
+              </div>
+              <p class="dropzone-title">Drop your RFP here</p>
+              <p class="dropzone-sub"><span class="browse">Click to upload</span> or drag and drop</p>
+              <p class="dropzone-formats">DOCX, PDF, PPTX, or image &mdash; up to ~40 MB</p>
+              <div class="floating-file">
+                <div class="floating-visual">
+                  <div class="doc-icon">DOCX</div>
+                  <div class="doc-name">RFP_ERP_Implementation_Kuwait.docx</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="file-loaded-card">
+              <div class="file-loaded-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                  <path d="M14 2v6h6"/>
+                </svg>
+              </div>
+              <div class="file-loaded-info">
+                <div class="file-loaded-name">RFP_ERP_Implementation_Kuwait.docx</div>
+                <div class="file-loaded-size">38.1 KB</div>
+              </div>
+              <div class="file-loaded-close">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6L6 18M6 6l12 12"/></svg>
+              </div>
+            </div>
+
+            <div class="custom-focus-label">Custom focus (optional)</div>
+            <div class="focus-textarea">Tell the assistant what matters most&hellip;</div>
+            <p class="focus-helper">Anything the assistant should pay extra attention to when parsing and scoring. E.g. "Prioritize Arabic submission capability" or "Our budget ceiling is 900,000 KWD."</p>
+
+            <div class="upload-actions">
+              <button class="upload-btn-primary">Analyze RFP</button>
+              <button class="upload-btn-ghost">Cancel</button>
+            </div>
+          </div>
+
+          <!-- Right: dark progress panel -->
+          <div class="progress-panel">
+            <div class="progress-panel-inner">
+              <h3 class="progress-title">New procurement evaluation</h3>
+              <div class="progress-steps" id="progressSteps">
+                <div class="progress-step" data-step="1">
+                  <span class="step-dot"></span>
+                  <span class="step-label">Extracting text</span>
+                </div>
+                <div class="progress-step" data-step="2">
+                  <span class="step-dot"></span>
+                  <span class="step-label">Grounding against Kuwait Public Tenders Law 49/2016</span>
+                </div>
+                <div class="progress-step" data-step="3">
+                  <span class="step-dot"></span>
+                  <span class="step-label">Structuring requirements</span>
+                </div>
+                <div class="progress-step" data-step="4">
+                  <span class="step-dot"></span>
+                  <span class="step-label">Detecting risks and gaps</span>
+                </div>
+                <div class="progress-step" data-step="5">
+                  <span class="step-dot"></span>
+                  <span class="step-label">Profile ready</span>
+                </div>
+              </div>
+              <p class="progress-description">Upload an RFP, score every proposal against it, and get clear, Kuwait-law-grounded recommendations.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ===== PHASE 2: Dashboard ===== -->
+      <div class="phase" data-phase-panel="dashboard">
+        <div class="dashboard">
+          <div class="dash-topbar">
+            <button class="back-btn">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+              Back to evaluations
+            </button>
+            <span class="dash-updated" id="dashUpdated">Updated Apr 22, 03:08 PM</span>
+          </div>
+
+          <div class="dash-header">
+            <div>
+              <span class="dash-rfp-pill">RFP</span>
+              <span class="dash-rfp-sub">Request for Proposal</span>
+            </div>
+            <h2 class="dash-title">Integrated Cloud ERP Solution Implementation</h2>
+          </div>
+
+          <div class="dash-tabs" id="dashTabs">
+            <div class="dash-tab" data-tab="overview">Overview</div>
+            <div class="dash-tab" data-tab="proposals">
+              Proposals
+              <span class="dash-tab-count" id="proposalsCount">0</span>
+            </div>
+            <div class="dash-tab" data-tab="comparison">Comparison</div>
+            <div class="dash-tab" data-tab="chat">Chat</div>
+          </div>
+
+          <div class="dash-body">
+
+            <!-- ============ OVERVIEW TAB ============ -->
+            <div class="dash-tab-panel" data-tab-panel="overview">
+              <div class="overview-summary-card">
+                <span class="company-pill">AL-ASIMA SOLUTIONS K.S.C.P.</span>
+                <h3 class="overview-title">Integrated Cloud ERP Solution Implementation</h3>
+                <p class="overview-desc">Al-Asima Solutions K.S.C.P. is seeking qualified vendors to supply, implement, and support a cloud-based ERP system covering Financials, Supply Chain Management, and Human Capital Management. The solution must be localized for Kuwait Labor Law, integrate with local banking and MoF tax portals, and include full data migration from legacy systems. Comprehensive training for over 150 users and 24/7 technical support are required.</p>
+                <div class="overview-meta-grid">
+                  <div class="meta-card">
+                    <div class="meta-card-label">
+                      <svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/></svg>
+                      Submission deadline
+                    </div>
+                    <div class="meta-card-value">2026-05-24</div>
+                    <div class="meta-card-hint">Submission deadline</div>
+                  </div>
+                  <div class="meta-card amber">
+                    <div class="meta-card-label">
+                      <svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/></svg>
+                      Estimated value
+                    </div>
+                    <div class="meta-card-value">Not disclosed</div>
+                  </div>
+                  <div class="meta-card green">
+                    <div class="meta-card-label">
+                      <svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
+                      Requirements
+                    </div>
+                    <div class="meta-card-value">13</div>
+                    <div class="meta-card-hint">Mandatory &middot; 5</div>
+                  </div>
+                  <div class="meta-card blue">
+                    <div class="meta-card-label">
+                      <svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                      Kuwait law coverage
+                    </div>
+                    <div class="meta-card-value">3</div>
+                    <div class="meta-card-hint">Proposals scored &middot; 0</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="focus-card">
+                <div class="focus-icon">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+                </div>
+                <div class="focus-content">
+                  <h4>Custom focus</h4>
+                  <p>Guide every scoring run and chat answer with what matters most to your team.</p>
+                  <div class="focus-input">Add or edit focus notes for this evaluation&hellip;</div>
+                  <div class="focus-footer">
+                    <span class="focus-footer-note">Re-run the analysis to apply your updated focus.</span>
+                    <div class="focus-footer-actions">
+                      <button class="focus-btn ghost">Save focus</button>
+                      <button class="focus-btn primary">
+                        <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/></svg>
+                        Re-analyze RFP
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="overview-grid">
+                <div class="overview-card border-left">
+                  <div class="card-header">
+                    <div class="card-head-left">
+                      <div class="card-head-icon">
+                        <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M8 12h8M12 8v8"/></svg>
+                      </div>
+                      <span class="card-title">Executive summary</span>
+                    </div>
+                  </div>
+                  <div class="exec-summary">
+                    Al-Asima Solutions K.S.C.P. is seeking qualified vendors to supply, implement, and support a cloud-based ERP system covering Financials, Supply Chain Management, and Human Capital Management. The solution must be localized for Kuwait Labor Law, integrate with local banking and MoF tax portals, and include full data migration from legacy systems. Comprehensive training for over 150 users and 24/7 technical support are required.
+                  </div>
+                </div>
+
+                <div class="overview-card">
+                  <div class="card-header">
+                    <div class="card-head-left">
+                      <div class="card-head-icon">
+                        <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/></svg>
+                      </div>
+                      <span class="card-title">Submission requirements</span>
+                    </div>
+                    <span class="card-count">4</span>
+                  </div>
+                  <div class="req-list">
+                    <div class="req-item">
+                      <div class="req-num">1</div>
+                      <div>Submit two separate wax-sealed envelopes: Envelope A for Technical Proposal and Envelope B for Financial Proposal.</div>
+                    </div>
+                    <div class="req-item">
+                      <div class="req-num">2</div>
+                      <div>Include original hard copy of Tender Bond (Irrevocable Bank Guarantee) in Envelope A.</div>
+                    </div>
+                    <div class="req-item">
+                      <div class="req-num">3</div>
+                      <div>Financial Proposal must be quoted in KWD, including all applicable taxes and fees.</div>
+                    </div>
+                    <div class="req-item">
+                      <div class="req-num">4</div>
+                      <div>Address submissions to the Secretary of the Procurement Committee at Al-Asima Solutions Tower, 3rd Floor, Sharq, Kuwait City.</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="eval-criteria-card">
+                <div class="card-header">
+                  <div class="card-head-left">
+                    <div class="card-head-icon amber">
+                      <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    </div>
+                    <span class="card-title">Evaluation criteria</span>
+                  </div>
+                  <span class="card-count">3</span>
+                </div>
+                <div class="eval-row">
+                  <div class="eval-row-head">
+                    <span class="eval-title">Technical Compliance &amp; Methodology</span>
+                    <span class="eval-pct">60%</span>
+                  </div>
+                  <div class="eval-desc">Assessment of technical approach, system functionality, and implementation plan.</div>
+                  <div class="eval-bar"><div class="eval-bar-fill" style="width: 60%;"></div></div>
+                </div>
+                <div class="eval-row">
+                  <div class="eval-row-head">
+                    <span class="eval-title">Financial Competitiveness</span>
+                    <span class="eval-pct">30%</span>
+                  </div>
+                  <div class="eval-desc">Evaluation of total cost proposal, including all fees and taxes.</div>
+                  <div class="eval-bar"><div class="eval-bar-fill" style="width: 30%;"></div></div>
+                </div>
+                <div class="eval-row">
+                  <div class="eval-row-head">
+                    <span class="eval-title">Local Value Addition (Kuwaitization/SME Status)</span>
+                    <span class="eval-pct">10%</span>
+                  </div>
+                  <div class="eval-desc">Preference given for compliance with national manpower ratio or SME status per Kuwaiti regulations.</div>
+                  <div class="eval-bar"><div class="eval-bar-fill" style="width: 10%;"></div></div>
+                </div>
+              </div>
+
+              <div class="req-breakdown">
+                <div class="req-breakdown-head">
+                  <div>
+                    <div class="card-title" style="margin-bottom: 2px;">Requirements breakdown</div>
+                    <div style="font-size: 11px; color: var(--gray-500);">Switch between mandatory, technical, and commercial requirements.</div>
+                  </div>
+                  <div class="req-tabs">
+                    <div class="req-tab active">Mandatory <span class="req-tab-count">5</span></div>
+                    <div class="req-tab">Technical <span class="req-tab-count">5</span></div>
+                    <div class="req-tab">Commercial <span class="req-tab-count">3</span></div>
+                  </div>
+                </div>
+                <div class="req-row">
+                  <div class="req-row-num">01</div>
+                  <div class="req-row-body">
+                    <div class="req-row-title">Kuwaiti Commercial License</div>
+                    <div class="req-row-desc">Bidder must hold a valid Kuwaiti Commercial License issued by the Ministry of Commerce &amp; Industry.</div>
+                  </div>
+                  <div class="req-row-tag">mand_1</div>
+                </div>
+                <div class="req-row">
+                  <div class="req-row-num">02</div>
+                  <div class="req-row-body">
+                    <div class="req-row-title">Chamber Registration</div>
+                    <div class="req-row-desc">Current year Chamber of Commerce &amp; Industry Registration Certificate is required.</div>
+                  </div>
+                  <div class="req-row-tag">mand_2</div>
+                </div>
+                <div class="req-row">
+                  <div class="req-row-num">03</div>
+                  <div class="req-row-body">
+                    <div class="req-row-title">National Manpower Ratio</div>
+                    <div class="req-row-desc">Provide National Manpower Ratio Certificate issued by the Public Authority for Manpower (PAM).</div>
+                  </div>
+                  <div class="req-row-tag">mand_3</div>
+                </div>
+              </div>
+
+              <div class="risks-gaps">
+                <div class="risks-gaps-head">
+                  <div class="risks-gaps-title">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                    Risks &amp; gaps
+                  </div>
+                  <div class="risks-gaps-note">Everything the assistant wants you to double-check before scoring vendors.</div>
+                </div>
+                <div class="risks-gaps-cols">
+                  <div class="risks-col">
+                    <div class="risks-col-head">
+                      Kuwait Law flags
+                      <span class="risks-col-count">3</span>
+                    </div>
+                    <div class="risk-item">
+                      <div class="risk-item-head">
+                        <span class="risk-item-title">Bid Bond Required</span>
+                        <span class="risk-item-badge info">INFO</span>
+                      </div>
+                      <div class="risk-item-desc">Law 49/2016, Article 45 mandates an initial deposit (Bid Bond) via certified cheque or bank guarantee from a licensed Kuwaiti bank. Irrevocable guarantee of KWD 5,000,000.</div>
+                    </div>
+                    <div class="risk-item">
+                      <div class="risk-item-head">
+                        <span class="risk-item-title">Validity Period</span>
+                        <span class="risk-item-badge info">INFO</span>
+                      </div>
+                      <div class="risk-item-desc">Article 46 requires bids to remain valid for a minimum period. 90-day requirement aligns with the law's stipulation that bid validity shall not exceed 90 days.</div>
+                    </div>
+                  </div>
+                  <div class="risks-col">
+                    <div class="risks-col-head">
+                      Gaps in the RFP
+                      <span class="risks-col-count">3</span>
+                    </div>
+                    <div class="risk-item attention">
+                      <div class="risk-item-head">
+                        <span class="risk-item-title">No Contract Duration</span>
+                        <span class="risk-item-badge attention">ATTENTION</span>
+                      </div>
+                      <div class="risk-item-desc">The RFP does not specify the expected contract duration or support period beyond &ldquo;long-term&rdquo;, which is ambiguous for vendor planning and pricing.</div>
+                    </div>
+                    <div class="risk-item attention">
+                      <div class="risk-item-head">
+                        <span class="risk-item-title">No Performance Bond</span>
+                        <span class="risk-item-badge attention">ATTENTION</span>
+                      </div>
+                      <div class="risk-item-desc">The tender does not mention a performance bond requirement post-award, which is typically expected under Kuwaiti procurement practice for large-scale implementations.</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ============ PROPOSALS TAB ============ -->
+            <div class="dash-tab-panel" data-tab-panel="proposals">
+              <div class="proposals-empty">
+                <div class="proposals-empty-icon">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+                </div>
+                <div>
+                  <h4>No proposals yet</h4>
+                  <p>Upload up to 3 proposals at a time. The assistant will score each against the parsed RFP and the Kuwait Public Tenders Law.</p>
+                </div>
+              </div>
+
+              <div class="upload-proposals-card">
+                <div class="upload-proposals-head">
+                  <div class="upload-proposals-icon">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+                  </div>
+                  <div>
+                    <h4 class="upload-proposals-title">Upload proposals</h4>
+                    <p class="upload-proposals-sub">Pick up to 3 proposal files. Optionally set a vendor name for each &mdash; the assistant infers one if you leave it blank.</p>
+                  </div>
+                </div>
+
+                <div class="proposals-dropzone" id="proposalsDropzone">
+                  <div class="proposals-dropzone-icon">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+                  </div>
+                  <div class="proposals-dropzone-title">Drop proposal files here</div>
+                  <div class="proposals-dropzone-hint">or browse &middot; Up to 3 at a time &mdash; DOCX, PDF, PPTX, images</div>
+                  <div class="floating-proposals">
+                    <div class="floating-prop pdf">PDF</div>
+                    <div class="floating-prop docx">DOCX</div>
+                    <div class="floating-prop pptx">PPTX</div>
+                  </div>
+                </div>
+
+                <div class="selected-files-label">
+                  <span>Selected files</span>
+                  <span class="selected-files-count" id="selectedFilesCount">0 of 3 selected</span>
+                </div>
+                <div class="selected-empty">No files selected yet. Drop a proposal above or click browse to add one.</div>
+                <div class="selected-files-grid">
+                  <div class="selected-file">
+                    <div class="selected-file-top">
+                      <div class="sf-icon docx">DOCX</div>
+                      <div class="sf-meta">
+                        <div class="sf-name">RFP_ERP_Implementation_Ku...</div>
+                        <div class="sf-size">38.1 KB</div>
+                      </div>
+                    </div>
+                    <div class="sf-input">VENDOR NAME (OPTIONAL)</div>
+                    <div class="sf-vendor">e.g. Acme LLC</div>
+                  </div>
+                  <div class="selected-file">
+                    <div class="selected-file-top">
+                      <div class="sf-icon pdf">PDF</div>
+                      <div class="sf-meta">
+                        <div class="sf-name">VendorB_Proposal_2026.pdf</div>
+                        <div class="sf-size">64.3 KB</div>
+                      </div>
+                    </div>
+                    <div class="sf-input">VENDOR NAME (OPTIONAL)</div>
+                    <div class="sf-vendor">e.g. Acme LLC</div>
+                  </div>
+                  <div class="selected-file">
+                    <div class="selected-file-top">
+                      <div class="sf-icon pptx">PPTX</div>
+                      <div class="sf-meta">
+                        <div class="sf-name">VendorC_Pitch_Deck.pptx</div>
+                        <div class="sf-size">112 KB</div>
+                      </div>
+                    </div>
+                    <div class="sf-input">VENDOR NAME (OPTIONAL)</div>
+                    <div class="sf-vendor">e.g. Acme LLC</div>
+                  </div>
+                </div>
+
+                <div class="proposals-footer">
+                  <button class="score-btn" id="scoreBtn">
+                    <span class="spinner"></span>
+                    <span id="scoreBtnText">Score proposals</span>
+                  </button>
+                </div>
+
+                <div class="scored-result">
+                  <div class="scored-row">
+                    <div class="score-badge">0</div>
+                    <div class="scored-body">
+                      <div class="scored-head-row">
+                        <span class="scored-vendor">Al-Asima Solutions K.S.C.P.</span>
+                        <span class="scored-label">RISKY</span>
+                      </div>
+                      <p class="scored-desc">The provided document is the tender request issued by Al-Asima Solutions K.S.C.P., not a vendor proposal. No vendor response has been submitted for evaluation. As such, no compliance scoring can be performed against the requirements.</p>
+                      <div class="scored-metrics">
+                        <span class="scored-metric">
+                          <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/></svg>
+                          0% compliance
+                        </span>
+                        <span class="scored-metric">
+                          <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>
+                          0/13 requirements met
+                        </span>
+                        <span class="scored-metric">
+                          <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                          3 risks
+                        </span>
+                        <span class="scored-metric">
+                          <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><line x1="8" y1="12" x2="16" y2="12"/></svg>
+                          Not quoted
+                        </span>
+                      </div>
+                    </div>
+                    <div class="scored-actions">
+                      <button class="scored-action-btn delete">
+                        <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="3 6 5 6 21 6"/><path d="M19 6l-2 14a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2L5 6"/></svg>
+                      </button>
+                      <button class="scored-action-btn primary">
+                        View full scorecard
+                        <svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M9 18l6-6-6-6"/></svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ============ COMPARISON TAB ============ -->
+            <div class="dash-tab-panel" data-tab-panel="comparison">
+              <div class="comparison-empty">
+                <div class="comparison-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
+                </div>
+                <h4 class="comparison-title">Upload at least two proposals to compare</h4>
+                <p class="comparison-sub">The comparison matrix needs two or more vendors so you can see how they stack up against each requirement.</p>
+                <div class="floating-comparison">
+                  <div class="floating-prop pdf">PDF</div>
+                  <div class="floating-prop docx">DOCX</div>
+                </div>
+              </div>
+
+              <div class="comparison-matrix">
+                <div class="matrix-header">
+                  <div class="matrix-head-label">Requirement</div>
+                  <div class="matrix-vendor-card">
+                    <div class="matrix-vendor-name">
+                      <span class="matrix-file-icon pdf">PDF</span>
+                      Vendor A
+                    </div>
+                    <div class="matrix-vendor-file">VendorA_Proposal.pdf &middot; 72 KB</div>
+                    <div class="matrix-vendor-score">
+                      <span class="matrix-score-num">78</span>
+                      <span class="matrix-score-label">/100 compliance</span>
+                    </div>
+                  </div>
+                  <div class="matrix-vendor-card second">
+                    <div class="matrix-vendor-name">
+                      <span class="matrix-file-icon docx">DOCX</span>
+                      Vendor B
+                    </div>
+                    <div class="matrix-vendor-file">VendorB_Response.docx &middot; 41 KB</div>
+                    <div class="matrix-vendor-score">
+                      <span class="matrix-score-num">63</span>
+                      <span class="matrix-score-label">/100 compliance</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="matrix-row">
+                  <div class="matrix-criterion">
+                    Kuwaiti Commercial License
+                    <div class="matrix-criterion-sub">mand_1 &middot; Ministry of Commerce</div>
+                  </div>
+                  <div class="matrix-cell win">
+                    <div class="matrix-status pass"></div>
+                    <div class="matrix-cell-text">Valid, attached</div>
+                  </div>
+                  <div class="matrix-cell">
+                    <div class="matrix-status pass"></div>
+                    <div class="matrix-cell-text">Valid, attached</div>
+                  </div>
+                </div>
+                <div class="matrix-row">
+                  <div class="matrix-criterion">
+                    National Manpower Ratio
+                    <div class="matrix-criterion-sub">mand_3 &middot; PAM certificate</div>
+                  </div>
+                  <div class="matrix-cell win">
+                    <div class="matrix-status pass"></div>
+                    <div class="matrix-cell-text">65% ratio &mdash; above threshold</div>
+                  </div>
+                  <div class="matrix-cell">
+                    <div class="matrix-status partial"></div>
+                    <div class="matrix-cell-text">Certificate pending renewal</div>
+                  </div>
+                </div>
+                <div class="matrix-row">
+                  <div class="matrix-criterion">
+                    Technical Compliance
+                    <div class="matrix-criterion-sub">60% weighting</div>
+                  </div>
+                  <div class="matrix-cell win">
+                    <div class="matrix-status pass"></div>
+                    <div class="matrix-cell-text">Full coverage, 3 modules</div>
+                  </div>
+                  <div class="matrix-cell">
+                    <div class="matrix-status partial"></div>
+                    <div class="matrix-cell-text">HCM module partial</div>
+                  </div>
+                </div>
+                <div class="matrix-row">
+                  <div class="matrix-criterion">
+                    Financial Proposal (KWD)
+                    <div class="matrix-criterion-sub">30% weighting</div>
+                  </div>
+                  <div class="matrix-cell">
+                    <div class="matrix-status partial"></div>
+                    <div class="matrix-cell-text">480,000 KWD &middot; over budget</div>
+                  </div>
+                  <div class="matrix-cell win">
+                    <div class="matrix-status pass"></div>
+                    <div class="matrix-cell-text">385,000 KWD &middot; in range</div>
+                  </div>
+                </div>
+                <div class="matrix-row">
+                  <div class="matrix-criterion">
+                    Bid Bond (Art. 45)
+                    <div class="matrix-criterion-sub">KWD 5M irrevocable guarantee</div>
+                  </div>
+                  <div class="matrix-cell win">
+                    <div class="matrix-status pass"></div>
+                    <div class="matrix-cell-text">Submitted, licensed bank</div>
+                  </div>
+                  <div class="matrix-cell">
+                    <div class="matrix-status fail"></div>
+                    <div class="matrix-cell-text">Not submitted</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ============ CHAT TAB ============ -->
+            <div class="dash-tab-panel" data-tab-panel="chat">
+              <div class="chat-card">
+                <div class="chat-card-head">
+                  <div class="chat-card-head-left">
+                    <div class="chat-icon-box">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                    </div>
+                    <div>
+                      <h4 class="chat-card-title">Ask the assistant</h4>
+                      <p class="chat-card-sub">Questions get answered against your parsed RFP, every scored proposal, and Kuwait Public Tenders Law.</p>
+                    </div>
+                  </div>
+                  <button class="new-chat-btn-s">
+                    <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/></svg>
+                    New chat
+                  </button>
+                </div>
+
+                <div class="chat-card-body" id="chatCardBody">
+                  <div class="chat-empty">
+                    <div class="chat-empty-icon">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                    </div>
+                    <h4 class="chat-empty-title">Ask anything about this evaluation</h4>
+                    <p class="chat-empty-sub">Try one of these starters or write your own question.</p>
+                    <div class="chat-starters">
+                      <button class="chat-starter">Which vendor best meets the timeline?</button>
+                      <button class="chat-starter">Who has the weakest compliance?</button>
+                      <button class="chat-starter" id="targetStarter">Any Kuwait-law red flags across the proposals?</button>
+                      <button class="chat-starter">Rank the vendors with a short justification for each.</button>
+                    </div>
+                  </div>
+
+                  <div class="chat-messages">
+                    <div class="chat-msg user">
+                      <div class="chat-msg-avatar">YOU</div>
+                      <div class="chat-msg-bubble">Any Kuwait-law red flags across the proposals?</div>
+                    </div>
+                    <div class="chat-msg ai">
+                      <div class="chat-msg-avatar">AI</div>
+                      <div class="chat-typing-wrap">
+                        <div class="chat-typing">
+                          <span></span><span></span><span></span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="chat-msg ai" id="chatAiReply" style="display: none;">
+                      <div class="chat-msg-avatar">AI</div>
+                      <div class="chat-msg-bubble">
+                        <p class="chat-reply-block">There is only one submission, which is not a valid vendor proposal but the original tender document issued by Al-Asima Solutions K.S.C.P. itself. As such, <strong>there are no actual vendor proposals to evaluate for compliance</strong>, and this constitutes a critical red flag under Kuwait Public Tenders Law No. 49/2016.</p>
+                        <p class="chat-reply-block">The submission fails to meet fundamental legal requirements under <strong>Article 45</strong>, which mandates a <strong>Tender Bond (bid security)</strong> in the form of an irrevocable bank guarantee from a licensed Kuwaiti bank for KWD 5,000,000. The absence of this bond results in automatic disqualification. Furthermore, <strong>Article 31</strong> requires bidders to be legally registered Kuwaiti entities with proper commercial and Chamber of Commerce documentation &mdash; none of which are submitted.</p>
+                        <p class="chat-reply-block">Additionally, <strong>Article 35</strong> specifies that bid validity must last at least 90 days post-submission, but without a submitted bond or any proposal, this condition cannot be fulfilled. The complete lack of mandatory documents &mdash; including the National Manpower Ratio Certificate (PAM), authorized signatory proof, and commercial license &mdash; violates core administrative and legal obligations under Kuwaiti procurement law.</p>
+                        <p class="chat-reply-block">In summary: <strong>This is not a bid</strong>. It is the RFP. Therefore, <strong>no compliant vendor proposal currently exists in the evaluation pool</strong>, creating a full legal and procedural red flag. The buyer must reissue or extend the tender to receive actual, compliant bids.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="chat-card-input">
+                  <div class="chat-input-box empty" id="chatInputBox" data-placeholder="Ask anything about the RFP, the proposals, or what to pick..."></div>
+                  <button class="chat-send-btn">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===================== WORKFLOW ===================== -->
+<section class="sec">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="section-index">/ 01 &mdash; Workflow</div>
+      <div>
+        <h2 class="section-title">RFP to recommendation in four tabs.</h2>
+        <p class="section-intro">Procurement AI doesn't just summarize a document. It parses the tender, grounds it in Kuwait procurement law, scores every proposal, and answers the questions your committee will actually ask.</p>
+      </div>
+    </div>
+
+    <div class="workflow reveal">
+      <div class="workflow-step">
+        <div class="workflow-num">01</div>
+        <h3>Parse the RFP.</h3>
+        <p>Extract title, issuing authority, deadline, mandatory documents, and evaluation criteria. Grounded in Kuwait Public Tenders Law 49/2016.</p>
+      </div>
+      <div class="workflow-step">
+        <div class="workflow-num">02</div>
+        <h3>Score proposals.</h3>
+        <p>Upload up to 3 vendor responses. Each is scored against every mandatory, technical, and commercial requirement, with compliance percentages and risk flags.</p>
+      </div>
+      <div class="workflow-step">
+        <div class="workflow-num">03</div>
+        <h3>Compare side by side.</h3>
+        <p>A matrix that shows who wins on each requirement, with pass/partial/fail markers and the specific clause that supports each verdict.</p>
+      </div>
+      <div class="workflow-step">
+        <div class="workflow-num">04</div>
+        <h3>Ask the assistant.</h3>
+        <p>Open chat. Ask which vendor fits best, what's missing, what the law says. Answers are grounded in the parsed RFP, every scored proposal, and the act itself.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CAPABILITIES ===================== -->
+<section class="sec" style="padding-top: 0;">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="section-index">/ 02 &mdash; Capabilities</div>
+      <div>
+        <h2 class="section-title">Built for the procurement committee.</h2>
+      </div>
+    </div>
+
+    <div class="capabilities reveal">
+      <div class="cap-card">
+        <div class="cap-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>
+        </div>
+        <h4>Full RFP parsing</h4>
+        <p>Executive summary, submission requirements, evaluation criteria, and 13+ requirement types extracted in under a minute.</p>
+      </div>
+      <div class="cap-card">
+        <div class="cap-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <h4>Kuwait law grounding</h4>
+        <p>Every clause checked against Law 49/2016 &mdash; bid bonds, validity periods, submission formats, bidder classification.</p>
+      </div>
+      <div class="cap-card">
+        <div class="cap-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+        </div>
+        <h4>Proposal scoring</h4>
+        <p>Score up to 3 proposals at a time with a 0&ndash;100 compliance score, requirement pass rate, and risk count.</p>
+      </div>
+      <div class="cap-card">
+        <div class="cap-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
+        </div>
+        <h4>Side-by-side matrix</h4>
+        <p>Requirement-by-requirement comparison with pass/partial/fail markers, highlighted wins, and one-click drill-down.</p>
+      </div>
+      <div class="cap-card">
+        <div class="cap-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+        </div>
+        <h4>Custom focus</h4>
+        <p>Tell the assistant what matters most &mdash; budget ceiling, Arabic submission, local content &mdash; and every scoring run reflects it.</p>
+      </div>
+      <div class="cap-card">
+        <div class="cap-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        </div>
+        <h4>Evaluation chat</h4>
+        <p>Ask across the whole evaluation &mdash; RFP, every scored proposal, and Kuwait law &mdash; and get cited, committee-ready answers.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FEATURES TWO-UP ===================== -->
+<section class="sec" style="padding-top: 0;">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="section-index">/ 03 &mdash; What makes it different</div>
+      <div>
+        <h2 class="section-title">Grounded. Comparative. Defensible.</h2>
+        <p class="section-intro">Generic AI summarizes proposals. This one scores them against the law, flags gaps in the tender itself, and gives your committee an audit trail.</p>
+      </div>
+    </div>
+
+    <div class="features-two reveal">
+      <div class="feature-box dark">
+        <div class="feature-inner">
+          <div class="feature-eyebrow">Law-grounded</div>
+          <h3>Cites the article that disqualified the bid.</h3>
+          <p>Every risk flag and missing document is tied back to the specific article of Kuwait Public Tenders Law No. 49/2016. Committee decisions travel with the audit trail already attached.</p>
+          <div class="feature-list">
+            <div class="feature-list-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Article 31 (bidder eligibility), 45 (bid bonds), 46 (validity), 48 (format)</span>
+            </div>
+            <div class="feature-list-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Distinguishes between RFP gaps and proposal gaps</span>
+            </div>
+            <div class="feature-list-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Flags Kuwaitization / SME preferences automatically</span>
+            </div>
+            <div class="feature-list-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Updated as the law and executive regulations change</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="feature-box">
+        <div class="feature-inner">
+          <div class="feature-eyebrow">Committee-ready output</div>
+          <h3>A scorecard you can take into the meeting.</h3>
+          <p>Compliance percentage, requirements met, risk count, price position &mdash; at a glance per vendor. No more pasting from three Word files into a spreadsheet the night before.</p>
+          <div class="feature-list">
+            <div class="feature-list-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Export the full evaluation as PDF or DOCX</span>
+            </div>
+            <div class="feature-list-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Comparison matrix with pass/partial/fail highlighting</span>
+            </div>
+            <div class="feature-list-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Re-analyze with a new focus in one click</span>
+            </div>
+            <div class="feature-list-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Every score is drillable to the source passage</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== ENTERPRISE ===================== -->
+<div class="enterprise">
+  <div class="enterprise-inner">
+    <div>
+      <h2>Enterprise-grade <span style="color:var(--lilac)">by default.</span></h2>
+      <p>Tenders and proposals never leave your perimeter. No retention, no training on your evaluations, every score traceable to the passage and the article that produced it.</p>
+    </div>
+    <div class="enterprise-pills">
+      <div class="ent-pill">
+        <h4><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>Zero retention</h4>
+        <p>Tenders and proposals deleted post-session by default.</p>
+      </div>
+      <div class="ent-pill">
+        <h4><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>In-country hosting</h4>
+        <p>Kuwait, UAE, KSA residency, your own VPC, or on-prem.</p>
+      </div>
+      <div class="ent-pill">
+        <h4><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>Audit trail</h4>
+        <p>Every score linked to the passage and article that produced it.</p>
+      </div>
+      <div class="ent-pill">
+        <h4><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>Committee mode</h4>
+        <p>Shared workspace with role-based access and version history.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===================== SISTERS ===================== -->
+<section class="sec">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="section-index">/ 04 &mdash; Works well with</div>
+      <div>
+        <h2 class="section-title">Two sides of the tender.</h2>
+        <p class="section-intro">Procurement AI works on the buy side. Kuwait Tender Builder handles the issuing side. Together they cover the full tender lifecycle.</p>
+      </div>
+    </div>
+
+    <div class="sisters reveal">
+      <a href="kuwait-tender.html" class="sister">
+        <div class="sister-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 21V4a2 2 0 0 1 2-2h10l-2 5 2 5H6"/>
+            <path d="M4 13v8"/>
+          </svg>
+        </div>
+        <h4>Kuwait Tender Builder</h4>
+        <p>Issue RFP, RFI, and RFQ documents grounded in the same Kuwait Public Tenders Law knowledge base.</p>
+        <span class="sister-link">Explore Tender Builder <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+      </a>
+      <a href="contract-reviewer.html" class="sister">
+        <div class="sister-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+            <path d="M14 2v6h6"/>
+            <path d="M9 15l2 2 4-4"/>
+          </svg>
+        </div>
+        <h4>Contract Reviewer</h4>
+        <p>Once the winning vendor is selected, review the contract itself with risk flags, obligations, and redlines.</p>
+        <span class="sister-link">Explore Contract Reviewer <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+      </a>
+      <a href="doc-drafting.html" class="sister">
+        <div class="sister-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 19l7-7 3 3-7 7-3-3z"/>
+            <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/>
+            <circle cx="11" cy="11" r="2"/>
+          </svg>
+        </div>
+        <h4>Doc Drafting</h4>
+        <p>Draft the award letter, purchase order, or service agreement that follows the procurement.</p>
+        <span class="sister-link">Explore Doc Drafting <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CTA ===================== -->
+<section id="cta" style="padding: 40px 0 0;">
+  <div class="cta">
+    <div class="cta-inner">
+      <div>
+        <div class="section-index" style="color: var(--lilac); margin-bottom: 20px;">/ Get started</div>
+        <h2>Score your next <span>tender in minutes.</span></h2>
+      </div>
+      <div>
+        <p class="cta-body">Try Procurement AI on suite.arabic.ai &mdash; or book a 30-minute walkthrough and we'll analyze one of your own RFPs live.</p>
+        <div class="cta-ctas">
+          <a href="mailto:Contact.us@arabic.ai" class="btn btn-light btn-lg">
+            Book a demo
+            <svg class="arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+          <a href="assistants.html" class="btn btn-outline-light btn-lg">Explore more assistants</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <svg viewBox="0 0 323.09 57.94" xmlns="http://www.w3.org/2000/svg">
+        <g>
+          <path fill="#09090a" d="M54.26,56.73h10.07v-24.93c0-5.48,4.44-9.91,9.91-9.91h6.63v-9.35h-10.07c-9.13,0-16.54,7.4-16.54,16.54v27.65Z"/>
+          <rect fill="#09090a" x="188.87" y="12.55" width="10.07" height="44.11"/>
+          <path fill="#09090a" d="M226.89,20.46c4.48,0,8.15,1.76,10.63,4.55l6.47-6.63c-4.23-4.47-10.39-7.35-17.1-7.35-13.02,0-23.57,10.47-23.57,23.41s10.55,23.49,23.57,23.49c6.47,0,12.31-2.56,16.54-6.87l-6.47-6.55c-2.48,2.48-5.83,4-10.07,4-7.51,0-13.5-6.07-13.5-14.06s5.99-13.98,13.5-13.98Z"/>
+          <path fill="#09090a" d="M119.8,15.27c-3.65-2.54-8.06-4.07-12.83-4.2-.22-.01-.44-.03-.66-.03-.07,0-.14,0-.2.01-.13,0-.25-.01-.38-.01-13.02,0-23.57,10.47-23.57,23.41s10.19,23.1,22.9,23.46c.22,0,.44.03.66.03.07,0,.14,0,.2-.01.13,0,.25.01.38.01,5.03,0,9.68-1.57,13.5-4.23v2.95h10.07V12.55h-10.07v2.72ZM115.81,44.53l-.02-.03c-2.42,2.42-5.68,3.91-9.76,3.98-3.78-.06-6.97-1.38-9.34-3.52-.02-.02-.05-.05-.07-.07-.26-.24-.51-.5-.75-.76-2.26-2.49-3.65-5.87-3.65-9.7s1.52-7.5,3.99-10.01l.02.03c2.42-2.42,5.68-3.91,9.76-3.98,3.78.06,6.97,1.38,9.34,3.52.02.02.05.04.07.07.26.24.51.5.75.77,2.26,2.49,3.65,5.87,3.65,9.7s-1.52,7.5-3.99,10.01Z"/>
+          <path fill="#09090a" d="M296.14,15.27c-3.65-2.54-8.06-4.07-12.83-4.2-.22-.01-.44-.03-.66-.03-.07,0-.14,0-.2.01-.13,0-.25-.01-.38-.01-13.02,0-23.57,10.47-23.57,23.41s10.19,23.1,22.9,23.46c.22,0,.44.03.66.03.07,0,.14,0,.2-.01.13,0,.25.01.38.01,5.03,0,9.68-1.57,13.5-4.23v2.95h10.07V12.55h-10.07v2.72ZM292.15,44.53l-.02-.03c-2.42,2.42-5.68,3.91-9.76,3.98-3.78-.06-6.97-1.38-9.34-3.52-.02-.02-.05-.05-.07-.07-.26-.24-.51-.5-.75-.76-2.26-2.49-3.65-5.87-3.65-9.7s1.52-7.5,3.99-10.01l.02.03c2.42-2.42,5.68-3.91,9.76-3.98,3.78.06,6.97,1.38,9.34,3.52.02.02.05.04.07.07.26.24.51.5.75.77,2.26,2.49,3.65,5.87,3.65,9.7s-1.52,7.5-3.99,10.01Z"/>
+          <path fill="#09090a" d="M160.55,11.03c-.13,0-.25,0-.38.01-.07,0-.14-.01-.2-.01-.22,0-.44.03-.66.03-4.77.13-9.18,1.67-12.83,4.2V.04h-10.07v56.62h10.07v-2.95c3.83,2.66,8.48,4.23,13.5,4.23.13,0,.25,0,.38-.01.07,0,.14.01.2.01.22,0,.44-.03.66-.03,12.71-.36,22.9-10.66,22.9-23.46s-10.55-23.41-23.57-23.41ZM170.41,44.14c-.24.26-.49.52-.75.76-.02.02-.05.05-.07.07-2.36,2.14-5.56,3.46-9.34,3.52-4.09-.07-7.35-1.57-9.76-3.98l-.02.03c-2.47-2.51-3.99-6.03-3.99-10.01s1.39-7.21,3.65-9.7c.24-.26.49-.52.75-.77.02-.02.05-.04.07-.07,2.36-2.14,5.56-3.46,9.34-3.52,4.09.07,7.35,1.57,9.76,3.98l.02-.03c2.47,2.51,3.99,6.03,3.99,10.01s-1.39,7.21-3.65,9.7Z"/>
+          <path fill="#09090a" d="M193.9,10.04c2.77,0,4.99-2.28,4.99-5.06s-2.22-4.99-4.99-4.99-5.06,2.22-5.06,4.99,2.29,5.06,5.06,5.06Z"/>
+          <rect fill="#09090a" x="313.02" y="12.55" width="10.07" height="44.11"/>
+          <path fill="#09090a" d="M318.05,10.04c2.77,0,4.99-2.28,4.99-5.06s-2.22-4.99-4.99-4.99-5.06,2.22-5.06,4.99,2.29,5.06,5.06,5.06Z"/>
+          <path fill="#09090a" d="M248.17,51.68c0-2.77,2.29-4.99,5.06-4.99s4.99,2.22,4.99,4.99-2.22,5.06-4.99,5.06-5.06-2.28-5.06-5.06Z"/>
+          <path fill="#3f1993" d="M37.66,12.55v2.72c-3.66-2.53-8.07-4.06-12.83-4.2-.22-.01-.44-.03-.66-.03-.07,0-.14.01-.2.01-.14-.01-.26-.01-.38-.01C10.55,11.03,0,21.5,0,34.44s10.18,23.1,22.9,23.46c.23,0,.44.03.67.03.07,0,.14-.01.2-.01.12,0,.25.01.38.01,5.02,0,9.68-1.57,13.5-4.23v2.95h10.07V12.55h-10.07ZM32.26,23.23c.32.24.63.49.93.76l.07.07c.26.25.51.5.76.77,1.92,2.13,3.23,4.9,3.55,8.06-6.63-.22-11.97-5.6-12.12-12.26,1.39.14,2.73.46,3.96,1,.66.27,1.27.58,1.84.93.35.2.68.43,1.01.68ZM14.07,24.43l.02.02c.72-.72,1.51-1.36,2.38-1.9.23-.14.46-.27.7-.4.68-.37,1.42-.67,2.19-.92.93-.3,1.9-.51,2.91-.61-.14,6.65-5.49,12.05-12.12,12.26.34-3.35,1.77-6.28,3.92-8.45ZM18.68,47.51l-.58-.24c-.58-.26-1.13-.54-1.64-.86-.69-.43-1.32-.91-1.92-1.45l-.07-.07c-.27-.24-.52-.5-.76-.76-1.94-2.13-3.23-4.92-3.55-8.08,6.65.2,11.99,5.64,12.12,12.32-1.28-.15-2.49-.44-3.6-.87ZM33.67,44.54l-.02-.03c-.91.91-1.94,1.69-3.08,2.31-.29.16-.6.3-.91.45-.29.13-.59.25-.89.37-1.03.37-2.14.63-3.32.76.1-6.69,5.47-12.12,12.13-12.32-.34,3.35-1.78,6.29-3.92,8.48Z"/>
+        </g>
+      </svg>
+        <p>The AI operating layer for Arabic-first enterprises. 700+ clients. 8 markets. One suite.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Technology</h4>
+        <a href="llm.html">Arabic.AI LLM</a>
+        <a href="agentic-studio.html">Agentic Platform</a>
+        <a href="data-services.html">Data Services</a>
+        <a href="technology.html">Technology</a>
+      </div>
+      <div class="footer-col">
+        <h4>Product</h4>
+        <a href="assistants.html">Assistants</a>
+        <a href="translate.html">Translate</a>
+        <a href="ocr.html">OCR</a>
+        <a href="integrations.html">Integrations</a>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <a href="academy.html">Academy</a>
+        <a href="about.html">Who we are</a>
+        <a href="blog.html">Blog</a>
+        <a href="careers.html">Careers</a>
+        <a href="case-studies.html">Case studies</a>
+        <a href="partners.html">Become a partner</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <a href="mailto:Contact.us@arabic.ai">Contact.us@arabic.ai</a>
+        <a href="mailto:Partners@arabic.ai">Partners@arabic.ai</a>
+        <a href="#">Dubai &middot; Riyadh</a>
+        <a href="#">Amman &middot; Doha</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Arabic.AI &middot; Built by Tarjama with love</span>
+      
+    </div>
+  </div>
+</footer>
+
+<script>
+  /* Scroll reveal */
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('in');
+        io.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -60px 0px' });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+  /* Widget state machine */
+  const widget = document.getElementById('widget');
+  const progressSteps = document.querySelectorAll('.progress-step');
+  const proposalsCount = document.getElementById('proposalsCount');
+  const chatInputBox = document.getElementById('chatInputBox');
+  const targetStarter = document.getElementById('targetStarter');
+
+  function setPhase(phase) {
+    widget.setAttribute('data-phase', phase);
+  }
+  function setState(state) {
+    /* Remove only state-* classes */
+    widget.classList.forEach(c => {
+      if (c.startsWith('state-')) widget.classList.remove(c);
+    });
+    /* Must do this twice because the above live-mutates */
+    Array.from(widget.classList).forEach(c => {
+      if (c.startsWith('state-')) widget.classList.remove(c);
+    });
+    if (state) widget.classList.add('state-' + state);
+  }
+  function setTab(tab) {
+    widget.setAttribute('data-tab', tab);
+    document.querySelectorAll('.dash-tab').forEach(t => {
+      t.classList.toggle('active', t.dataset.tab === tab);
+    });
+  }
+  function wait(ms) { return new Promise(r => setTimeout(r, ms)); }
+
+  async function typeText(el, text, delay) {
+    el.classList.remove('empty');
+    el.textContent = '';
+    const caret = document.createElement('span');
+    caret.className = 'caret';
+    el.appendChild(caret);
+    for (let i = 0; i < text.length; i++) {
+      caret.before(document.createTextNode(text[i]));
+      await wait(delay + Math.random() * 15);
+    }
+  }
+
+  async function runLoop() {
+    while (true) {
+
+      /* ===== PHASE 1: Upload ===== */
+      setPhase('upload');
+      setState(null);
+      progressSteps.forEach(s => s.classList.remove('active', 'done'));
+      await wait(1200);
+
+      /* File dragging in */
+      setState('dragging');
+      await wait(1800);
+
+      /* File loaded */
+      setState('loaded');
+      await wait(900);
+
+      /* Analyze button pulses */
+      setState('ready');
+      await wait(700);
+
+      /* Start analyzing — tick through each step */
+      setState('analyzing');
+      for (let i = 0; i < progressSteps.length; i++) {
+        if (i > 0) {
+          progressSteps[i - 1].classList.remove('active');
+          progressSteps[i - 1].classList.add('done');
+        }
+        progressSteps[i].classList.add('active');
+        await wait(800);
+      }
+      progressSteps[progressSteps.length - 1].classList.remove('active');
+      progressSteps[progressSteps.length - 1].classList.add('done');
+      await wait(600);
+
+      /* ===== PHASE 2: Dashboard ===== */
+      setPhase('dashboard');
+
+      /* --- OVERVIEW TAB --- */
+      setTab('overview');
+      setState(null);
+      await wait(10000);
+
+      /* --- PROPOSALS TAB --- */
+      setTab('proposals');
+      setState(null);
+      await wait(1500);
+
+      /* Proposals drag in */
+      setState('dragging-props');
+      await wait(2400);
+
+      /* Scoring */
+      setState('scoring');
+      proposalsCount.textContent = '3';
+      document.getElementById('scoreBtnText').textContent = 'Scoring against RFP...';
+      await wait(2800);
+
+      /* Scored */
+      setState('scored');
+      proposalsCount.textContent = '1';
+      document.getElementById('scoreBtnText').textContent = '+ Add more proposals';
+      await wait(7000);
+
+      /* --- COMPARISON TAB --- */
+      setTab('comparison');
+      setState(null);
+      await wait(1500);
+
+      setState('comp-dragging');
+      await wait(2000);
+
+      setState('comp-filled');
+      await wait(8000);
+
+      /* --- CHAT TAB --- */
+      setTab('chat');
+      setState(null);
+      chatInputBox.classList.add('empty');
+      chatInputBox.textContent = chatInputBox.dataset.placeholder;
+      document.getElementById('chatAiReply').style.display = 'none';
+      document.querySelector('.chat-typing-wrap').style.display = '';
+      await wait(1200);
+
+      /* Hover starter */
+      targetStarter.classList.add('hover');
+      await wait(600);
+      targetStarter.classList.remove('hover');
+      await wait(200);
+
+      /* Type in input */
+      setState('chat-typing');
+      chatInputBox.classList.add('focused');
+      await typeText(chatInputBox, 'Any Kuwait-law red flags across the proposals?', 25);
+      await wait(400);
+
+      /* Send */
+      setState('chat-sent');
+      chatInputBox.classList.remove('focused', 'rtl');
+      chatInputBox.classList.add('empty');
+      chatInputBox.textContent = chatInputBox.dataset.placeholder;
+      await wait(100);
+      const chatCardBody = document.getElementById('chatCardBody');
+      chatCardBody.scrollTop = chatCardBody.scrollHeight;
+      await wait(2200);
+
+      /* Reply */
+      setState('chat-replied');
+      document.getElementById('chatAiReply').style.display = '';
+      await wait(500);
+      chatCardBody.scrollTop = chatCardBody.scrollHeight / 2;
+      await wait(3000);
+      chatCardBody.scrollTop = chatCardBody.scrollHeight;
+      await wait(6000);
+    }
+  }
+
+  window.addEventListener('load', () => {
+    setPhase('upload');
+    setState(null);
+    setTab('overview');
+    runLoop();
+  });
+</script>
+
+
+<script>
+(function() {
+  var burger = document.querySelector('.nav-burger');
+  var drawer = document.getElementById('navDrawer');
+  var backdrop = document.getElementById('navBackdrop');
+  var closeBtn = document.querySelector('.nav-drawer-close');
+  if (!burger || !drawer || !backdrop) return;
+
+  function open() {
+    burger.classList.add('open');
+    drawer.classList.add('open');
+    backdrop.classList.add('open');
+    burger.setAttribute('aria-expanded', 'true');
+    drawer.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+  }
+  function close() {
+    burger.classList.remove('open');
+    drawer.classList.remove('open');
+    backdrop.classList.remove('open');
+    burger.setAttribute('aria-expanded', 'false');
+    drawer.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+  }
+  function toggle() {
+    if (drawer.classList.contains('open')) close();
+    else open();
+  }
+
+  burger.addEventListener('click', toggle);
+  backdrop.addEventListener('click', close);
+  if (closeBtn) closeBtn.addEventListener('click', close);
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && drawer.classList.contains('open')) close();
+  });
+  // Close drawer when a link is clicked (so navigating feels responsive)
+  drawer.querySelectorAll('a').forEach(function(a) {
+    a.addEventListener('click', close);
+  });
+})();
+</script>
+
+</body>
+</html>

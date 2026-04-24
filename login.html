@@ -1,0 +1,781 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Sign in · Arabic.AI Suite</title>
+<meta name="description" content="Sign in to the Arabic.AI Suite — Assistants, Translate, OCR, and Speech on the #1 Arabic AI model." />
+<!-- Favicon & canonical -->
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="canonical" href="https://arabic.ai/login.html">
+
+<!-- Open Graph / Facebook / LinkedIn -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Arabic.AI">
+<meta property="og:url" content="https://arabic.ai/login.html">
+<meta property="og:title" content="Sign in · Arabic.AI Suite">
+<meta property="og:description" content="Sign in to the Arabic.AI Suite — Assistants, Translate, OCR, and Speech on the #1 Arabic AI model.">
+<meta property="og:image" content="https://arabic.ai/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="ar_AE">
+
+<!-- Twitter / X -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Sign in · Arabic.AI Suite">
+<meta name="twitter:description" content="Sign in to the Arabic.AI Suite — Assistants, Translate, OCR, and Speech on the #1 Arabic AI model.">
+<meta name="twitter:image" content="https://arabic.ai/assets/og-image.png">
+
+<!-- Theme -->
+<meta name="theme-color" content="#3F1993">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@400;500;600;700;800&amp;family=Big+Shoulders+Display:wght@600;700;800;900&amp;family=DM+Sans:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+
+<style>
+/* Screen-reader-only utility (injected) */
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+
+/* --- Accessibility: visible focus ring (injected) --- */
+:focus-visible { outline: 2px solid var(--purple, #3F1993); outline-offset: 3px; border-radius: 4px; }
+:focus:not(:focus-visible) { outline: none; }
+button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-visible {
+  outline: 2px solid var(--purple, #3F1993);
+  outline-offset: 3px;
+}
+.skip-to-content {
+  position: absolute; left: -9999px; top: 0;
+  background: var(--purple, #3F1993); color: #fff; padding: 8px 16px;
+  text-decoration: none; z-index: 10000; border-radius: 0 0 8px 0;
+}
+.skip-to-content:focus { left: 0; }
+
+  :root {
+    --purple: #3F1993;
+    --purple-deep: #2a0f66;
+    --purple-soft: #ede7f8;
+    --lilac: #C9A4F5;
+    --blush: #F8C8DC;
+    --charcoal: #09090A;
+    --ink: #1a1a1f;
+    --gray-700: #4a4a52;
+    --gray-500: #8a8a92;
+    --gray-300: #d6d6dc;
+    --gray-100: #eaeaee;
+    --cream: #f6f4ef;
+    --paper: #ffffff;
+
+    --display: "Big Shoulders Display", Impact, "Arial Black", sans-serif;
+    --sans: "DM Sans", -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
+    --mono: "JetBrains Mono", ui-monospace, Menlo, monospace;
+    --ease: cubic-bezier(.2,.7,.2,1);
+  }
+
+  * { box-sizing: border-box; }
+  html, body { height: 100%; }
+  body {
+    margin: 0;
+    font-family: var(--sans);
+    color: var(--ink);
+    background: var(--cream);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow: hidden;
+  }
+
+  /* =====================================================================
+     STAGE — the whole viewport acts as the "hero" for magnet-lines
+     ===================================================================== */
+  .stage {
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+    display: grid;
+    grid-template-rows: auto 1fr;
+  }
+
+  /* AMBIENT BLOOMS — soft drifting radial gradients sitting beneath the
+     magnet-lines, giving the canvas a bit of color depth. */
+  .ambient {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    overflow: hidden;
+  }
+  .ambient::before {
+    content: "";
+    position: absolute;
+    inset: -10%;
+    background-image:
+      radial-gradient(ellipse 900px 500px at 85% 10%, color-mix(in srgb, var(--blush) 60%, transparent), transparent 60%),
+      radial-gradient(ellipse 700px 400px at 10% 90%, color-mix(in srgb, var(--purple) 18%, transparent), transparent 60%);
+    opacity: 0.8;
+    animation: bloom-drift 22s var(--ease) infinite alternate;
+  }
+  .ambient::after {
+    content: "";
+    position: absolute;
+    inset: -10%;
+    background-image:
+      radial-gradient(ellipse 500px 380px at 25% 15%, color-mix(in srgb, var(--lilac) 28%, transparent), transparent 60%),
+      radial-gradient(ellipse 600px 420px at 80% 85%, color-mix(in srgb, var(--blush) 32%, transparent), transparent 60%);
+    opacity: 0.45;
+    animation: bloom-drift-2 28s var(--ease) infinite alternate;
+  }
+  @keyframes bloom-drift {
+    0%   { transform: translate3d(0, 0, 0) scale(1); }
+    50%  { transform: translate3d(-30px, 20px, 0) scale(1.04); }
+    100% { transform: translate3d(25px, -15px, 0) scale(0.98); }
+  }
+  @keyframes bloom-drift-2 {
+    0%   { transform: translate3d(0, 0, 0) scale(1); }
+    50%  { transform: translate3d(35px, -25px, 0) scale(1.05); }
+    100% { transform: translate3d(-20px, 20px, 0) scale(0.97); }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .ambient::before, .ambient::after { animation: none; }
+  }
+
+  /* MAGNET LINES — ported from the home hero. A grid of tiny purple bars
+     that rotate to face the cursor. Sits behind everything else. */
+  .magnet-lines {
+    position: absolute;
+    inset: 0;
+    display: grid;
+    grid-template-columns: repeat(var(--magnet-cols, 20), 1fr);
+    grid-template-rows: repeat(var(--magnet-rows, 14), 1fr);
+    justify-items: center;
+    align-items: center;
+    pointer-events: none;
+    z-index: 1;
+    opacity: 0.045;
+    transition: opacity 0.5s var(--ease);
+    will-change: opacity;
+  }
+  .stage:hover .magnet-lines { opacity: 0.09; }
+  .magnet-lines span {
+    display: block;
+    width: 2px;
+    height: 26px;
+    background-color: var(--purple);
+    border-radius: 2px;
+    transform-origin: center;
+    transform: rotate(var(--rotate, -10deg));
+    transition: transform 0.28s cubic-bezier(.22,.61,.36,1);
+    will-change: transform;
+  }
+  @media (max-width: 720px) {
+    .magnet-lines { --magnet-cols: 12; --magnet-rows: 18; opacity: 0.035; }
+    .magnet-lines span { height: 20px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .magnet-lines span { transition: none; }
+  }
+
+  /* =====================================================================
+     LAYOUT — top bar with lang toggle + centered card
+     ===================================================================== */
+  .topbar {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 32px;
+  }
+  .back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    background: color-mix(in srgb, var(--paper) 80%, transparent);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid var(--gray-100);
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--gray-700);
+    text-decoration: none;
+    transition: color .2s var(--ease), background .2s var(--ease), border-color .2s var(--ease);
+  }
+  .back-link:hover {
+    color: var(--ink);
+    background: var(--paper);
+    border-color: var(--gray-300);
+  }
+  .back-arrow {
+    width: 14px;
+    height: 14px;
+    transition: transform .2s var(--ease);
+  }
+  .back-link:hover .back-arrow { transform: translateX(-3px); }
+  .lang-toggle {
+    display: inline-flex;
+    background: color-mix(in srgb, var(--paper) 80%, transparent);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid var(--gray-100);
+    border-radius: 999px;
+    padding: 4px;
+    gap: 2px;
+  }
+  .lang-toggle button {
+    appearance: none;
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    padding: 6px 14px;
+    border-radius: 999px;
+    font-family: var(--mono);
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    color: var(--gray-700);
+    text-transform: uppercase;
+    transition: background .2s var(--ease), color .2s var(--ease);
+  }
+  .lang-toggle button:hover { color: var(--ink); }
+  .lang-toggle button.active {
+    background: var(--purple);
+    color: #fff;
+  }
+
+  /* Centered card */
+  .card-wrap {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    place-items: center;
+    padding: 24px;
+  }
+  .card {
+    position: relative;
+    width: 100%;
+    max-width: 440px;
+    background: var(--paper);
+    border: 1px solid var(--gray-100);
+    border-radius: 20px;
+    padding: 48px 40px 40px;
+    box-shadow:
+      0 1px 2px rgba(13, 5, 33, 0.04),
+      0 10px 30px rgba(13, 5, 33, 0.08),
+      0 40px 80px rgba(13, 5, 33, 0.1);
+  }
+
+  /* Logo — full Arabic.AI wordmark at top of the card */
+  .card-logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  .card-logo svg {
+    height: 44px;
+    width: auto;
+    display: block;
+  }
+  .subtitle {
+    margin: 14px 0 32px;
+    text-align: center;
+    font-size: 14px;
+    color: var(--gray-500);
+  }
+
+  /* Fields */
+  .field {
+    display: block;
+    margin-bottom: 18px;
+  }
+  .field label {
+    display: block;
+    font-family: var(--mono);
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--gray-700);
+    margin-bottom: 8px;
+  }
+  .field input {
+    width: 100%;
+    appearance: none;
+    background: var(--paper);
+    border: 1px solid var(--gray-300);
+    border-radius: 10px;
+    padding: 12px 14px;
+    font: 500 15px var(--sans);
+    color: var(--ink);
+    transition: border-color .2s var(--ease), box-shadow .2s var(--ease);
+  }
+  .field input::placeholder { color: var(--gray-500); }
+  .field input:hover { border-color: color-mix(in srgb, var(--purple) 40%, var(--gray-300)); }
+  .field input:focus {
+    outline: none;
+    border-color: var(--purple);
+    box-shadow: 0 0 0 4px color-mix(in srgb, var(--purple) 14%, transparent);
+  }
+
+  .password-wrap { position: relative; }
+  .password-wrap input { padding-right: 44px; }
+  .password-toggle {
+    position: absolute;
+    top: 50%;
+    right: 8px;
+    transform: translateY(-50%);
+    appearance: none;
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    padding: 6px;
+    border-radius: 6px;
+    color: var(--gray-500);
+    display: grid;
+    place-items: center;
+    transition: color .2s var(--ease), background .2s var(--ease);
+  }
+  .password-toggle:hover { color: var(--ink); background: var(--gray-100); }
+  .password-toggle svg { width: 18px; height: 18px; }
+
+  .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
+  }
+  .remember {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    color: var(--gray-700);
+    cursor: pointer;
+    user-select: none;
+  }
+  .remember input {
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border: 1.5px solid var(--gray-300);
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+    transition: background .15s var(--ease), border-color .15s var(--ease);
+  }
+  .remember input:checked {
+    background: var(--purple);
+    border-color: var(--purple);
+  }
+  .remember input:checked::after {
+    content: "";
+    position: absolute;
+    top: 1px;
+    left: 4px;
+    width: 4px;
+    height: 8px;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+  .forgot {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--purple);
+    text-decoration: none;
+    transition: color .2s var(--ease);
+  }
+  .forgot:hover { color: var(--purple-deep); text-decoration: underline; }
+
+  .btn-signin {
+    width: 100%;
+    appearance: none;
+    background: var(--charcoal);
+    color: #fff;
+    border: 0;
+    border-radius: 999px;
+    padding: 14px 24px;
+    font: 600 15px var(--sans);
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: background .2s var(--ease), transform .1s var(--ease);
+  }
+  .btn-signin:hover { background: var(--purple); }
+  .btn-signin:active { transform: translateY(1px); }
+  .btn-signin:disabled { opacity: 0.6; cursor: not-allowed; }
+  .btn-signin .arrow {
+    width: 14px; height: 14px;
+    transition: transform .2s var(--ease);
+  }
+  .btn-signin:hover .arrow { transform: translateX(3px); }
+
+  .spinner {
+    width: 16px; height: 16px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-top-color: #fff;
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+    display: none;
+  }
+  .btn-signin.loading .spinner { display: inline-block; }
+  .btn-signin.loading .label, .btn-signin.loading .arrow { display: none; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  .error-banner {
+    display: none;
+    margin-bottom: 16px;
+    padding: 10px 14px;
+    background: color-mix(in srgb, #d93025 8%, transparent);
+    border: 1px solid color-mix(in srgb, #d93025 30%, transparent);
+    color: #a0201c;
+    border-radius: 10px;
+    font-size: 13px;
+  }
+  .error-banner.show { display: block; }
+
+  @media (max-width: 480px) {
+    body { overflow: auto; }
+    .topbar { padding: 16px 20px; }
+    .back-link { padding: 6px 12px; font-size: 12px; }
+    .back-link span { display: none; }  /* collapse to arrow-only on tiny screens */
+    .card { padding: 36px 24px 28px; border-radius: 16px; }
+    .card-logo svg { height: 36px; }
+  }
+
+  /* RTL tweaks */
+  html[dir="rtl"] body,
+  html[dir="rtl"] .field input,
+  html[dir="rtl"] .field label,
+  html[dir="rtl"] .subtitle,
+  html[dir="rtl"] .remember,
+  html[dir="rtl"] .forgot,
+  html[dir="rtl"] .back-link,
+  html[dir="rtl"] .btn-signin,
+  html[dir="rtl"] .error-banner {
+    font-family: "Alexandria", var(--sans);
+  }
+  html[dir="rtl"] .field label { letter-spacing: normal; }
+  html[dir="rtl"] .btn-signin .arrow { transform: scaleX(-1); }
+  html[dir="rtl"] .btn-signin:hover .arrow { transform: scaleX(-1) translateX(3px); }
+  html[dir="rtl"] .back-arrow { transform: scaleX(-1); }
+  html[dir="rtl"] .back-link:hover .back-arrow { transform: scaleX(-1) translateX(-3px); }
+  html[dir="rtl"] .password-toggle { right: auto; left: 8px; }
+  html[dir="rtl"] .password-wrap input { padding-right: 14px; padding-left: 44px; }
+</style>
+</head>
+<body>
+<h1 class="sr-only">Sign in to Arabic.AI Suite</h1>
+
+<div class="stage" id="stage">
+  <!-- Ambient blooms (soft drifting gradients) -->
+  <div class="ambient" aria-hidden="true"></div>
+
+  <!-- Magnet lines background layer -->
+  <div class="magnet-lines" id="magnetLines" aria-hidden="true"></div>
+
+  <div class="topbar">
+    <a href="index.html" class="back-link">
+      <svg class="back-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M19 12H5M12 19l-7-7 7-7"/>
+      </svg>
+      <span data-i18n="backToSite">Back to main website</span>
+    </a>
+
+    <div class="lang-toggle" role="group" aria-label="Language">
+      <button type="button" data-lang="en" class="active">EN</button>
+      <button type="button" data-lang="ar">AR</button>
+    </div>
+  </div>
+
+  <!-- Login card -->
+  <main class="card-wrap">
+    <div class="card">
+      <div class="card-logo">
+        <!-- Full Arabic.AI wordmark in card -->
+        <svg viewBox="0 0 323.09 57.94" xmlns="http://www.w3.org/2000/svg" aria-label="Arabic.AI">
+          <g>
+            <path fill="#09090a" d="M54.26,56.73h10.07v-24.93c0-5.48,4.44-9.91,9.91-9.91h6.63v-9.35h-10.07c-9.13,0-16.54,7.4-16.54,16.54v27.65Z"/>
+            <rect fill="#09090a" x="188.87" y="12.55" width="10.07" height="44.11"/>
+            <path fill="#09090a" d="M226.89,20.46c4.48,0,8.15,1.76,10.63,4.55l6.47-6.63c-4.23-4.47-10.39-7.35-17.1-7.35-13.02,0-23.57,10.47-23.57,23.41s10.55,23.49,23.57,23.49c6.47,0,12.31-2.56,16.54-6.87l-6.47-6.55c-2.48,2.48-5.83,4-10.07,4-7.51,0-13.5-6.07-13.5-14.06s5.99-13.98,13.5-13.98Z"/>
+            <path fill="#09090a" d="M119.8,15.27c-3.65-2.54-8.06-4.07-12.83-4.2-.22-.01-.44-.03-.66-.03-.07,0-.14,0-.2.01-.13,0-.25-.01-.38-.01-13.02,0-23.57,10.47-23.57,23.41s10.19,23.1,22.9,23.46c.22,0,.44.03.66.03.07,0,.14,0,.2-.01.13,0,.25.01.38.01,5.03,0,9.68-1.57,13.5-4.23v2.95h10.07V12.55h-10.07v2.72ZM115.81,44.53l-.02-.03c-2.42,2.42-5.68,3.91-9.76,3.98-3.78-.06-6.97-1.38-9.34-3.52-.02-.02-.05-.05-.07-.07-.26-.24-.51-.5-.75-.76-2.26-2.49-3.65-5.87-3.65-9.7s1.52-7.5,3.99-10.01l.02.03c2.42-2.42,5.68-3.91,9.76-3.98,3.78.06,6.97,1.38,9.34,3.52.02.02.05.04.07.07.26.24.51.5.75.77,2.26,2.49,3.65,5.87,3.65,9.7s-1.52,7.5-3.99,10.01Z"/>
+            <path fill="#09090a" d="M296.14,15.27c-3.65-2.54-8.06-4.07-12.83-4.2-.22-.01-.44-.03-.66-.03-.07,0-.14,0-.2.01-.13,0-.25-.01-.38-.01-13.02,0-23.57,10.47-23.57,23.41s10.19,23.1,22.9,23.46c.22,0,.44.03.66.03.07,0,.14,0,.2-.01.13,0,.25.01.38.01,5.03,0,9.68-1.57,13.5-4.23v2.95h10.07V12.55h-10.07v2.72ZM292.15,44.53l-.02-.03c-2.42,2.42-5.68,3.91-9.76,3.98-3.78-.06-6.97-1.38-9.34-3.52-.02-.02-.05-.05-.07-.07-.26-.24-.51-.5-.75-.76-2.26-2.49-3.65-5.87-3.65-9.7s1.52-7.5,3.99-10.01l.02.03c2.42-2.42,5.68-3.91,9.76-3.98,3.78.06,6.97,1.38,9.34,3.52.02.02.05.04.07.07.26.24.51.5.75.77,2.26,2.49,3.65,5.87,3.65,9.7s-1.52,7.5-3.99,10.01Z"/>
+            <path fill="#09090a" d="M160.55,11.03c-.13,0-.25,0-.38.01-.07,0-.14-.01-.2-.01-.22,0-.44.03-.66.03-4.77.13-9.18,1.67-12.83,4.2V.04h-10.07v56.62h10.07v-2.95c3.83,2.66,8.48,4.23,13.5,4.23.13,0,.25,0,.38-.01.07,0,.14.01.2.01.22,0,.44-.03.66-.03,12.71-.36,22.9-10.66,22.9-23.46s-10.55-23.41-23.57-23.41ZM170.41,44.14c-.24.26-.49.52-.75.76-.02.02-.05.05-.07.07-2.36,2.14-5.56,3.46-9.34,3.52-4.09-.07-7.35-1.57-9.76-3.98l-.02.03c-2.47-2.51-3.99-6.03-3.99-10.01s1.39-7.21,3.65-9.7c.24-.26.49-.52.75-.77.02-.02.05-.04.07-.07,2.36-2.14,5.56-3.46,9.34-3.52,4.09.07,7.35,1.57,9.76,3.98l.02-.03c2.47,2.51,3.99,6.03,3.99,10.01s-1.39,7.21-3.65,9.7Z"/>
+            <path fill="#09090a" d="M193.9,10.04c2.77,0,4.99-2.28,4.99-5.06s-2.22-4.99-4.99-4.99-5.06,2.22-5.06,4.99,2.29,5.06,5.06,5.06Z"/>
+            <rect fill="#09090a" x="313.02" y="12.55" width="10.07" height="44.11"/>
+            <path fill="#09090a" d="M318.05,10.04c2.77,0,4.99-2.28,4.99-5.06s-2.22-4.99-4.99-4.99-5.06,2.22-5.06,4.99,2.29,5.06,5.06,5.06Z"/>
+            <path fill="#09090a" d="M248.17,51.68c0-2.77,2.29-4.99,5.06-4.99s4.99,2.22,4.99,4.99-2.22,5.06-4.99,5.06-5.06-2.28-5.06-5.06Z"/>
+            <path fill="#3f1993" d="M37.66,12.55v2.72c-3.66-2.53-8.07-4.06-12.83-4.2-.22-.01-.44-.03-.66-.03-.07,0-.14.01-.2.01-.14-.01-.26-.01-.38-.01C10.55,11.03,0,21.5,0,34.44s10.18,23.1,22.9,23.46c.23,0,.44.03.67.03.07,0,.14-.01.2-.01.12,0,.25.01.38.01,5.02,0,9.68-1.57,13.5-4.23v2.95h10.07V12.55h-10.07ZM32.26,23.23c.32.24.63.49.93.76l.07.07c.26.25.51.5.76.77,1.92,2.13,3.23,4.9,3.55,8.06-6.63-.22-11.97-5.6-12.12-12.26,1.39.14,2.73.46,3.96,1,.66.27,1.27.58,1.84.93.35.2.68.43,1.01.68ZM14.07,24.43l.02.02c.72-.72,1.51-1.36,2.38-1.9.23-.14.46-.27.7-.4.68-.37,1.42-.67,2.19-.92.93-.3,1.9-.51,2.91-.61-.14,6.65-5.49,12.05-12.12,12.26.34-3.35,1.77-6.28,3.92-8.45ZM18.68,47.51l-.58-.24c-.58-.26-1.13-.54-1.64-.86-.69-.43-1.32-.91-1.92-1.45l-.07-.07c-.27-.24-.52-.5-.76-.76-1.94-2.13-3.23-4.92-3.55-8.08,6.65.2,11.99,5.64,12.12,12.32-1.28-.15-2.49-.44-3.6-.87ZM33.67,44.54l-.02-.03c-.91.91-1.94,1.69-3.08,2.31-.29.16-.6.3-.91.45-.29.13-.59.25-.89.37-1.03.37-2.14.63-3.32.76.1-6.69,5.47-12.12,12.13-12.32-.34,3.35-1.78,6.29-3.92,8.48Z"/>
+          </g>
+        </svg>
+      </div>
+      <p class="subtitle" data-i18n="subtitle">Sign in to continue to the AI Suite</p>
+
+      <div id="errorBanner" class="error-banner" role="alert"></div>
+
+      <form id="loginForm" autocomplete="on" novalidate>
+        <div class="field">
+          <label for="username" data-i18n="usernameLabel">Username</label>
+          <input
+            id="username"
+            name="username"
+            type="text"
+            autocomplete="username"
+            required
+            data-i18n-placeholder="usernamePlaceholder"
+            placeholder="Enter your username"
+            autofocus
+          />
+        </div>
+
+        <div class="field">
+          <label for="password" data-i18n="passwordLabel">Password</label>
+          <div class="password-wrap">
+            <input
+              id="password"
+              name="password"
+              type="password"
+              autocomplete="current-password"
+              required
+              data-i18n-placeholder="passwordPlaceholder"
+              placeholder="Enter your password"
+            />
+            <button type="button" class="password-toggle" id="togglePassword" aria-label="Show password">
+              <svg id="eyeIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+                <circle cx="12" cy="12" r="3"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="row">
+          <label class="remember">
+            <input type="checkbox" id="remember" />
+            <span data-i18n="remember">Remember me</span>
+          </label>
+          <a href="#" class="forgot" data-i18n="forgot">Forgot password?</a>
+        </div>
+
+        <button type="submit" class="btn-signin" id="signInBtn">
+          <span class="label" data-i18n="signIn">Sign in</span>
+          <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+            <path d="M5 12h14M13 5l7 7-7 7"/>
+          </svg>
+          <span class="spinner" aria-hidden="true"></span>
+        </button>
+      </form>
+    </div>
+  </main>
+</div>
+
+<script>
+  /* ========================================================================
+     MagnetLines — cursor-reactive rotating bars, lifted from the home hero
+     ======================================================================== */
+  (function magnetLinesIIFE() {
+    const container = document.getElementById('magnetLines');
+    const stage = document.getElementById('stage');
+    if (!container || !stage) return;
+
+    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      return;
+    }
+
+    const isMobile = window.matchMedia && window.matchMedia('(max-width: 720px)').matches;
+    const ROWS = isMobile ? 18 : 14;
+    const COLS = isMobile ? 12 : 20;
+    const BASE_ANGLE = -10;
+
+    // Build the grid
+    const frag = document.createDocumentFragment();
+    const total = ROWS * COLS;
+    for (let i = 0; i < total; i++) {
+      const span = document.createElement('span');
+      span.style.setProperty('--rotate', BASE_ANGLE + 'deg');
+      frag.appendChild(span);
+    }
+    container.appendChild(frag);
+    const items = container.querySelectorAll('span');
+
+    // Cache each line's center, relative to the container
+    let centers = [];
+    function recomputeCenters() {
+      const cr = container.getBoundingClientRect();
+      centers = Array.from(items).map(item => {
+        const r = item.getBoundingClientRect();
+        return {
+          cx: r.x - cr.x + r.width / 2,
+          cy: r.y - cr.y + r.height / 2,
+        };
+      });
+    }
+    recomputeCenters();
+    window.addEventListener('resize', recomputeCenters);
+
+    // rAF-throttled pointermove — rotate each line to face the cursor
+    let rafPending = false;
+    let lastPX = 0, lastPY = 0;
+    function onPointerMove(e) {
+      lastPX = e.clientX;
+      lastPY = e.clientY;
+      if (rafPending) return;
+      rafPending = true;
+      requestAnimationFrame(flush);
+    }
+    function flush() {
+      rafPending = false;
+      const cr = container.getBoundingClientRect();
+      const px = lastPX - cr.x;
+      const py = lastPY - cr.y;
+      for (let i = 0; i < items.length; i++) {
+        const c = centers[i];
+        if (!c) continue;
+        const dx = px - c.cx;
+        const dy = py - c.cy;
+        const dist = Math.sqrt(dx * dx + dy * dy) || 1;
+        const rotDeg = (Math.acos(dx / dist) * 180 / Math.PI) * (py > c.cy ? 1 : -1);
+        items[i].style.setProperty('--rotate', rotDeg + 'deg');
+      }
+    }
+
+    stage.addEventListener('pointermove', onPointerMove);
+    stage.addEventListener('pointerleave', function () {
+      for (let i = 0; i < items.length; i++) {
+        items[i].style.setProperty('--rotate', BASE_ANGLE + 'deg');
+      }
+    });
+  })();
+
+  /* ========================================================================
+     i18n + login form logic
+     ======================================================================== */
+  (function () {
+    const i18n = {
+      en: {
+        dir: 'ltr',
+        backToSite: 'Back to main website',
+        subtitle: 'Sign in to continue to the AI Suite',
+        usernameLabel: 'Username',
+        usernamePlaceholder: 'Enter your username',
+        passwordLabel: 'Password',
+        passwordPlaceholder: 'Enter your password',
+        remember: 'Remember me',
+        forgot: 'Forgot password?',
+        signIn: 'Sign in',
+        showPassword: 'Show password',
+        hidePassword: 'Hide password',
+        errorRequired: 'Please enter both your username and password.',
+        errorInvalid: 'Those credentials don\u2019t match. Please try again.',
+      },
+      ar: {
+        dir: 'rtl',
+        backToSite: 'العودة إلى الموقع الرئيسي',
+        subtitle: 'سجّل الدخول للوصول إلى منصة الذكاء',
+        usernameLabel: 'اسم المستخدم',
+        usernamePlaceholder: 'أدخل اسم المستخدم',
+        passwordLabel: 'كلمة المرور',
+        passwordPlaceholder: 'أدخل كلمة المرور',
+        remember: 'تذكّرني',
+        forgot: 'نسيت كلمة المرور؟',
+        signIn: 'تسجيل الدخول',
+        showPassword: 'إظهار كلمة المرور',
+        hidePassword: 'إخفاء كلمة المرور',
+        errorRequired: 'الرجاء إدخال اسم المستخدم وكلمة المرور.',
+        errorInvalid: 'بيانات الاعتماد غير صحيحة. حاول مرة أخرى.',
+      }
+    };
+
+    let currentLang = 'en';
+
+    function applyLang(lang) {
+      currentLang = lang;
+      const t = i18n[lang];
+      document.documentElement.lang = lang;
+      document.documentElement.dir = t.dir;
+
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if (t[key] !== undefined) el.innerHTML = t[key];
+      });
+      document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+        const key = el.getAttribute('data-i18n-placeholder');
+        if (t[key] !== undefined) el.placeholder = t[key];
+      });
+
+      document.querySelectorAll('.lang-toggle button').forEach(b => {
+        b.classList.toggle('active', b.dataset.lang === lang);
+      });
+
+      const pwToggle = document.getElementById('togglePassword');
+      const isShown = document.getElementById('password').type === 'text';
+      pwToggle.setAttribute('aria-label', isShown ? t.hidePassword : t.showPassword);
+    }
+
+    document.querySelectorAll('.lang-toggle button').forEach(btn => {
+      btn.addEventListener('click', () => applyLang(btn.dataset.lang));
+    });
+
+    const passwordInput = document.getElementById('password');
+    const togglePw = document.getElementById('togglePassword');
+    const eyeIcon = document.getElementById('eyeIcon');
+    togglePw.addEventListener('click', () => {
+      const shown = passwordInput.type === 'text';
+      passwordInput.type = shown ? 'password' : 'text';
+      eyeIcon.innerHTML = shown
+        ? '<path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/>'
+        : '<path d="M17.94 17.94A10.94 10.94 0 0 1 12 20c-7 0-11-8-11-8a19.44 19.44 0 0 1 5.17-6.17M9.9 4.24A10.94 10.94 0 0 1 12 4c7 0 11 8 11 8a19.44 19.44 0 0 1-2.61 3.77M6.1 6.1a3 3 0 1 0 4.24 4.24"/><path d="M1 1l22 22"/>';
+      const t = i18n[currentLang];
+      togglePw.setAttribute('aria-label', shown ? t.showPassword : t.hidePassword);
+    });
+
+    const form = document.getElementById('loginForm');
+    const btn = document.getElementById('signInBtn');
+    const errBanner = document.getElementById('errorBanner');
+
+    function showError(msg) {
+      errBanner.textContent = msg;
+      errBanner.classList.add('show');
+    }
+    function clearError() {
+      errBanner.classList.remove('show');
+      errBanner.textContent = '';
+    }
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      clearError();
+      const u = document.getElementById('username').value.trim();
+      const p = passwordInput.value;
+      const t = i18n[currentLang];
+
+      if (!u || !p) {
+        showError(t.errorRequired);
+        return;
+      }
+
+      btn.classList.add('loading');
+      btn.disabled = true;
+
+      // Simulate auth — replace with real backend call
+      setTimeout(() => {
+        btn.classList.remove('loading');
+        btn.disabled = false;
+        // window.location.href = '/dashboard';
+        showError(t.errorInvalid);
+      }, 900);
+    });
+
+    ['username', 'password'].forEach(id => {
+      document.getElementById(id).addEventListener('input', clearError);
+    });
+
+    applyLang('en');
+  })();
+</script>
+
+</body>
+</html>

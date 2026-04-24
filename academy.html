@@ -1,0 +1,943 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Academy &mdash; Arabic.AI</title>
+<meta name="description" content="AI training built for Arabic-speaking professionals. Expert-led, Arabic-first programs that get your team productive with AI from day one." />
+<!-- Favicon & canonical -->
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="canonical" href="https://arabic.ai/academy.html">
+
+<!-- Open Graph / Facebook / LinkedIn -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Arabic.AI">
+<meta property="og:url" content="https://arabic.ai/academy.html">
+<meta property="og:title" content="Academy — Arabic.AI">
+<meta property="og:description" content="AI training built for Arabic-speaking professionals. Expert-led, Arabic-first programs that get your team productive with AI from day one.">
+<meta property="og:image" content="https://arabic.ai/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="en_US">
+
+<!-- Twitter / X -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Academy — Arabic.AI">
+<meta name="twitter:description" content="AI training built for Arabic-speaking professionals. Expert-led, Arabic-first programs that get your team productive with AI from day one.">
+<meta name="twitter:image" content="https://arabic.ai/assets/og-image.png">
+
+<!-- Theme -->
+<meta name="theme-color" content="#3F1993">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800;900&amp;family=DM+Sans:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+
+<style>
+/* --- Accessibility: visible focus ring (injected) --- */
+:focus-visible { outline: 2px solid var(--purple, #3F1993); outline-offset: 3px; border-radius: 4px; }
+:focus:not(:focus-visible) { outline: none; }
+button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-visible {
+  outline: 2px solid var(--purple, #3F1993);
+  outline-offset: 3px;
+}
+.skip-to-content {
+  position: absolute; left: -9999px; top: 0;
+  background: var(--purple, #3F1993); color: #fff; padding: 8px 16px;
+  text-decoration: none; z-index: 10000; border-radius: 0 0 8px 0;
+}
+.skip-to-content:focus { left: 0; }
+
+
+  :root {
+    --purple: #3F1993;
+    --purple-deep: #2a0f66;
+    --purple-soft: #ede7f8;
+    --purple-softer: #f5f2fb;
+    --lilac: #C9A4F5;
+    --blush: #F8C8DC;
+    --charcoal: #09090A;
+    --ink: #1a1a1f;
+    --gray-700: #4a4a52;
+    --gray-500: #8a8a92;
+    --gray-400: #b4b4bb;
+    --gray-300: #d6d6dc;
+    --gray-200: #e3e3e8;
+    --gray-100: #eaeaee;
+    --gray-50: #f4f4f6;
+    --cream: #f6f4ef;
+    --cream-2: #efede6;
+    --paper: #ffffff;
+    --cosmic: #0D0521;
+
+    --display: "Big Shoulders Display", Impact, "Arial Black", sans-serif;
+    --sans: "DM Sans", -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
+    --mono: "JetBrains Mono", ui-monospace, Menlo, monospace;
+
+    --container: 1280px;
+    --radius: 18px;
+    --radius-lg: 22px;
+    --ease: cubic-bezier(.2,.7,.2,1);
+  }
+
+  *, *::before, *::after { box-sizing: border-box; }
+  html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; }
+  body {
+    margin: 0;
+    font-family: var(--sans);
+    color: var(--charcoal);
+    background: var(--cream);
+    line-height: 1.5;
+    font-size: 16px;
+    overflow-x: hidden;
+  }
+  body::before {
+    content: "";
+    position: fixed; inset: 0; pointer-events: none; z-index: 0;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='180' height='180'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.035 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+    mix-blend-mode: multiply;
+  }
+  a { color: inherit; text-decoration: none; }
+  button { font: inherit; cursor: pointer; border: 0; background: none; color: inherit; }
+  img, svg { display: block; max-width: 100%; }
+
+  .container { max-width: var(--container); margin: 0 auto; padding: 0 32px; position: relative; z-index: 1; }
+
+  /* Nav */
+  .nav { position: sticky; top: 0; z-index: 50;
+    backdrop-filter: saturate(140%) blur(12px);
+    background: color-mix(in srgb, var(--cream) 78%, transparent);
+    border-bottom: 1px solid color-mix(in srgb, var(--charcoal) 8%, transparent);
+  }
+  .nav-inner { display: flex; align-items: center; justify-content: space-between; height: 68px; }
+  .nav-logo svg { height: 22px; }
+  .nav-links { display: flex; gap: 26px; font-size: 14px; font-weight: 500; }
+  .nav-links > a { opacity: 0.75; transition: opacity .2s var(--ease); position: relative; }
+  .nav-links > a:hover { opacity: 1; }
+  .nav-links > a.active { opacity: 1; color: var(--purple); }
+  .nav-links > a.active::after { content: ""; position: absolute; left: 50%; bottom: -22px; transform: translateX(-50%); width: 4px; height: 4px; background: var(--purple); border-radius: 50%; }
+  .nav-actions { display: flex; gap: 10px; align-items: center; flex-shrink: 0; }
+
+  /* Hamburger menu trigger — circular, matches Sign in button height */
+  .nav-burger {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 4px;
+    width: 42px;
+    height: 42px;
+    padding: 0;
+    background: transparent;
+    border: 1px solid var(--gray-100);
+    border-radius: 50%;
+    cursor: pointer;
+    color: var(--charcoal);
+    flex-shrink: 0;
+    transition: background .2s var(--ease), border-color .2s var(--ease);
+  }
+  .nav-burger:hover {
+    background: var(--purple-softer);
+    border-color: color-mix(in srgb, var(--purple) 25%, transparent);
+  }
+  .nav-burger span {
+    display: block;
+    width: 16px;
+    height: 2px;
+    background: currentColor;
+    border-radius: 1px;
+    transition: transform .3s var(--ease), opacity .2s var(--ease);
+    transform-origin: center;
+  }
+  .nav-burger.open span:nth-child(1) { transform: translateY(6px) rotate(45deg); }
+  .nav-burger.open span:nth-child(2) { opacity: 0; }
+  .nav-burger.open span:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
+
+  /* Slide-in drawer — full-width on phones, right-aligned panel on tablet */
+  .nav-drawer {
+    position: fixed;
+    top: 0; right: 0; bottom: 0;
+    width: min(420px, 100%);
+    background: var(--cream);
+    box-shadow: -24px 0 48px -16px rgba(20, 10, 50, 0.18);
+    transform: translateX(100%);
+    transition: transform .35s cubic-bezier(0.2, 0.8, 0.2, 1);
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    visibility: hidden;
+  }
+  .nav-drawer.open {
+    transform: translateX(0);
+    visibility: visible;
+  }
+  .nav-drawer-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 24px;
+    border-bottom: 1px solid var(--gray-100);
+    min-height: 68px;
+  }
+  .nav-drawer-header .brand {
+    font-family: var(--mono);
+    font-size: 12px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--gray-500);
+  }
+  .nav-drawer-close {
+    width: 36px; height: 36px;
+    padding: 0;
+    background: none;
+    border: 0;
+    cursor: pointer;
+    color: var(--charcoal);
+    display: grid;
+    place-items: center;
+  }
+  .nav-drawer-close svg { width: 20px; height: 20px; }
+  .nav-drawer-body {
+    flex: 1;
+    overflow-y: auto;
+    padding: 8px 16px 24px;
+  }
+  .nav-drawer-body a {
+    display: block;
+    padding: 14px 16px;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--charcoal);
+    border-radius: 10px;
+    transition: background .2s var(--ease), color .2s var(--ease);
+  }
+  .nav-drawer-body a:hover {
+    background: var(--purple-softer);
+    color: var(--purple);
+  }
+  .nav-drawer-body a.active {
+    color: var(--purple);
+    background: var(--purple-softer);
+  }
+  .nav-drawer-section {
+    margin-top: 20px;
+    padding-top: 16px;
+    border-top: 1px solid var(--gray-100);
+  }
+  .nav-drawer-section h4 {
+    font-family: var(--mono);
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--gray-500);
+    margin: 0 16px 8px;
+  }
+  .nav-drawer-footer {
+    padding: 16px 24px 24px;
+    border-top: 1px solid var(--gray-100);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .nav-drawer-footer .btn { width: 100%; justify-content: center; }
+  .nav-drawer-backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(13, 5, 32, 0.4);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .3s var(--ease);
+    z-index: 999;
+  }
+  .nav-drawer-backdrop.open {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+
+  .btn { display: inline-flex; align-items: center; gap: 10px; padding: 12px 20px; border-radius: 999px; font-size: 14px; font-weight: 600; letter-spacing: -0.005em; transition: all .25s var(--ease); white-space: nowrap; flex-shrink: 0; }
+  .btn-primary { background: var(--charcoal); color: #fff; border: 1px solid var(--charcoal); }
+  .btn-primary:hover { background: var(--purple); border-color: var(--purple); transform: translateY(-1px); }
+  .btn-primary .arrow { transition: transform .25s var(--ease); }
+  .btn-primary:hover .arrow { transform: translateX(3px); }
+  .btn-ghost { background: transparent; color: var(--charcoal); border: 1px solid color-mix(in srgb, var(--charcoal) 18%, transparent); }
+  .btn-ghost:hover { border-color: var(--charcoal); background: color-mix(in srgb, var(--charcoal) 5%, transparent); }
+  .btn-light { background: #fff; color: var(--charcoal); border: 1px solid #fff; }
+  .btn-light:hover { background: var(--blush); transform: translateY(-1px); }
+  .btn-outline-light { background: transparent; color: #fff; border: 1px solid rgba(255,255,255,0.3); }
+  .btn-outline-light:hover { border-color: #fff; background: rgba(255,255,255,0.08); }
+  .btn-lg { padding: 16px 28px; font-size: 15px; }
+
+  /* Solutions mega-dropdown */
+  .nav-dropdown { position: relative; }
+  .nav-trigger { display: inline-flex; align-items: center; gap: 5px; font: inherit; color: inherit; background: none; border: 0; padding: 0; cursor: pointer; opacity: 0.75; transition: opacity .2s var(--ease); }
+  .nav-trigger:hover, .nav-dropdown:hover .nav-trigger, .nav-dropdown.open .nav-trigger { opacity: 1; }
+  .nav-trigger .chev { width: 10px; height: 10px; transition: transform .25s var(--ease); margin-top: 1px; }
+  .nav-dropdown:hover .nav-trigger .chev, .nav-dropdown.open .nav-trigger .chev { transform: rotate(180deg); }
+  .nav-mega { position: absolute; top: calc(100% + 16px); right: 0; left: auto;
+    width: 820px; max-width: calc(100vw - 48px);
+    background: var(--paper); color: var(--charcoal);
+    border: 1px solid var(--gray-100); border-radius: 18px;
+    padding: 28px 32px 32px;
+    opacity: 0; visibility: hidden; pointer-events: none;
+    transform: translateY(-6px);
+    transition: opacity .2s var(--ease), transform .2s var(--ease), visibility 0s linear .2s;
+    z-index: 50;
+    box-shadow: 0 30px 60px -20px rgba(20, 10, 50, 0.22), 0 8px 16px -8px rgba(20, 10, 50, 0.08);
+  }
+  .nav-mega::before { content: ""; position: absolute; top: -16px; left: 0; right: 0; height: 16px; }
+  .nav-dropdown:hover .nav-mega, .nav-dropdown.open .nav-mega {
+    opacity: 1; visibility: visible; pointer-events: auto; transform: translateY(0);
+    transition: opacity .25s var(--ease), transform .25s var(--ease), visibility 0s;
+  }
+  .nav-mega-inner { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 24px; }
+  .nav-mega-col h4 { font-family: var(--sans); font-size: 11px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--gray-500); margin: 0 0 14px; padding-bottom: 12px; border-bottom: 1px solid var(--gray-100); }
+  .nav-mega-item { display: block; padding: 10px 12px; margin: 0 -12px 4px; border-radius: 10px; transition: background .2s var(--ease); }
+  .nav-mega-item:hover { background: var(--purple-softer); }
+  .nav-mega-logo {
+    display: flex;
+    align-items: center;
+    height: 31px; margin-bottom: 6px; }
+  .nav-mega-logo svg {
+    height: 100%;
+    width: auto;
+    max-width: 208px;
+  }
+  .nav-mega-logo.xs { height: 25px; }
+  .nav-mega-logo.xs svg { max-height: 25px; max-width: 166px; }
+  .nav-mega-logo.ureed-sm { height: 28px; }
+  .nav-mega-logo.ureed-sm svg { max-height: 28px; max-width: 187px; }
+  .nav-mega-logo.tall { height: 31px; }
+  .nav-mega-logo.tall svg { max-height: 31px; }
+  /* 0.6x smaller variant for ContentLab logo */
+  .nav-mega-logo.tall.sm { height: 14.4px; }
+  .nav-mega-logo.tall.sm svg { max-height: 14.4px; }
+  .nav-mega-logo.tall.lg { height: 33px; }
+  .nav-mega-logo.tall.lg svg { max-height: 33px; max-width: 192px; }
+  .nav-mega-logo.llm-mark { height: 28px; }
+  .nav-mega-logo.llm-mark svg { max-width: 64px; }
+  .nav-mega-logo.llm-mark.lg { height: 34px; }
+  .nav-mega-logo.llm-mark.lg svg { max-width: 77px; }
+  /* Enlarged dropdown logos (Tarjama & Media Services at 1.5x) */
+  .nav-mega-logo.xl { height: 32px; }
+  .nav-mega-logo.xl svg { max-height: 32px; max-width: 180px; }
+  .nav-mega-logo.xl.sm { height: 19.2px; }
+  .nav-mega-logo.xl.sm svg { max-height: 19.2px; max-width: 108px; }
+  .nav-mega-logo.xl.xxl { height: 38.4px; }
+  .nav-mega-logo.xl.xxl svg { max-height: 38.4px; max-width: 216px; }
+
+  .nav-mega-logo .st0 { fill: #09090A; }
+  .nav-mega-item p { margin: 0; font-size: 12.5px; color: var(--gray-500); line-height: 1.5; max-width: 46ch; }
+  .nav-mega-item:hover p { color: var(--gray-700); }
+
+  /* Breadcrumb */
+  .crumbs { padding-top: 48px; font-family: var(--mono); font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--gray-500); display: flex; gap: 10px; align-items: center; }
+  .crumbs a { color: var(--gray-500); }
+  .crumbs a:hover { color: var(--purple); }
+  .crumbs .sep { opacity: 0.5; }
+  .crumbs .current { color: var(--purple); }
+
+  /* Hero standard */
+  .hero { padding: 72px 0 56px; }
+  .hero-eyebrow { display: inline-flex; align-items: center; gap: 10px; padding: 8px 16px; border-radius: 999px; background: var(--purple-softer); border: 1px solid color-mix(in srgb, var(--purple) 15%, transparent); font-family: var(--mono); font-size: 11px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: var(--purple); margin-bottom: 28px; }
+  .hero-eyebrow .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--purple); box-shadow: 0 0 10px var(--purple); }
+  .hero h1 { font-family: var(--display); font-weight: 800; font-size: clamp(44px, 5.8vw, 80px); line-height: 0.92; letter-spacing: -0.02em; margin: 0 0 24px; color: var(--charcoal); max-width: 20ch; }
+  .hero h1 .accent { color: var(--purple); position: relative; display: inline-block; }
+  .hero h1 .accent::after { content: ""; position: absolute; left: 0; right: 0; bottom: 4px; height: 18px; background: var(--blush); z-index: -1; opacity: 0.6; border-radius: 2px; }
+  .hero p.lead { max-width: 56ch; font-size: 18px; color: var(--gray-700); line-height: 1.55; margin: 0 0 32px; }
+  .hero-ctas { display: flex; gap: 12px; flex-wrap: wrap; }
+
+  /* Sections */
+  section.sec { padding: 72px 0; }
+  .section-head { display: grid; grid-template-columns: 160px 1fr; gap: 48px; align-items: start; margin-bottom: 48px; }
+  .section-index { font-family: var(--mono); font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--purple); padding-top: 8px; }
+  .section-title { font-family: var(--display); font-weight: 800; font-size: clamp(34px, 4.4vw, 56px); line-height: 0.95; letter-spacing: -0.015em; color: var(--charcoal); margin: 0; max-width: 20ch; }
+  .section-intro { margin-top: 18px; font-size: 16px; color: var(--gray-700); max-width: 62ch; line-height: 1.6; }
+
+  /* Generic feature grid (4-up) */
+  .feat-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+  }
+  .feat-card {
+    background: var(--paper);
+    border: 1px solid var(--gray-100);
+    border-radius: var(--radius);
+    padding: 28px 24px;
+    transition: all .3s var(--ease);
+  }
+  .feat-card:hover {
+    transform: translateY(-3px);
+    border-color: color-mix(in srgb, var(--purple) 30%, transparent);
+    box-shadow: 0 20px 40px -20px color-mix(in srgb, var(--purple) 20%, transparent);
+  }
+  .feat-card .icon {
+    width: 44px; height: 44px;
+    border-radius: 11px;
+    background: color-mix(in srgb, var(--purple) 12%, transparent);
+    color: var(--purple);
+    display: grid; place-items: center;
+    margin-bottom: 20px;
+  }
+  .feat-card h3 {
+    font-family: var(--sans);
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0 0 8px;
+    color: var(--charcoal);
+  }
+  .feat-card p {
+    font-size: 14px;
+    color: var(--gray-700);
+    line-height: 1.55;
+    margin: 0;
+  }
+
+  /* 3-up variant */
+  .feat-grid.three { grid-template-columns: repeat(3, 1fr); }
+  .feat-grid.two { grid-template-columns: repeat(2, 1fr); }
+
+  /* Stats strip */
+  .stats-strip {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 40px 48px;
+    background: var(--paper);
+    border: 1px solid var(--gray-100);
+    border-radius: var(--radius-lg);
+    margin-top: 40px;
+  }
+  .stat-item { text-align: left; padding: 0 24px; position: relative; }
+  .stat-item + .stat-item::before { content: ""; position: absolute; left: 0; top: 8px; bottom: 8px; width: 1px; background: var(--gray-100); }
+  .stat-num { font-family: var(--display); font-weight: 800; font-size: 42px; letter-spacing: -0.015em; line-height: 1; color: var(--purple); }
+  .stat-label { font-family: var(--mono); font-size: 11px; color: var(--gray-500); letter-spacing: 0.08em; text-transform: uppercase; margin-top: 10px; }
+
+  /* CTA dark block */
+  .cta { background: var(--cosmic); color: #fff; border-radius: 28px; margin: 0 32px 80px; padding: 72px 56px; position: relative; overflow: hidden; }
+  .cta::before { content: ""; position: absolute; inset: 0; background: radial-gradient(ellipse 600px 400px at 15% 20%, color-mix(in srgb, var(--purple) 55%, transparent), transparent 60%), radial-gradient(ellipse 500px 300px at 90% 80%, color-mix(in srgb, var(--blush) 22%, transparent), transparent 55%); pointer-events: none; }
+  .cta-inner { position: relative; z-index: 1; display: grid; grid-template-columns: 1.3fr 1fr; gap: 56px; align-items: end; max-width: var(--container); margin: 0 auto; }
+  .cta h2 { font-family: var(--display); font-size: clamp(42px, 5vw, 72px); line-height: 0.92; letter-spacing: -0.02em; margin: 0 0 12px; max-width: 16ch; }
+  .cta h2 span { color: var(--lilac); }
+  .cta-eyebrow { font-family: var(--mono); font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--lilac); margin-bottom: 20px; }
+  .cta-body { font-size: 16px; color: rgba(255,255,255,0.72); line-height: 1.55; margin: 0 0 24px; }
+  .cta-ctas { display: flex; gap: 12px; flex-wrap: wrap; }
+
+  /* Footer */
+  footer { padding: 80px 0 48px; border-top: 1px solid var(--gray-100); background: var(--cream); }
+  .footer-grid { display: grid; grid-template-columns: 1.6fr 1fr 1fr 1fr 1fr; gap: 48px; margin-bottom: 72px; }
+  .footer-brand svg { height: 26px; margin-bottom: 20px; }
+  .footer-brand p { font-size: 14px; color: var(--gray-700); max-width: 34ch; line-height: 1.55; margin: 0; }
+  .footer-col h4 { font-family: var(--mono); font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gray-500); margin: 0 0 20px; font-weight: 500; }
+  .footer-col a { display: block; font-size: 14px; color: var(--charcoal); margin-bottom: 12px; transition: color .2s var(--ease); }
+  .footer-col a:hover { color: var(--purple); }
+  .footer-bottom { display: flex; justify-content: space-between; align-items: center; padding-top: 32px; border-top: 1px solid var(--gray-100); font-family: var(--mono); font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--gray-500); }
+
+  .reveal { opacity: 0; transform: translateY(20px); transition: opacity .8s var(--ease), transform .8s var(--ease); }
+  .reveal.in { opacity: 1; transform: none; }
+
+  @media (max-width: 1200px) {
+    .nav-links { display: none; }
+    .nav-burger { display: inline-flex; }
+  }
+  @media (max-width: 860px) {
+    .nav-actions > .btn-ghost { display: none; }
+  }
+  @media (max-width: 1024px) {
+    .hero { padding: 48px 0 40px; }
+    .feat-grid, .feat-grid.three { grid-template-columns: repeat(2, 1fr); }
+    .stats-strip { grid-template-columns: 1fr 1fr; gap: 0; padding: 24px; }
+    .stat-item:nth-child(odd)::before { display: none; }
+    .stat-item { padding: 16px 20px; border-top: 1px solid var(--gray-100); border-right: 1px solid var(--gray-100); }
+    .stat-item:nth-child(even) { border-right: 0; }
+    .stat-item:nth-child(1), .stat-item:nth-child(2) { border-top: 0; }
+    .section-head { grid-template-columns: 1fr; gap: 16px; }
+    .cta { padding: 48px 32px; margin: 0 16px 48px; }
+    .cta-inner { grid-template-columns: 1fr; gap: 24px; }
+    .footer-grid { grid-template-columns: 1fr 1fr 1fr; gap: 32px; }
+    .footer-brand { grid-column: 1 / -1; }
+  }
+  @media (max-width: 720px) {
+    .container { padding: 0 20px; }
+    .feat-grid, .feat-grid.three, .feat-grid.two { grid-template-columns: 1fr; }
+    section.sec { padding: 48px 0; }
+    .footer-grid { grid-template-columns: 1fr 1fr; }
+    .footer-brand { grid-column: 1 / -1; }
+  }
+
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="container nav-inner">
+    <a href="index.html" class="nav-logo" aria-label="Arabic.AI">
+      <svg viewBox="0 0 323.09 57.94" xmlns="http://www.w3.org/2000/svg">
+        <g>
+          <path fill="#09090a" d="M54.26,56.73h10.07v-24.93c0-5.48,4.44-9.91,9.91-9.91h6.63v-9.35h-10.07c-9.13,0-16.54,7.4-16.54,16.54v27.65Z"/>
+          <rect fill="#09090a" x="188.87" y="12.55" width="10.07" height="44.11"/>
+          <path fill="#09090a" d="M226.89,20.46c4.48,0,8.15,1.76,10.63,4.55l6.47-6.63c-4.23-4.47-10.39-7.35-17.1-7.35-13.02,0-23.57,10.47-23.57,23.41s10.55,23.49,23.57,23.49c6.47,0,12.31-2.56,16.54-6.87l-6.47-6.55c-2.48,2.48-5.83,4-10.07,4-7.51,0-13.5-6.07-13.5-14.06s5.99-13.98,13.5-13.98Z"/>
+          <path fill="#09090a" d="M119.8,15.27c-3.65-2.54-8.06-4.07-12.83-4.2-.22-.01-.44-.03-.66-.03-.07,0-.14,0-.2.01-.13,0-.25-.01-.38-.01-13.02,0-23.57,10.47-23.57,23.41s10.19,23.1,22.9,23.46c.22,0,.44.03.66.03.07,0,.14,0,.2-.01.13,0,.25.01.38.01,5.03,0,9.68-1.57,13.5-4.23v2.95h10.07V12.55h-10.07v2.72ZM115.81,44.53l-.02-.03c-2.42,2.42-5.68,3.91-9.76,3.98-3.78-.06-6.97-1.38-9.34-3.52-.02-.02-.05-.05-.07-.07-.26-.24-.51-.5-.75-.76-2.26-2.49-3.65-5.87-3.65-9.7s1.52-7.5,3.99-10.01l.02.03c2.42-2.42,5.68-3.91,9.76-3.98,3.78.06,6.97,1.38,9.34,3.52.02.02.05.04.07.07.26.24.51.5.75.77,2.26,2.49,3.65,5.87,3.65,9.7s-1.52,7.5-3.99,10.01Z"/>
+          <path fill="#09090a" d="M296.14,15.27c-3.65-2.54-8.06-4.07-12.83-4.2-.22-.01-.44-.03-.66-.03-.07,0-.14,0-.2.01-.13,0-.25-.01-.38-.01-13.02,0-23.57,10.47-23.57,23.41s10.19,23.1,22.9,23.46c.22,0,.44.03.66.03.07,0,.14,0,.2-.01.13,0,.25.01.38.01,5.03,0,9.68-1.57,13.5-4.23v2.95h10.07V12.55h-10.07v2.72ZM292.15,44.53l-.02-.03c-2.42,2.42-5.68,3.91-9.76,3.98-3.78-.06-6.97-1.38-9.34-3.52-.02-.02-.05-.05-.07-.07-.26-.24-.51-.5-.75-.76-2.26-2.49-3.65-5.87-3.65-9.7s1.52-7.5,3.99-10.01l.02.03c2.42-2.42,5.68-3.91,9.76-3.98,3.78.06,6.97,1.38,9.34,3.52.02.02.05.04.07.07.26.24.51.5.75.77,2.26,2.49,3.65,5.87,3.65,9.7s-1.52,7.5-3.99,10.01Z"/>
+          <path fill="#09090a" d="M160.55,11.03c-.13,0-.25,0-.38.01-.07,0-.14-.01-.2-.01-.22,0-.44.03-.66.03-4.77.13-9.18,1.67-12.83,4.2V.04h-10.07v56.62h10.07v-2.95c3.83,2.66,8.48,4.23,13.5,4.23.13,0,.25,0,.38-.01.07,0,.14.01.2.01.22,0,.44-.03.66-.03,12.71-.36,22.9-10.66,22.9-23.46s-10.55-23.41-23.57-23.41ZM170.41,44.14c-.24.26-.49.52-.75.76-.02.02-.05.05-.07.07-2.36,2.14-5.56,3.46-9.34,3.52-4.09-.07-7.35-1.57-9.76-3.98l-.02.03c-2.47-2.51-3.99-6.03-3.99-10.01s1.39-7.21,3.65-9.7c.24-.26.49-.52.75-.77.02-.02.05-.04.07-.07,2.36-2.14,5.56-3.46,9.34-3.52,4.09.07,7.35,1.57,9.76,3.98l.02-.03c2.47,2.51,3.99,6.03,3.99,10.01s-1.39,7.21-3.65,9.7Z"/>
+          <path fill="#09090a" d="M193.9,10.04c2.77,0,4.99-2.28,4.99-5.06s-2.22-4.99-4.99-4.99-5.06,2.22-5.06,4.99,2.29,5.06,5.06,5.06Z"/>
+          <rect fill="#09090a" x="313.02" y="12.55" width="10.07" height="44.11"/>
+          <path fill="#09090a" d="M318.05,10.04c2.77,0,4.99-2.28,4.99-5.06s-2.22-4.99-4.99-4.99-5.06,2.22-5.06,4.99,2.29,5.06,5.06,5.06Z"/>
+          <path fill="#09090a" d="M248.17,51.68c0-2.77,2.29-4.99,5.06-4.99s4.99,2.22,4.99,4.99-2.22,5.06-4.99,5.06-5.06-2.28-5.06-5.06Z"/>
+          <path fill="#3f1993" d="M37.66,12.55v2.72c-3.66-2.53-8.07-4.06-12.83-4.2-.22-.01-.44-.03-.66-.03-.07,0-.14.01-.2.01-.14-.01-.26-.01-.38-.01C10.55,11.03,0,21.5,0,34.44s10.18,23.1,22.9,23.46c.23,0,.44.03.67.03.07,0,.14-.01.2-.01.12,0,.25.01.38.01,5.02,0,9.68-1.57,13.5-4.23v2.95h10.07V12.55h-10.07ZM32.26,23.23c.32.24.63.49.93.76l.07.07c.26.25.51.5.76.77,1.92,2.13,3.23,4.9,3.55,8.06-6.63-.22-11.97-5.6-12.12-12.26,1.39.14,2.73.46,3.96,1,.66.27,1.27.58,1.84.93.35.2.68.43,1.01.68ZM14.07,24.43l.02.02c.72-.72,1.51-1.36,2.38-1.9.23-.14.46-.27.7-.4.68-.37,1.42-.67,2.19-.92.93-.3,1.9-.51,2.91-.61-.14,6.65-5.49,12.05-12.12,12.26.34-3.35,1.77-6.28,3.92-8.45ZM18.68,47.51l-.58-.24c-.58-.26-1.13-.54-1.64-.86-.69-.43-1.32-.91-1.92-1.45l-.07-.07c-.27-.24-.52-.5-.76-.76-1.94-2.13-3.23-4.92-3.55-8.08,6.65.2,11.99,5.64,12.12,12.32-1.28-.15-2.49-.44-3.6-.87ZM33.67,44.54l-.02-.03c-.91.91-1.94,1.69-3.08,2.31-.29.16-.6.3-.91.45-.29.13-.59.25-.89.37-1.03.37-2.14.63-3.32.76.1-6.69,5.47-12.12,12.13-12.32-.34,3.35-1.78,6.29-3.92,8.48Z"/>
+        </g>
+      </svg>
+    </a>
+    <nav class="nav-links">
+      <a href="index.html#suite">The Suite</a>
+      <a href="assistants.html">Assistants</a>
+      <a href="translate.html">Translate</a>
+      <a href="ocr.html">OCR</a>
+      <a href="speech.html">Speech</a>
+      <a href="technology.html">Technology</a>
+      <a href="integrations.html">Integrations</a>
+      <div class="nav-dropdown">
+        <button class="nav-trigger" aria-haspopup="true">
+          Solutions
+          <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="nav-mega" role="menu">
+          <div class="nav-mega-inner">
+            <div class="nav-mega-col">
+              <h4>AI &amp; Agentic Tech</h4>
+              <a href="llm.html" class="nav-mega-item">
+                <div class="nav-mega-logo llm-mark lg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 83 60"> <path class="st0" d="M28.7,9.1h0c-.4-.4-1.1-.7-1.8-.7-.8,0-1.4.3-1.9.7-.5.5-.8,1.1-.8,1.9s.3,1.3.7,1.8c0,0,0,0,.1.1h0c.4.4,1.1.7,1.8.7.8,0,1.4-.3,1.9-.7.5-.5.8-1.1.8-1.9s-.3-1.4-.7-1.8c0,0,0,0-.1-.1Z"/> <path class="st0" d="M37.3,8.4c-.7,0-1.3.3-1.8.7h0c0,0,0,.1-.1.2-.4.5-.7,1.1-.7,1.8s.3,1.4.8,1.9c.5.5,1.1.7,1.9.7.7,0,1.3-.3,1.8-.7h0c0,0,0-.1.1-.2.4-.5.7-1.1.7-1.8s-.3-1.4-.8-1.9c-.5-.5-1.1-.7-1.9-.7Z"/> <path class="st0" d="M11.6,13.6c.2,0,.4,0,.6-.1,0,0,.1,0,.2,0h.2c.2-.2.4-.3.6-.5.4-.4.7-1,.7-1.6-1.3,0-2.3,1-2.3,2.3Z"/> <path class="st0" d="M8.7,11.3c0,.6.3,1.1.7,1.5,0,0,0,0,.1.2h0c.1,0,.2.2.4.3,0,0,.2.1.3.2h.1s0,0,0,0h0c.2,0,.4.1.7.2,0-1.2-1-2.3-2.3-2.3Z"/> <path class="st0" d="M13.9,10.7c0-.6-.3-1.1-.7-1.5,0,0,0,0-.1-.2h0c0,0-.1,0-.2-.1h0c0,0-.1,0-.2-.1-.1,0-.2-.1-.4-.2-.2,0-.5-.2-.8-.2,0,1.2,1,2.2,2.3,2.3Z"/> <path class="st0" d="M11,8.4s0,0,0,0c-.2,0-.3,0-.5,0-.1,0-.3.1-.4.2,0,0-.1,0-.1,0-.2.1-.3.2-.5.4h0c-.4.4-.7.9-.7,1.6,1.3,0,2.3-1,2.3-2.3,0,0,0,0,0,0,0,0,0,0,0,0Z"/> <path class="st0" d="M62.4,9.1h0c-.4-.4-1.1-.7-1.8-.7-.8,0-1.4.3-1.9.7-.5.5-.8,1.1-.8,1.9s.3,1.3.7,1.8c0,0,0,0,.1.1h0c.4.4,1.1.7,1.8.7.8,0,1.4-.3,1.9-.7.5-.5.8-1.1.8-1.9s-.3-1.4-.7-1.8c0,0,0,0-.1-.1Z"/> <path class="st0" d="M75.9,17.3V3.5c0-1.9-1.6-3.5-3.5-3.5H3.5C1.6,0,0,1.5,0,3.5v13.8c0,1.9,1.6,3.5,3.5,3.5h68.8c2,0,3.5-1.5,3.5-3.5ZM43.7,4.6c.5,0,.9.4.9.9s-.4.9-.9.9-1-.4-1-.9.4-.9,1-.9ZM15.8,15.1h-1.9v-.5c-.7.5-1.6.8-2.6.8h-.2c-2.4,0-4.4-2-4.4-4.4s2-4.4,4.5-4.4h.2c.9,0,1.8.3,2.4.8v-.5h1.9v8.2ZM22.2,8.7h-1.3c-1,0-1.9.8-1.9,1.8v4.6h-1.9v-5.1c0-1.7,1.4-3.1,3.2-3.1h1.9v1.7ZM31.5,15.1h-1.9v-.6c-.7.5-1.6.8-2.6.8h-.2c-2.4,0-4.4-2-4.4-4.4s2-4.4,4.5-4.4h.2c.9,0,1.8.3,2.4.8v-.5h1.9v8.2ZM37.5,15.3h-.2c-1,0-1.9-.3-2.6-.8v.6h-1.9V4.6h1.9v2.8c.7-.5,1.5-.8,2.4-.8h.2c2.5,0,4.5,2,4.5,4.3s-1.9,4.3-4.4,4.4ZM44.7,15.1h-1.9V6.9h1.9v8.2ZM50,13.6c.8,0,1.5-.3,1.9-.7l1.2,1.2c-.8.8-1.9,1.3-3.2,1.3-2.5,0-4.5-2-4.5-4.4s2-4.4,4.5-4.4,2.5.5,3.3,1.4l-1.2,1.2c-.5-.5-1.2-.9-2-.9h0c-1.4,0-2.6,1.1-2.6,2.6s1.1,2.6,2.6,2.6ZM55,15.1c-.5,0-1-.4-1-.9s.4-.9,1-.9.9.4.9.9-.4.9-.9.9ZM65.1,15.1h-1.9v-.6c-.7.5-1.6.8-2.6.8h-.2c-2.4,0-4.4-2-4.4-4.4s2-4.4,4.5-4.4h.2c.9,0,1.8.3,2.4.8v-.5h1.9v8.2ZM67.4,4.6c.5,0,.9.4.9.9s-.4.9-.9.9-1-.4-1-.9.4-.9,1-.9ZM68.3,15.1h-1.9V6.9h1.9v8.2Z"/> <path class="st0" d="M49.9,41.3c.6-.2,1.2-.3,1.9-.3h-1.3c-.2,0-.4.2-.6.3Z"/> <path class="st0" d="M17.8,54.8c-3,0-5.5-1.1-5.5-6.8v-7.3h0v-11.4h-5.6v21.6c0,3.7,2.3,6.9,5.6,8.3,1.1.5,2.3.7,3.6.7h5.6v-5.1h-3.7Z"/> <path class="st0" d="M33.5,54.8c-3,0-5.5-1.1-5.5-6.8v-7.3h0v-11.4h-5.6v21.6c0,3.7,2.3,6.9,5.6,8.3,1.1.5,2.3.7,3.6.7h5.6v-5.1h-3.7Z"/> <path class="st0" d="M73.4,35.9h0s-9.4,0-9.4,0v4.9c-1.5-2.9-4.6-4.9-8.2-4.9h-5.9c-.3,0-.5,0-.8,0-1,0-1.9.3-2.8.7v-.7h-5.6v23.9h5.6s0,0,0,0v-12.2c0,0,0,.1,0,.2,0,0,0-.1,0-.2v-1.3c0-2.3,1.5-4.3,3.6-5,0,0,0,0,0,0,0,0,0,0,0,0,.2-.1.4-.2.6-.3h1.3s0,0,0,0h2c3.1,0,5.5,2.4,5.5,5.4v13.5h5.6v-15c0-1.4-.3-2.7-.9-3.9h7.4c3.1,0,5.5,2.4,5.5,5.4v13.5h5.6v-15c0-5-4.1-9-9.2-9Z"/> </svg></div>
+                <p>The sovereign Arabic-first language model powering national-scale AI innovation.</p>
+              </a>
+              <a href="agentic-studio.html" class="nav-mega-item">
+                <div class="nav-mega-logo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 291 58"> <path class="st0" d="M43.5,32.4c-1.5-1-3.4-1.7-5.4-1.7h0c0,0-.2,0-.3,0s0,0,0,0c0,0-.1,0-.2,0-5.4,0-9.9,4.3-9.9,9.6s4.3,9.5,9.6,9.6h0c0,0,.2,0,.3,0h.2c2.1,0,4-.6,5.6-1.7v1.7c0,2.2-1.9,4.1-4.1,4.1h-2.8v3.8h4.2c3.8,0,6.9-3,6.9-6.8v-19.7h-4.2v1.1ZM41.8,44.4h0s0,0,0,0c-1,1-2.4,1.6-4.1,1.6-1.6,0-2.9-.6-3.9-1.4,0,0,0,0,0,0-.1,0-.2-.2-.3-.3-.9-1-1.5-2.4-1.5-4s.6-3.1,1.7-4.1h0c1-1,2.4-1.6,4.1-1.6,1.6,0,2.9.6,3.9,1.4,0,0,0,0,0,0,.1,0,.2.2.3.3.9,1,1.5,2.4,1.5,4s-.6,3.1-1.7,4.1Z"/> <path class="st0" d="M83.2,31.3c-1.1-.4-2.3-.6-3.5-.6h-.5c-2,0-3.8.7-5.3,1.7v-1.1h-4.2v18h4.2v-9c0-1.6.6-3,1.5-4,.1-.1.2-.2.3-.3h0c.7-.7,1.7-1.1,2.7-1.3.4,0,.8-.1,1.2-.1.9,0,1.6.2,2.3.4.3.1.6.3.8.4.3.2.7.5.9.7,1,1,1.7,2.5,1.7,4.1v9.1h4.2v-9.1c0-4.1-2.6-7.5-6.3-8.9Z"/> <rect class="st0" x="108.3" y="31.3" width="4.2" height="18"/> <path class="st0" d="M124.1,34.5h0c1.9,0,3.4.7,4.4,1.9l2.7-2.7c-1.8-1.8-4.3-3-7.1-3-5.4,0-9.8,4.3-9.8,9.6s4.4,9.6,9.8,9.6,5.1-1,6.9-2.8l-2.7-2.7c-1,1-2.4,1.6-4.2,1.6-3.1,0-5.6-2.5-5.6-5.7s2.5-5.7,5.6-5.7Z"/> <path class="st0" d="M110.4,30.3c1.2,0,2.1-.9,2.1-2.1s-.9-2-2.1-2-2.1.9-2.1,2,1,2.1,2.1,2.1Z"/> <path class="st0" d="M22.4,31.3v1.1c-1.5-1-3.4-1.7-5.3-1.7h-.5c-5.4,0-9.8,4.3-9.8,9.6s4.2,9.4,9.5,9.6h.5c2.1,0,4-.6,5.6-1.7v1.2h4.2v-18h-4.2,0ZM14.5,45.5h0,0s-.2-.1-.2-.1c-.2-.1-.5-.2-.7-.4-.3-.2-.6-.4-.8-.6h0c-.1-.1-.2-.2-.3-.3-.8-.9-1.3-2-1.5-3.3,2.8,0,5,2.3,5,5-.5,0-1-.2-1.5-.4ZM11,39.6c.2-1.4.7-2.6,1.6-3.5h0c.3-.3.6-.5,1-.8,0,0,.2-.1.3-.2.3-.1.6-.3.9-.4.4-.1.8-.2,1.2-.2,0,2.7-2.3,4.9-5,5ZM20.8,44.3h0c-.4.4-.8.7-1.3.9l-.4.2c-.1,0-.2.1-.4.1-.4.1-.9.2-1.4.3,0-2.7,2.3-4.9,5-5-.2,1.4-.7,2.6-1.6,3.5ZM17.3,34.6c.6,0,1.1.2,1.6.4.3.1.5.2.8.4.2,0,.3.2.4.3h0c.1.1.3.2.4.3h0c.1.1.2.2.3.3.8.9,1.3,2,1.5,3.3-2.8,0-5-2.3-5-5Z"/> <path class="st0" d="M98.4,26.2h-4.2v4.5h-4.6v4.1h4.6v2.7h0v5.1c0,3.7,3.1,6.8,6.9,6.8h4.2v-3.8h-2.8c-2.3,0-4.1-.8-4.1-5.1v-5.5h6.9v-4.1h-7v-4.5Z"/> <path class="st0" d="M58.7,30.8c-5.6,0-9.7,4.1-9.7,9.5s3.9,9.3,9.3,9.5h0s.4,0,.4,0c3.6,0,6.7-1.7,8.4-4.5l.4-.7-3.5-2-.4.7c-.8,1.2-2.3,2.7-4.9,2.7s-4.8-1.9-5.4-3.7h13.8c1.2,0,1.2-1.4,1.2-2,0-4.5-3.4-9.4-9.7-9.4ZM53.3,38.3c.6-1.8,2.5-3.5,5.4-3.5s4.6,1.7,5.3,3.5h-10.6Z"/> <path class="st0" d="M37.3,8.4c-.7,0-1.3.3-1.8.7h0c0,0,0,.1-.1.2-.4.5-.7,1.1-.7,1.8s.3,1.4.8,1.9c.5.5,1.1.7,1.9.8.7,0,1.3-.3,1.8-.7h0c0,0,0-.1.1-.2.4-.5.7-1.1.7-1.8s-.3-1.4-.8-1.9c-.5-.5-1.1-.7-1.9-.8Z"/> <path class="st0" d="M13.9,10.7c0-.6-.3-1.1-.7-1.5,0,0,0,0-.1-.2h0c0,0-.1,0-.2-.1h0c0,0-.1,0-.2-.1-.1,0-.2-.1-.4-.2-.2,0-.5-.2-.8-.2,0,1.3,1,2.3,2.3,2.3Z"/> <path class="st0" d="M75.9,17.4V3.5c0-1.9-1.6-3.5-3.5-3.5H3.5C1.6,0,0,1.6,0,3.5v13.9c0,1.9,1.6,3.5,3.5,3.5h68.8c2,0,3.5-1.6,3.5-3.5ZM43.7,4.6c.5,0,.9.4.9.9s-.4.9-.9.9-1-.4-1-.9.4-.9,1-.9ZM15.8,15.2h-1.9v-.5c-.7.5-1.6.8-2.6.8h-.2c-2.4,0-4.4-2-4.4-4.4s2-4.4,4.5-4.4h.2c.9,0,1.8.3,2.4.8v-.5h1.9v8.3ZM22.2,8.7h-1.3c-1,0-1.9.8-1.9,1.9v4.7h-1.9v-5.2c0-1.7,1.4-3.1,3.2-3.1h1.9v1.7ZM31.5,15.2h-1.9v-.6c-.7.5-1.6.8-2.6.8h-.2c-2.4,0-4.4-2-4.4-4.4s2-4.4,4.5-4.4h.2c.9,0,1.8.3,2.4.8v-.5h1.9v8.3ZM37.5,15.4h-.2c-1,0-1.9-.3-2.6-.8v.6h-1.9V4.6h1.9v2.9c.7-.5,1.5-.8,2.4-.8h.2c2.5,0,4.5,2,4.5,4.4s-1.9,4.3-4.4,4.4ZM44.7,15.2h-1.9V6.9h1.9v8.3ZM50,13.7c.8,0,1.5-.3,1.9-.8l1.2,1.2c-.8.8-1.9,1.3-3.2,1.3-2.5,0-4.5-2-4.5-4.4s2-4.4,4.5-4.4,2.5.5,3.3,1.4l-1.2,1.2c-.5-.5-1.2-.9-2-.9h0c-1.4,0-2.6,1.1-2.6,2.6s1.1,2.6,2.6,2.6ZM55,15.2c-.5,0-1-.4-1-.9s.4-.9,1-.9.9.4.9.9-.4.9-.9.9ZM65.1,15.2h-1.9v-.6c-.7.5-1.6.8-2.6.8h-.2c-2.4,0-4.4-2-4.4-4.4s2-4.4,4.5-4.4h.2c.9,0,1.8.3,2.4.8v-.5h1.9v8.3ZM67.4,4.6c.5,0,.9.4.9.9s-.4.9-.9.9-1-.4-1-.9.4-.9,1-.9ZM68.4,15.2h-1.9V6.9h1.9v8.3Z"/> <path class="st0" d="M11.6,13.6c.2,0,.4,0,.6-.1,0,0,.1,0,.2,0h.2c.2-.2.4-.3.6-.5.4-.4.7-1,.7-1.6-1.3,0-2.3,1.1-2.3,2.3Z"/> <path class="st0" d="M62.4,9.1h0c-.4-.4-1.1-.7-1.8-.7-.8,0-1.4.3-1.9.7-.5.5-.8,1.2-.8,1.9s.3,1.3.7,1.8c0,0,0,0,.1.1h0c.4.4,1.1.7,1.8.7.8,0,1.4-.3,1.9-.7.5-.5.8-1.2.8-1.9s-.3-1.4-.7-1.8c0,0,0,0-.1-.1Z"/> <path class="st0" d="M28.7,9.1h0c-.4-.4-1.1-.7-1.8-.7-.8,0-1.4.3-1.9.7-.5.5-.8,1.2-.8,1.9s.3,1.3.7,1.8c0,0,0,0,.1.1h0c.4.4,1.1.7,1.8.7.8,0,1.4-.3,1.9-.7.5-.5.8-1.2.8-1.9s-.3-1.4-.7-1.8c0,0,0,0-.1-.1Z"/> <path class="st0" d="M8.7,11.3c0,.6.3,1.1.7,1.5,0,0,0,0,.1.2h0c.1,0,.2.2.4.3,0,0,.2.1.3.2h.1s0,0,0,0h0c.2,0,.4.1.7.2,0-1.2-1-2.3-2.3-2.3Z"/> <path class="st0" d="M11,8.4s0,0,0,0c-.2,0-.3,0-.5,0-.1,0-.3.1-.4.2,0,0-.1,0-.1,0-.2.1-.3.2-.5.4h0c-.4.4-.7,1-.7,1.6,1.3,0,2.3-1,2.3-2.3,0,0,0,0,0,0,0,0,0,0,0,0Z"/> <path class="st0" d="M242.2,33h0s0,0,0,0c-.3-.3-.6-.5-1-.7h0c-.5-.3-1.1-.6-1.7-.9,0,0-.2,0-.3-.1,0,0-.1,0-.2,0-1.1-.4-2.3-.6-3.7-.6-1.4,0-2.7.3-3.8.7-3.6,1.4-6.1,4.9-6.1,8.9s0,.2,0,.3c0,.1,0,.2,0,.3,0,.2,0,.5,0,.7,0,0,0,.1,0,.2.5,3,2.3,5.4,4.8,6.8,0,0,.2,0,.3.1,0,0,.1,0,.2,0,1.3.6,2.9,1,4.6,1,1.5,0,2.8-.3,4-.8,0,0,0,0,0,0,.2,0,.4-.2.6-.3.4-.2.8-.4,1.2-.7h0c.5-.3.9-.6,1.3-1h0c1.8-1.7,2.9-4.2,2.9-6.8s-1-4.9-2.6-6.6c-.2-.2-.4-.4-.5-.5ZM239.5,44.3h0c-1,1-2.4,1.6-4.1,1.6-1.6,0-2.9-.6-3.9-1.4,0,0,0,0,0,0-.1,0-.2-.2-.3-.3-.9-1-1.5-2.4-1.5-4s.6-3.1,1.7-4.1h0c1-1,2.4-1.6,4.1-1.6,1.6,0,2.9.6,3.9,1.4,0,0,0,0,0,0,.1,0,.2.2.3.3.9,1,1.5,2.4,1.5,4s-.6,3.1-1.7,4.1Z"/> <path class="st0" d="M284.1,31.1h-7.1v3.7c-1.1-2.2-3.5-3.7-6.1-3.7h-4.4c-.2,0-.4,0-.6,0-.7,0-1.5.2-2.1.5v-.5h-4.2v18.1h4.2v-9.1s0,0,0-.1v-1c0-1.8,1.1-3.2,2.7-3.8.2,0,.3-.2.5-.3h2.5c2.3,0,4.1,1.8,4.1,4.1v10.2h4.2v-11.3c0-1.1-.3-2.1-.7-2.9h5.6c2.3,0,4.1,1.8,4.1,4.1v10.2h4.2v-11.3c0-3.7-3.1-6.8-6.9-6.8Z"/> <path class="st0" d="M203.1,26.1h-4.2v4.5h-4.6v4.1h4.6v2.7h0v5.1c0,3.7,3.1,6.8,6.9,6.8h4.2v-3.8h-2.8c-2.3,0-4.1-.8-4.1-5.1v-5.5h6.9v-4.1h-7v-4.5Z"/> <path class="st0" d="M150.6,29.9c0,0-.2,0-.3,0s0,0,0,0c0,0-.1,0-.2,0-2.1,0-4,.6-5.6,1.7v-1.2h-4.2v23.2h4.2v-6.2c1.5,1,3.4,1.7,5.4,1.7,0,0,.2,0,.3,0s0,0,0,0c0,0,.1,0,.2,0,5.4,0,9.9-4.3,9.9-9.6s-4.3-9.5-9.6-9.6ZM156,39.6c0,1.6-.6,3.1-1.7,4.1h0c-1,1-2.4,1.6-4.1,1.6-1.6,0-2.9-.6-3.9-1.4,0,0,0,0,0,0-.1,0-.2-.2-.3-.3-.9-1-1.5-2.4-1.5-4s.6-3.1,1.7-4.1h0c1-1,2.4-1.6,4.1-1.6,1.6,0,2.9.6,3.9,1.4,0,0,0,0,0,0,.1,0,.2.2.3.3.9,1,1.5,2.4,1.5,4h0Z"/> <path class="st0" d="M246.6,37.9v11.3h4.2v-10.2c0-2.3,1.8-4.1,4.1-4.1h2.8v-3.8h-4.2c-3.8,0-6.9,3-6.9,6.8Z"/> <path class="st0" d="M188.4,32.2c-1.5-1-3.4-1.7-5.4-1.7h-.5c-5.4,0-9.8,4.3-9.8,9.6s4.2,9.5,9.6,9.6h.5c2.1,0,4-.7,5.6-1.7v1.2h4.2v-18.1h-4.2v1.1ZM186.7,44.2c-1,1-2.4,1.6-4.1,1.6-1.6,0-2.9-.6-3.9-1.5h0c-.1-.1-.2-.2-.3-.3-.9-1-1.5-2.4-1.5-4s.6-3.1,1.7-4.1c1-1,2.4-1.6,4.1-1.6,1.6,0,2.9.6,3.9,1.5h0c.1.1.2.2.3.3.9,1,1.5,2.4,1.5,4s-.6,3.1-1.7,4.1Z"/> <path class="st0" d="M165.7,40.2v-5.5h0v-8.6h-4.2v16.3c0,2.8,1.7,5.2,4.2,6.2.8.3,1.7.5,2.7.5h4.2v-3.8h-2.8c-2.3,0-4.1-.8-4.1-5.1Z"/> <path class="st0" d="M217.3,26.6h0c-2.5,1-4.2,3.4-4.2,6.2v16.3h4.2v-8.6h0v-.9h6.9v-4.1h-6.9v-.5c0-4.3,1.9-5.1,4.1-5.1h2.8v-3.8h-4.2c-1,0-1.9.2-2.7.5Z"/> </svg></div>
+                <p>A platform to build, deploy, and manage enterprise-grade AI agents and workflows.</p>
+              </a>
+              <a href="data-services.html" class="nav-mega-item">
+                <div class="nav-mega-logo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 225 54"> <path fill="#09090A" d="M10.9,8.5s0,0,0,0c-.2,0-.3,0-.5,0-.1,0-.3.1-.4.2,0,0,0,0-.1,0-.2.1-.3.2-.4.4h0c-.4.4-.7,1-.7,1.6,1.3,0,2.3-1.1,2.3-2.3,0,0,0,0,0,0,0,0,0,0,0,0Z"/> <path fill="#09090A" d="M8.6,11.5c0,.6.3,1.1.7,1.5,0,0,0,0,.1.2h0c.1,0,.2.2.4.3,0,0,.2.1.3.2h.1s0,0,0,0h0c.2,0,.4.1.7.2,0-1.3-1-2.3-2.3-2.3Z"/> <path fill="#09090A" d="M62,9.2h0c-.4-.4-1.1-.7-1.8-.7-.8,0-1.4.3-1.8.7-.5.5-.8,1.2-.8,1.9s.3,1.4.7,1.8c0,0,0,0,.1.1h0c.4.4,1.1.7,1.8.7.8,0,1.4-.3,1.8-.7.5-.5.8-1.2.8-1.9s-.3-1.4-.7-1.8c0,0,0,0-.1-.1Z"/> <path fill="#09090A" d="M37.1,8.5c-.7,0-1.3.3-1.8.7h0c0,0,0,.1-.1.2-.4.5-.7,1.1-.7,1.8s.3,1.4.8,1.9c.5.5,1.1.7,1.8.8.7,0,1.3-.3,1.8-.7h0c0,0,0-.1.1-.2.4-.5.7-1.1.7-1.8s-.3-1.4-.8-1.9c-.5-.5-1.1-.8-1.8-.8Z"/> <path fill="#09090A" d="M28.6,9.2h0c-.4-.4-1.1-.7-1.8-.7-.8,0-1.4.3-1.8.7-.5.5-.8,1.2-.8,1.9s.3,1.4.7,1.8c0,0,0,0,.1.1h0c.4.4,1.1.7,1.8.7.8,0,1.4-.3,1.8-.7.5-.5.8-1.2.8-1.9s-.3-1.4-.7-1.8c0,0,0,0-.1-.1Z"/> <path fill="#09090A" d="M11.5,13.8c.2,0,.4,0,.6-.1,0,0,.1,0,.2,0h.2c.2-.2.4-.3.6-.5.4-.4.7-1,.7-1.6-1.3,0-2.3,1.1-2.3,2.3Z"/> <path fill="#09090A" d="M13.8,10.9c0-.6-.3-1.1-.7-1.5,0,0,0,0-.1-.2h0c0,0-.1,0-.2-.1h0c0,0-.1,0-.2-.1-.1,0-.2-.1-.3-.2-.2,0-.5-.2-.7-.2,0,1.3,1,2.3,2.3,2.3Z"/> <path fill="#09090A" d="M75.4,17.6V3.5c0-1.9-1.6-3.5-3.5-3.5H3.5C1.6,0,0,1.6,0,3.5v14c0,1.9,1.6,3.5,3.5,3.5h68.4c1.9,0,3.5-1.6,3.5-3.5ZM43.5,4.6c.5,0,.9.4.9.9s-.4,1-.9,1-1-.4-1-1,.4-.9,1-.9ZM15.8,15.4h-1.9v-.6c-.7.5-1.6.8-2.6.8h-.2c-2.4,0-4.3-2-4.3-4.4s2-4.4,4.5-4.4h.2c.9,0,1.7.3,2.4.8v-.5h1.9v8.3ZM22,8.8h-1.3c-1,0-1.9.8-1.9,1.9v4.7h-1.9v-5.2c0-1.7,1.4-3.1,3.1-3.1h1.9v1.8ZM31.3,15.4h-1.9v-.6c-.7.5-1.6.8-2.6.8h-.2c-2.4,0-4.3-2-4.3-4.4s2-4.4,4.5-4.4h.2c.9,0,1.7.3,2.4.8v-.5h1.9v8.3ZM37.3,15.6h-.2c-1,0-1.8-.3-2.6-.8v.6h-1.9V4.6h1.9v2.9c.7-.5,1.5-.8,2.4-.8h.2c2.5,0,4.5,2,4.5,4.4s-1.9,4.4-4.3,4.4ZM44.4,15.4h-1.9V7h1.9v8.3ZM49.7,13.8c.8,0,1.4-.3,1.9-.8l1.2,1.2c-.8.8-1.9,1.3-3.1,1.3-2.5,0-4.5-2-4.5-4.4s2-4.4,4.5-4.4,2.4.5,3.2,1.4l-1.2,1.3c-.5-.5-1.2-.9-2-.9h0c-1.4,0-2.6,1.1-2.6,2.6s1.1,2.7,2.6,2.7ZM54.7,15.4c-.5,0-1-.4-1-1s.4-.9,1-.9.9.4.9.9-.4,1-.9,1ZM64.8,15.4h-1.9v-.6c-.7.5-1.6.8-2.6.8h-.2c-2.4,0-4.3-2-4.3-4.4s2-4.4,4.5-4.4h.2c.9,0,1.7.3,2.4.8v-.5h1.9v8.3ZM67,4.6c.5,0,.9.4.9.9s-.4,1-.9,1-1-.4-1-1,.4-.9,1-.9ZM68,15.4h-1.9V7h1.9v8.3Z"/> <path fill="#09090A" d="M43.2,36c-1.5-1-3.3-1.7-5.3-1.7h-.5c-5.4,0-9.8,4.3-9.8,9.7s4.2,9.6,9.5,9.7h.5c2.1,0,4-.7,5.6-1.7v1.2h4.2v-18.3h-4.2v1.1ZM41.6,48.1c-1,1-2.3,1.6-4.1,1.6-1.6,0-2.9-.6-3.9-1.5h0c-.1-.1-.2-.2-.3-.3-.9-1-1.5-2.4-1.5-4s.6-3.1,1.7-4.1c1-1,2.3-1.6,4.1-1.6,1.6,0,2.9.6,3.9,1.5h0c.1.1.2.2.3.3.9,1,1.5,2.4,1.5,4s-.6,3.1-1.7,4.1Z"/> <path fill="#09090A" d="M22.3,36c-1.5-1.1-3.3-1.7-5.3-1.7,0,0-.2,0-.3,0s0,0,0,0c0,0-.1,0-.2,0-5.4,0-9.8,4.3-9.8,9.7,0,5.3,4.2,9.6,9.5,9.7,0,0,.2,0,.3,0h.2c2.1,0,4-.7,5.6-1.8v1.2h4.2v-23.5h-4.2v6.3ZM20.6,48.1h0c-1,1-2.4,1.6-4.1,1.6-1.6,0-2.9-.6-3.9-1.5,0,0,0,0,0,0-.1,0-.2-.2-.3-.3-.9-1-1.5-2.4-1.5-4h0c0-1.7.6-3.1,1.7-4.2h0c1-1,2.4-1.6,4.1-1.6,1.6,0,2.9.6,3.9,1.5,0,0,0,0,0,0,.1,0,.2.2.3.3.9,1,1.5,2.4,1.5,4s-.6,3.1-1.7,4.1Z"/> <polygon fill="#09090A" points="6.6 43.9 6.6 43.9 6.6 43.9 6.6 43.9"/> <path fill="#09090A" d="M57.6,29.8h-4.2v4.6h-4.6v4.2h4.6v2.7h0v5.1c0,3.8,3.1,6.9,6.9,6.9h4.2v-3.9h-2.8c-2.2,0-4.1-.8-4.1-5.2v-5.6h6.9v-4.2h-6.9v-4.6Z"/> <path fill="#09090A" d="M80.2,36c-1.5-1-3.3-1.7-5.3-1.7h-.5c-5.4,0-9.8,4.3-9.8,9.7s4.2,9.6,9.5,9.7h.5c2.1,0,4-.7,5.6-1.7v1.2h4.2v-18.3h-4.2v1.1ZM72.3,49.3h-.3c-.2-.2-.5-.3-.7-.5-.3-.2-.6-.4-.8-.6h0c-.1-.1-.2-.2-.3-.3-.8-.9-1.3-2-1.5-3.3,2.8,0,5,2.3,5,5.1-.5,0-1-.2-1.5-.4ZM68.8,43.3c.1-1.4.7-2.6,1.6-3.5h0c.3-.3.6-.5,1-.8,0,0,.2-.1.3-.2.3-.1.6-.3.9-.4.4-.1.8-.2,1.2-.3,0,2.8-2.3,5-5,5.1ZM78.5,48.1c-.4.4-.8.7-1.3.9l-.4.2c-.1,0-.2.1-.4.1-.4.1-.9.3-1.4.3,0-2.8,2.3-5,5-5.1-.1,1.4-.7,2.6-1.6,3.5ZM75.1,38.2c.6,0,1.1.2,1.6.4.3.1.5.2.8.4.1,0,.3.2.4.3h0c.1.1.3.2.4.3h0c.1.1.2.2.3.3.8.9,1.3,2,1.5,3.3-2.8,0-5-2.3-5-5.1Z"/> <polygon fill="#09090A" points="70.4 39.8 70.4 39.8 70.4 39.8 70.4 39.8"/> <path fill="#09090A" d="M131.7,41.7v11.4h4.2v-10.3c0-2.3,1.8-4.1,4.1-4.1h2.8v-3.9h-4.2c-3.8,0-6.9,3.1-6.9,6.8Z"/> <path fill="#09090A" d="M177.9,38.1h0c1.9,0,3.4.7,4.4,1.9l2.7-2.7c-1.8-1.8-4.3-3-7.1-3-5.4,0-9.8,4.3-9.8,9.7s4.4,9.7,9.8,9.7,5.1-1.1,6.9-2.9l-2.7-2.7c-1,1-2.4,1.7-4.2,1.7-3.1,0-5.6-2.5-5.6-5.8s2.5-5.8,5.6-5.8Z"/> <rect fill="#09090A" x="162.3" y="34.8" width="4.2" height="18.3"/> <path fill="#09090A" d="M164.4,33.8c1.2,0,2.1-.9,2.1-2.1s-.9-2.1-2.1-2.1-2.1.9-2.1,2.1,1,2.1,2.1,2.1Z"/> <polygon fill="#09090A" points="152.2 49.3 147.6 34.9 143.7 34.9 149.6 53.1 151 53.1 153.5 53.1 154.8 53.1 160.8 34.9 156.9 34.9 152.2 49.3"/> <path fill="#09090A" d="M120.8,34.4c-5.6,0-9.6,4.2-9.6,9.6s3.9,9.4,9.2,9.6h0s.4,0,.4,0c3.6,0,6.7-1.7,8.4-4.6l.4-.7-3.4-2.1-.4.7c-.8,1.2-2.3,2.7-4.9,2.7s-4.7-1.9-5.3-3.8h13.7c1.2,0,1.2-1.4,1.2-2,0-4.6-3.4-9.5-9.6-9.5ZM115.4,42c.6-1.8,2.5-3.6,5.3-3.6s4.6,1.8,5.2,3.6h-10.6Z"/> <path fill="#09090A" d="M195.3,34.4c-5.6,0-9.6,4.2-9.6,9.6s3.9,9.4,9.2,9.6h0s.4,0,.4,0c3.6,0,6.7-1.7,8.4-4.6l.4-.7-3.4-2.1-.4.7c-.8,1.2-2.3,2.7-4.9,2.7s-4.7-1.9-5.3-3.8h13.7c1.2,0,1.2-1.4,1.2-2,0-4.6-3.4-9.5-9.6-9.5ZM190,42c.6-1.8,2.5-3.6,5.3-3.6s4.6,1.8,5.2,3.6h-10.6Z"/> <path fill="#09090A" d="M109.4,44.1c-1.4-2-3.3-2.4-4.6-2.4h-7.4c-.2,0-.4,0-.6-.1-.2,0-.4-.2-.6-.4-.1-.1-.3-.3-.4-.5,0-.2-.1-.4-.1-.7s0-.5.1-.7c0-.2.2-.4.4-.5.2-.2.3-.3.5-.4.2,0,.4-.1.6-.1h5.9s5.3,0,5.3,0v-4h-11.3c-.8,0-1.5.2-2.2.5-.7.3-1.3.7-1.8,1.2-.5.5-.9,1.1-1.2,1.8-.3.7-.5,1.4-.5,2.2s.2,1.8.6,2.5c.1.2.3.5.5.8,1.4,2,3.3,2.4,4.6,2.4h7.4c.2,0,.4,0,.6.1.2,0,.4.2.6.4.2.1.3.3.4.5,0,.2.1.4.1.7s0,.5-.1.7c0,.2-.2.4-.4.5-.2.2-.3.3-.5.4-.2,0-.4.1-.6.1h-3.5s-8.3,0-8.3,0v4h11.8c.8,0,1.5-.2,2.2-.5.7-.3,1.3-.7,1.8-1.2.5-.5.9-1.1,1.2-1.8.3-.7.5-1.4.5-2.2s-.2-1.8-.6-2.6c-.1-.2-.3-.5-.5-.8Z"/> <path fill="#09090A" d="M224.3,44.9c-.1-.2-.3-.5-.5-.8-1.4-2-3.3-2.4-4.6-2.4h-7.4c-.2,0-.4,0-.6-.1-.2,0-.4-.2-.6-.4-.2-.1-.3-.3-.4-.5,0-.2-.1-.4-.1-.7s0-.5.1-.7c0-.2.2-.4.4-.5.2-.2.3-.3.5-.4.2,0,.4-.1.6-.1h5.9s5.3,0,5.3,0v-4h-11.3c-.8,0-1.5.2-2.2.5-.7.3-1.3.7-1.8,1.2-.5.5-.9,1.1-1.2,1.8-.3.7-.5,1.4-.5,2.2s.2,1.8.6,2.5c.1.2.3.5.5.8,1.4,2,3.3,2.4,4.6,2.4h7.4c.2,0,.4,0,.6.1.2,0,.4.2.6.4.1.1.3.3.4.5,0,.2.1.4.1.7s0,.5-.1.7c0,.2-.2.4-.4.5-.2.2-.3.3-.5.4-.2,0-.4.1-.6.1h-3.5s-8.3,0-8.3,0v4h11.8c.8,0,1.5-.2,2.2-.5.7-.3,1.3-.7,1.8-1.2.5-.5.9-1.1,1.2-1.8.3-.7.5-1.4.5-2.2s-.2-1.8-.6-2.6Z"/> </svg></div>
+                <p>End-to-end data collection, labeling, and annotation services for AI training.</p>
+              </a>
+            </div>
+            <div class="nav-mega-col">
+              <h4>Language &amp; Content</h4>
+              <a href="https://tarjama.com/" target="_blank" rel="noopener" class="nav-mega-item">
+                <div class="nav-mega-logo tall xl xxl"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 270"> <path fill="#09090A" d="M14.47,112.11H0v81.55c0,3.23.61,6.24,1.85,9.02,1.24,2.78,2.92,5.24,5.05,7.35,2.13,2.12,4.64,3.79,7.49,5.01,2.87,1.23,5.92,1.84,9.18,1.84h-.01s12.91-.01,12.91-.01v-14.37h-12.91c-2.58,0-4.73-.86-6.47-2.59s-2.6-3.82-2.6-6.27v-46.95h22.46v-14.2H14.47v-20.38Z"/> <path fill="#09090A" d="M121.71,142.93c-3.98-3.95-8.66-7.07-14.05-9.36-5.39-2.28-11.11-3.43-17.17-3.43s-11.72,1.14-17,3.43c-5.28,2.28-9.9,5.4-13.88,9.36-3.98,3.95-7.13,8.58-9.43,13.87s-3.45,10.94-3.45,16.96,1.16,11.67,3.45,16.96,5.44,9.89,9.43,13.78c3.98,3.9,8.6,6.99,13.88,9.27,5.28,2.28,10.94,3.43,17,3.43,5.72,0,11.07-.97,16.07-2.92,4.98-1.95,9.45-4.65,13.38-8.1v9.36h14.65v-41.77c0-6.02-1.16-11.67-3.45-16.96-2.3-5.29-5.44-9.91-9.43-13.87ZM117.67,185.12c-1.5,3.56-3.59,6.66-6.22,9.27-2.65,2.62-5.75,4.71-9.34,6.27-3.59,1.56-7.57,2.34-11.61,2.34s-7.85-.78-11.45-2.34c-3.59-1.56-6.71-3.65-9.34-6.27-2.63-2.62-4.73-5.71-6.31-9.27-1.57-3.56-2.35-7.35-2.35-11.36s.78-7.8,2.35-11.36,3.68-6.68,6.31-9.36c2.63-2.67,5.75-4.76,9.34-6.27,3.59-1.5,7.41-2.26,11.45-2.26s8.02.75,11.61,2.26c3.59,1.5,6.71,3.59,9.34,6.27,2.63,2.67,4.71,5.79,6.22,9.36s2.27,7.35,2.27,11.36-.75,7.8-2.27,11.36Z"/> <path fill="#09090A" d="M197.87,130.33c-6.5,0-12.59,1.14-18.25,3.43-5.67,2.28-10.64,5.37-14.9,9.27s-7.63,8.52-10.09,13.87c-2.46,5.35-3.7,11.03-3.7,17.04v41.77h14.47v-41.77c0-4.01.85-7.8,2.53-11.36,1.67-3.56,4.01-6.68,6.98-9.36,2.98-2.67,6.43-4.76,10.36-6.27,3.91-1.5,8.13-2.26,12.61-2.26v-14.37Z"/> <path fill="#09090A" d="M210.48,246.62c0,2.56-1.18,4.73-3.54,6.52-2.35,1.78-5.21,2.67-8.58,2.67h-8.81v14.19h8.81c3.69,0,7.14-.61,10.35-1.84,3.19-1.23,6-2.9,8.41-5.01s4.32-4.59,5.72-7.44c1.41-2.84,2.1-5.88,2.1-9.11v-116.46h-14.47v116.47Z"/> <path fill="#09090A" d="M312.89,142.93c-3.98-3.95-8.66-7.07-14.05-9.36-5.39-2.28-11.11-3.43-17.17-3.43s-11.72,1.14-17,3.43c-5.28,2.28-9.9,5.4-13.88,9.36-3.98,3.95-7.13,8.58-9.43,13.87-2.3,5.29-3.45,10.94-3.45,16.96s1.16,11.67,3.45,16.96c2.3,5.29,5.44,9.89,9.43,13.78,3.98,3.9,8.6,6.99,13.88,9.27,5.28,2.28,10.94,3.43,17,3.43,5.72,0,11.07-.97,16.07-2.92,4.98-1.95,9.45-4.65,13.38-8.1v9.36h14.65v-41.77c0-6.02-1.16-11.67-3.45-16.96-2.3-5.29-5.44-9.91-9.43-13.87ZM308.85,185.12c-1.5,3.56-3.59,6.66-6.22,9.27-2.65,2.62-5.75,4.71-9.34,6.27-3.59,1.56-7.57,2.34-11.61,2.34s-7.85-.78-11.45-2.34c-3.59-1.56-6.71-3.65-9.34-6.27-2.63-2.62-4.73-5.71-6.31-9.27-1.57-3.56-2.35-7.35-2.35-11.36s.78-7.8,2.35-11.36c1.57-3.56,3.68-6.68,6.31-9.36,2.63-2.67,5.75-4.76,9.34-6.27,3.59-1.5,7.41-2.26,11.45-2.26s8.02.75,11.61,2.26c3.59,1.5,6.71,3.59,9.34,6.27,2.63,2.67,4.71,5.79,6.22,9.36s2.27,7.35,2.27,11.36-.75,7.8-2.27,11.36Z"/> <path fill="#09090A" d="M553.23,142.93c-3.98-3.95-8.66-7.07-14.05-9.36-5.39-2.28-11.11-3.43-17.17-3.43s-11.72,1.14-17,3.43c-5.28,2.28-9.9,5.4-13.88,9.36-3.98,3.95-7.13,8.58-9.43,13.87-2.3,5.29-3.45,10.94-3.45,16.96s1.16,11.67,3.45,16.96c2.3,5.29,5.44,9.89,9.43,13.78,3.98,3.9,8.61,6.99,13.88,9.27,5.28,2.28,10.94,3.43,17,3.43,5.72,0,11.07-.97,16.07-2.92,4.98-1.95,9.45-4.65,13.38-8.1v9.36h14.65v-41.77c0-6.02-1.16-11.67-3.45-16.96-2.3-5.29-5.44-9.91-9.43-13.87ZM549.19,185.12c-1.5,3.56-3.59,6.66-6.22,9.27-2.65,2.62-5.75,4.71-9.34,6.27-3.59,1.56-7.57,2.34-11.61,2.34s-7.85-.78-11.45-2.34c-3.59-1.56-6.71-3.65-9.34-6.27-2.63-2.62-4.73-5.71-6.31-9.27-1.57-3.56-2.35-7.35-2.35-11.36s.78-7.8,2.35-11.36c1.57-3.56,3.68-6.68,6.31-9.36,2.63-2.67,5.75-4.76,9.34-6.27,3.59-1.5,7.41-2.26,11.45-2.26s8.02.75,11.61,2.26c3.59,1.5,6.71,3.59,9.34,6.27,2.63,2.67,4.71,5.79,6.22,9.36,1.52,3.56,2.27,7.35,2.27,11.36s-.75,7.8-2.27,11.36Z"/> <path fill="#09090A" d="M452.5,140.18c-3.02-3.01-6.59-5.4-10.68-7.18-4.11-1.78-8.45-2.67-13.05-2.67-5.5,0-10.5,1.17-14.98,3.51-4.48,2.34-8.35,5.51-11.61,9.52-3.15-4.01-6.99-7.18-11.53-9.52-4.55-2.34-9.5-3.51-14.88-3.51-4.6,0-8.94.89-13.02,2.67-4.09,1.78-7.66,4.18-10.69,7.18-3.04,3.01-5.44,6.54-7.24,10.61-1.8,4.07-2.7,8.38-2.7,12.95v51.96h14.3v-51.96c0-2.67.52-5.15,1.52-7.44,1.02-2.28,2.38-4.29,4.12-6.02s3.79-3.09,6.14-4.09c2.35-1,4.89-1.5,7.57-1.5s5.19.5,7.49,1.5c2.3,1,4.34,2.37,6.14,4.09,1.8,1.73,3.2,3.73,4.2,6.02,1.02,2.28,1.52,4.76,1.52,7.44v51.96h14.3v-51.96c0-2.67.51-5.15,1.52-7.44,1.02-2.28,2.38-4.29,4.12-6.02s3.79-3.09,6.14-4.09c2.35-1,4.87-1.5,7.57-1.5s5.19.5,7.49,1.5,4.32,2.37,6.06,4.09,3.12,3.73,4.12,6.02c1.02,2.28,1.52,4.76,1.52,7.44v51.96h14.48v-51.96c0-4.57-.91-8.88-2.7-12.95-1.8-4.07-4.2-7.6-7.24-10.61Z"/> <path fill="#09090A" d="M375.76,130.32s.01,0,.02,0c0,0,.01,0,.02,0h-.04Z"/> <path fill="#09090A" d="M708.68,101.43h-86.88c-10.11,0-18.37,8.27-18.37,18.37v86.88c0,10.11,8.27,18.37,18.37,18.37h86.88c10.11,0,18.37-8.27,18.37-18.37v-86.88c0-10.11-8.27-18.37-18.37-18.37ZM692.92,210.57l-6.86-8.84c-4.02,3.45-8.45,6.1-13.26,7.96-4.8,1.85-9.89,2.78-15.23,2.78-6.79,0-13.02-1.35-18.67-4.05-5.64-2.7-10.12-6.56-13.46-11.6-3.33-5.03-5-10.87-5-17.54,0-4.66.95-9.18,2.85-13.53,1.91-4.36,4.62-8.19,8.16-11.49,3.54-3.31,7.62-5.75,12.24-7.34l-12.85-16.6v-15.3h60.3v17.2h-38.42l32.9,42.63c2.45-6.17,3.75-13.12,3.87-20.87l16.58-.07c.14,6.35-.61,12.55-2.24,18.6-1.63,6.04-4.01,11.61-7.14,16.69l16.46,21.34h.03s-20.26.01-20.26.01Z"/> <path fill="#09090A" d="M645.43,162.33c-2.2,1.7-3.87,3.77-5,6.22s-1.7,4.98-1.7,7.62c0,4.12.93,7.6,2.81,10.44,1.88,2.83,4.4,4.97,7.55,6.39,3.15,1.43,6.66,2.14,10.5,2.14,6.29,0,11.84-2.06,16.58-6.18h.01s-22.9-29.66-22.9-29.66c-3.04.32-5.65,1.32-7.85,3.02Z"/> </svg></div>
+                <p>Premium enterprise language services covering translation, localization, and content.</p>
+              </a>
+              <a href="https://cleverso.tarjama.com/" target="_blank" rel="noopener" class="nav-mega-item">
+                <div class="nav-mega-logo xs"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 190.68 48.17"> <g> <g> <polygon fill="#09090A" points="41.72 36.13 20.86 48.17 20.86 24.09 41.72 36.13"/> <polygon fill="#09090A" points="20.86 0 20.86 24.09 0 12.05 20.86 0"/> <polygon fill="#09090A" points="20.86 24.09 20.86 48.17 0 36.13 0 12.05 20.86 24.09"/> <polygon fill="#09090A" points="41.72 12.05 20.86 24.09 20.86 0 41.72 12.05"/> <g> <g> <polygon fill="#09090A" points="108.93 16.64 104.06 32.27 98.99 16.64 94.77 16.64 101.78 35.74 106.26 35.74 112.91 16.64 108.93 16.64"/> <path fill="#09090A" d="M141.8,16.76c-1.32.53-2.49,1.26-3.49,2.17-1,.92-1.79,2.01-2.36,3.24-.57,1.24-.86,2.59-.86,4v9.79h3.6v-9.79c0-.9.19-1.77.57-2.57.39-.82.92-1.53,1.59-2.13.66-.61,1.46-1.09,2.36-1.43.9-.34,1.87-.51,2.87-.51h.12v-3.57h-.12c-1.52,0-2.95.27-4.27.8Z"/> <rect fill="#09090A" x="68.58" y="11.75" width="3.6" height="24.22"/> <path fill="#09090A" d="M59.47,35.95c-5.9,0-10.17-4.28-10.17-10.17s4.28-10.17,10.17-10.17c2.68,0,4.28.66,6.14,1.79l.19.12v4.06c-1.14-.95-3.85-2.47-6.33-2.47-3.86,0-6.67,2.81-6.67,6.67s2.8,6.67,6.67,6.67c1.93,0,4.71-.93,6.33-2.36v3.88l-.16.12c-1.17.87-2.93,1.86-6.17,1.86Z"/> <path fill="#09090A" d="M84.99,35.97c-5.9,0-10.17-4.28-10.17-10.17s4.28-10.17,10.17-10.17c6.61,0,10.17,5.17,10.17,10.04,0,.9-.11,1.73-.91,1.73h-15.75l.06.25c.61,2.33,2.63,4.83,6.43,4.83,2.46,0,4.41-1.08,5.79-3.2l.24-.37,3.04,1.82-.22.39c-1.76,3.04-5.06,4.86-8.84,4.86ZM84.99,19.12c-3.64,0-5.88,2.41-6.42,4.65l-.06.24h12.89l-.07-.25c-.64-2.31-2.85-4.65-6.34-4.65Z"/> <path fill="#09090A" d="M122.67,36.42c-5.9,0-10.17-4.28-10.17-10.17s4.28-10.17,10.17-10.17c6.61,0,10.17,5.17,10.17,10.04,0,.9-.11,1.73-.91,1.73h-15.75l.06.25c.61,2.33,2.63,4.83,6.43,4.83,2.46,0,4.41-1.08,5.79-3.2l.24-.37,3.04,1.82-.22.39c-1.76,3.04-5.06,4.86-8.84,4.86ZM122.67,19.58c-3.64,0-5.88,2.41-6.42,4.65l-.06.24h12.89l-.07-.25c-.64-2.31-2.85-4.65-6.34-4.65Z"/> </g> <path fill="#09090A" d="M180.85,35.51c-.3,0-.6-.01-.88-.04-.9-.08-1.77-.28-2.6-.59l-.13-.05c-.2-.08-.4-.17-.6-.26h0s-.22-.1-.29-.14c-.14-.07-.28-.15-.42-.23-.14-.08-.29-.17-.43-.26-.1-.07-.2-.13-.31-.2-.16-.11-.31-.22-.46-.34-.09-.07-.17-.13-.25-.2-.25-.21-.43-.37-.59-.53-.88-.86-1.59-1.9-2.11-3.08-.51-1.18-.76-2.46-.76-3.8s.26-2.61.77-3.79c.52-1.18,1.23-2.23,2.11-3.1.88-.88,1.94-1.58,3.14-2.1,1.19-.5,2.47-.76,3.81-.76,1.34,0,2.62.26,3.81.76,1.21.51,2.27,1.22,3.14,2.09.89.88,1.6,1.92,2.11,3.1.51,1.18.77,2.45.77,3.79s-.26,2.62-.77,3.8c-.52,1.18-1.23,2.22-2.11,3.08-.21.2-.42.39-.59.53-.08.07-.17.14-.25.2-.15.12-.3.23-.46.34-.1.07-.2.14-.3.2-.14.09-.28.18-.43.26-.14.08-.28.16-.42.23-.07.04-.14.07-.21.1-.29.13-.49.23-.69.31l-.07.02c-.87.33-1.73.53-2.63.61-.32.03-.61.04-.91.04h0ZM180.81,18.7c-.98,0-1.92.18-2.77.55-.88.37-1.63.87-2.27,1.52-.65.66-1.14,1.4-1.52,2.26-.38.86-.57,1.79-.57,2.76s.19,1.91.57,2.77c.38.86.9,1.62,1.53,2.25.64.64,1.38,1.13,2.27,1.52.87.37,1.8.56,2.78.56h.07c.99,0,1.93-.19,2.79-.56.88-.39,1.62-.88,2.27-1.52.63-.63,1.15-1.39,1.53-2.25.38-.86.57-1.79.57-2.77s-.19-1.9-.57-2.76c-.38-.86-.88-1.6-1.52-2.26-.65-.66-1.39-1.15-2.27-1.52-.86-.36-1.79-.55-2.78-.55h-.08Z"/> <path fill="#09090A" d="M151.96,35.51v-2.64h8.34l.67-.03h3.24c.4,0,.76-.07,1.09-.22.34-.15.63-.35.88-.6.25-.25.46-.55.6-.89.15-.35.22-.7.22-1.09s-.07-.76-.22-1.11c-.15-.35-.35-.65-.6-.9-.25-.25-.55-.45-.89-.61-.34-.15-.7-.22-1.08-.22h-8.27c-1.26,0-3.04-.4-4.4-2.29-.21-.29-.35-.52-.47-.74-.38-.73-.57-1.56-.57-2.44,0-.75.15-1.46.44-2.12.28-.66.68-1.24,1.17-1.74.48-.49,1.06-.88,1.73-1.18.65-.29,1.36-.44,2.11-.44h11.7v2.64h-5.07l-.67.03h-5.96c-.4,0-.75.07-1.09.22-.34.15-.63.35-.88.6-.25.25-.45.55-.6.89-.15.35-.22.7-.22,1.09s.07.76.22,1.11c.15.35.35.65.6.9.25.25.54.45.89.61.34.15.7.22,1.08.22h8.27c1.26,0,3.04.4,4.4,2.29.21.29.35.52.47.74.38.73.57,1.56.57,2.44,0,.74-.15,1.46-.44,2.12-.28.65-.67,1.24-1.17,1.74-.48.49-1.06.88-1.73,1.18-.65.29-1.36.44-2.11.44h-12.26Z"/> </g> </g> </g> </svg></div>
+                <p>An AI-powered Translation Management System for scalable localization operations.</p>
+              </a>
+              <a href="https://screens.tv/" target="_blank" rel="noopener" class="nav-mega-item">
+                <div class="nav-mega-logo tall xl sm"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 189.23 38.81"><path fill="#09090A" d="M158.76,12.29s0,0,0,0c-.73-.92-1.57-1.7-2.52-2.34-.23-.15-.46-.29-.7-.42-.03-.02-.06-.04-.09-.06-.3-.16-.6-.31-.92-.45-.31-.14-.63-.25-.95-.36-.04-.01-.09-.03-.13-.04-.28-.09-.56-.16-.85-.22-.14-.03-.28-.05-.42-.07-.21-.04-.42-.07-.64-.1-.37-.04-.75-.06-1.14-.06s-.76.03-1.13.06c-.3.03-.59.08-.88.13-.04,0-.08.01-.13.02-.68.14-1.34.35-1.98.63-.64.28-1.24.6-1.8.98-.1.07-.2.15-.3.22-.17.12-.35.24-.51.38-.28.23-.54.47-.79.72-.15.15-.3.32-.44.48-.08.09-.16.17-.24.26-.63.76-1.16,1.62-1.57,2.57-.57,1.28-.85,2.64-.85,4.08v16.42h4.5v-16.42c0-.84.16-1.62.48-2.35.33-.71.76-1.35,1.3-1.9s1.2-.98,1.94-1.29c.74-.31,1.54-.48,2.4-.48s1.64.16,2.37.48c.72.31,1.37.74,1.94,1.29.56.55,1,1.19,1.33,1.9.31.73.48,1.51.48,2.35v16.42h4.5v-16.42c0-1.44-.28-2.8-.85-4.08-.38-.87-.86-1.65-1.41-2.36Z"/><path fill="#09090A" d="M81.64,8.18c-2.05,0-3.98.36-5.76,1.08-1.79.72-3.36,1.7-4.71,2.93-1.34,1.23-2.41,2.69-3.19,4.38-.78,1.69-1.16,3.49-1.16,5.39v13.19h4.57v-13.19c0-1.27.27-2.47.79-3.58.54-1.13,1.27-2.12,2.21-2.96.93-.85,2.02-1.51,3.27-1.99,1.23-.47,2.57-.71,3.98-.71v-4.54Z"/><path fill="#09090A" d="M55.45,30.57c-5.02,0-8.67-3.65-8.67-8.67s3.65-8.67,8.67-8.67c3.23,0,5.49,1.48,6.97,2.72l1.26-4.79-.24-.15c-2.41-1.48-4.49-2.33-7.98-2.33-7.66,0-13.23,5.56-13.23,13.22s5.56,13.22,13.23,13.22c4.22,0,6.51-1.29,8.03-2.42l.2-.15-1.28-4.78c-2.1,1.86-4.44,2.8-6.95,2.8Z"/><path fill="#09090A" d="M94.87,8.68c-7.66,0-13.23,5.56-13.23,13.22s5.56,13.22,13.23,13.22c4.91,0,9.21-2.36,11.49-6.32l.29-.51-3.95-2.37-.31.48c-1.79,2.76-4.32,4.15-7.53,4.15-4.94,0-7.56-3.24-8.36-6.28l-.08-.32h20.48c1.04,0,1.19-1.08,1.19-2.25,0-6.32-4.64-13.05-13.22-13.05ZM86.44,19.6l.08-.31c.7-2.91,3.61-6.05,8.35-6.05s7.41,3.03,8.24,6.04l.09.32h-16.76Z"/><path fill="#09090A" d="M123.78,8.68c-7.66,0-13.23,5.56-13.23,13.22s5.56,13.22,13.23,13.22c4.92,0,9.21-2.36,11.49-6.32l.29-.51-3.94-2.37-.31.48c-1.23,1.89-3.54,4.15-7.53,4.15-4.94,0-7.56-3.24-8.36-6.28l-.08-.32h20.48c1.04,0,1.18-1.08,1.18-2.25,0-6.32-4.63-13.05-13.22-13.05ZM115.35,19.6l.08-.31c.7-2.91,3.61-6.05,8.35-6.05s7.41,3.03,8.24,6.04l.09.32h-16.76Z"/><path fill="#09090A" d="M188.42,23.83c-.17-.32-.37-.64-.65-1.03-1.91-2.67-4.42-3.23-6.2-3.23h-10.74c-.42,0-.81-.08-1.16-.23-.38-.17-.71-.4-.98-.67-.27-.27-.49-.6-.65-.98-.16-.38-.24-.78-.24-1.22s.08-.81.24-1.19c.16-.37.38-.7.66-.98.27-.27.59-.5.96-.66.36-.16.74-.24,1.17-.24h7.77l.85-.04h7.18v-4.62h-15.8c-1.05,0-2.06.21-2.98.62-.93.41-1.75.97-2.42,1.65-.69.7-1.24,1.52-1.64,2.43-.41.94-.62,1.95-.62,3,0,1.25.27,2.41.81,3.45.17.32.37.64.65,1.04,1.91,2.67,4.42,3.23,6.2,3.23h10.74c.42,0,.81.08,1.16.23.38.17.71.4.98.67.27.27.49.6.65.98.16.38.24.78.24,1.22s-.08.81-.24,1.19c-.16.37-.38.7-.66.98-.27.27-.59.49-.96.66-.35.16-.74.23-1.17.23h-4.24l-.85.04h-11.43v4.61h16.53c1.05,0,2.06-.21,2.98-.62.93-.41,1.75-.97,2.42-1.65.69-.7,1.24-1.52,1.64-2.44.41-.94.62-1.95.62-3,0-1.25-.27-2.41-.81-3.45Z"/><path fill="#09090A" d="M33.05,0H5.77C2.6,0,0,2.6,0,5.77v27.28c0,3.17,2.6,5.77,5.77,5.77h27.28c3.17,0,5.77-2.6,5.77-5.77V5.77c0-3.17-2.6-5.77-5.77-5.77ZM34.31,29.66c-.46,1.07-1.1,2.02-1.91,2.84-.78.8-1.73,1.44-2.82,1.92-1.07.48-2.23.72-3.44.72H6.14v-4.35h13.61l1.1-.05h5.29c.65,0,1.22-.12,1.76-.35.55-.24,1.03-.57,1.43-.98.41-.41.74-.89.97-1.44.24-.56.36-1.14.36-1.77s-.12-1.23-.36-1.8c-.24-.56-.56-1.05-.97-1.46-.4-.4-.88-.73-1.43-.98-.55-.24-1.14-.35-1.76-.35h-13.47c-2.06,0-4.97-.65-7.19-3.74-.33-.47-.57-.84-.77-1.21-.62-1.2-.93-2.54-.93-3.99,0-1.22.24-2.39.72-3.47.46-1.07,1.1-2.02,1.91-2.83.78-.79,1.73-1.44,2.82-1.92,1.07-.48,2.23-.72,3.45-.72h19.09v4.35h-8.28l-1.1.05h-9.71c-.64,0-1.22.12-1.76.36-.55.24-1.03.57-1.43.98-.41.41-.74.89-.97,1.44-.24.56-.36,1.14-.36,1.77s.12,1.23.36,1.8c.24.56.56,1.05.97,1.46.4.4.88.73,1.44.98.55.24,1.14.35,1.75.35h13.47c2.06,0,4.97.65,7.19,3.75.33.46.57.84.77,1.21.62,1.2.93,2.55.93,3.99,0,1.22-.24,2.39-.72,3.47Z"/></svg></div>
+                <p>Professional media localization, subtitling, dubbing, and broadcast services.</p>
+              </a>
+              <a href="https://contentlab.tarjama.com/" target="_blank" rel="noopener" class="nav-mega-item">
+                <div class="nav-mega-logo tall lg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 270"> <path fill="#09090A" d="M13.08,131.7H0v-20.38h54.1v20.38h-13.08v112.98H13.08v-112.98Z"/> <path fill="#09090A" d="M64.17,111.32h27.93v58.63h15.1v-58.63h27.93v133.36h-27.93v-54.6h-15.1v54.6h-27.93V111.32Z"/> <path fill="#09090A" d="M150.24,111.32h48.31v20.38h-20.63v35.98h15.6v20.38h-15.6v36.23h21.14v20.38h-48.82V111.32Z"/> <path fill="#09090A" d="M302.49,184.54v28.43c0,23.15-11.32,34.22-33.47,34.22s-34.22-11.58-34.22-34.22v-69.95c0-20.63,14.09-34.22,35.73-34.22,20.38,0,31.96,12.33,31.96,34.22v25.67l-25.16,4.03v-33.21c0-6.04-2.26-9.31-7.55-9.31s-7.55,3.53-7.55,9.31v77.25c0,5.28,1.26,9.31,7.55,9.31,5.29,0,7.55-2.77,7.55-9.31v-34.72l25.16,2.52Z"/> <path fill="#09090A" d="M308.78,143.02c0-20.88,14.34-34.22,35.73-34.22s34.22,12.83,34.22,34.22v69.95c0,22.4-12.08,34.22-34.98,34.22s-34.98-11.58-34.98-34.22v-69.95ZM336.21,139.5v77.25c0,5.28,1.26,9.31,7.55,9.31,5.29,0,7.55-2.77,7.55-9.31v-77.25c0-6.04-2.26-9.31-7.55-9.31s-7.55,3.53-7.55,9.31Z"/> <path fill="#09090A" d="M390.07,111.32h25.41l22.65,92.6h1.26c-3.02-23.15-6.04-49.07-6.29-70.71l-.25-21.89h26.92v133.36h-25.41l-22.65-90.08h-1.26c2.77,18.62,5.54,46.55,6.04,67.43l.5,22.65h-26.92V111.32Z"/> <path fill="#09090A" d="M482.93,131.7h-13.08v-20.38h54.1v20.38h-13.08v112.98h-27.93v-112.98Z"/> <path fill="#09090A" d="M534.02,111.32h48.31v20.38h-20.63v35.98h15.6v20.38h-15.6v36.23h21.14v20.38h-48.82V111.32Z"/> <path fill="#09090A" d="M592.91,111.32h25.41l22.65,92.6h1.26c-3.02-23.15-6.04-49.07-6.29-70.71l-.25-21.89h26.92v133.36h-25.41l-22.65-90.08h-1.26c2.77,18.62,5.54,46.55,6.04,67.43l.5,22.65h-26.92V111.32Z"/> <path fill="#09090A" d="M685.77,131.7h-13.08v-20.38h54.1v20.38h-13.08v112.98h-27.93v-112.98Z"/> <path fill="#09090A" d="M766.3,111.32h27.68v112.98h18.62v20.38h-46.3V111.32Z"/> <path fill="#09090A" d="M868.47,111.32l20.38,133.36h-28.69l-2.52-26.17h-14.85l-1.76,26.17h-24.66l22.9-133.36h29.19ZM844.06,200.9h11.83l-6.04-62.65h-1.26l-4.53,62.65Z"/> <path fill="#09090A" d="M965.35,151.33c0,12.58-4.53,19.88-14.6,23.15v1.26c10.07,1.76,16.1,9.56,16.1,20.38v22.65c0,16.1-13.34,25.92-31.96,25.92h-37.24V111.32h38.25c17.87,0,29.44,10.82,29.44,27.68v12.33ZM925.34,166.68h3.27c5.54,0,9.06-1.76,9.06-8.56v-19.63c0-6.54-3.02-8.56-8.81-8.56h-3.52v36.74ZM925.34,226.06h4.78c5.54,0,9.06-1.76,9.06-8.56v-23.4c0-6.8-3.52-8.56-9.06-8.56h-4.78v40.51Z"/> </svg></div>
+                <p>A creative studio for storytelling, copywriting, scripts, and campaign content.</p>
+              </a>
+            </div>
+            <div class="nav-mega-col">
+              <h4>Professional Services</h4>
+              <a href="https://ureed.com/" target="_blank" rel="noopener" class="nav-mega-item">
+                <div class="nav-mega-logo ureed-sm"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 127.29 39.43"> <path fill="#09090A" d="M24.78,14.91v5.18c0,2.56-.51,4.95-1.51,7.17-1.01,2.21-2.4,4.15-4.18,5.81-1.78,1.67-3.87,2.97-6.26,3.93-.16.06-.31.12-.47.17-.15-.05-.31-.11-.46-.17-2.37-.96-4.44-2.27-6.21-3.93-1.78-1.66-3.17-3.6-4.18-5.81-1.01-2.21-1.51-4.6-1.51-7.17V0l24.78,14.91Z"/> <path fill="#09090A" d="M39.43,6.41v14.2c0,2.63-.52,5.08-1.56,7.35s-2.48,4.25-4.32,5.96c-1.84,1.71-4,3.05-6.48,4.03-2.48.99-5.13,1.48-7.95,1.48-.37,0-.72,0-1.09-.03,1.25-.8,2.42-1.7,3.49-2.7,2.2-2.06,3.95-4.48,5.24-7.26,1.28-2.78,1.92-5.73,1.92-8.83V0l10.75,6.41Z"/> <path fill="#09090A" d="M48.44,21.75v-12.73h3.69v12.61c0,3.34,1.84,5.52,5.34,5.52s5.31-2.18,5.31-5.52v-12.61h3.69v12.7c0,5.23-2.97,8.7-9,8.7s-9.03-3.5-9.03-8.67Z"/> <path fill="#09090A" d="M70.97,30.41v-15.42h3.16v2.27c1.08-1.47,2.83-2.62,4.72-2.62v3.32c-.27-.06-.6-.1-.99-.1-1.32,0-3.1.96-3.73,2.04v10.5h-3.16Z"/> <path fill="#09090A" d="M86.85,17.32c-2.94,0-4.28,2.15-4.44,3.98h8.88c-.06-1.77-1.34-3.98-4.44-3.98ZM78.86,22.51c0-4.35,3.33-7.87,8-7.87s7.77,3.45,7.77,8.18v.78h-12.18c.26,2.27,2.06,4.14,5.03,4.14,1.53,0,3.36-.59,4.47-1.65l1.57,2.15c-1.57,1.43-3.89,2.18-6.4,2.18-4.73,0-8.26-3.14-8.26-7.9h0Z"/> <path fill="#09090A" d="M103.75,17.32c-2.94,0-4.28,2.15-4.44,3.98h8.88c-.06-1.77-1.34-3.98-4.44-3.98ZM95.75,22.51c0-4.35,3.33-7.87,8-7.87s7.77,3.45,7.77,8.18v.78h-12.18c.26,2.27,2.06,4.14,5.03,4.14,1.53,0,3.36-.59,4.47-1.65l1.57,2.15c-1.57,1.43-3.89,2.18-6.4,2.18-4.73,0-8.26-3.14-8.26-7.9h0Z"/> <path fill="#09090A" d="M124.05,25.47v-6.05c-.74-1.13-2.31-2.05-3.85-2.05-2.56,0-4.19,2.11-4.19,5.07s1.63,5.04,4.19,5.04c1.54,0,3.11-.88,3.85-2.02h0ZM124.05,30.04v-2.08c-1.14,1.51-2.87,2.46-4.78,2.46-3.82,0-6.63-2.96-6.63-7.97s2.77-8.01,6.63-8.01c1.85,0,3.58.88,4.78,2.49v-7.91h3.24v21.02s-3.24,0-3.24,0Z"/> <path fill="#09090A" d="M24.78,14.91v5.18c0,2.56-.51,4.95-1.51,7.17-1.01,2.21-2.4,4.15-4.18,5.81-1.78,1.67-3.87,2.97-6.26,3.93-.16.06-.31.12-.47.17-.15-.05-.31-.11-.46-.17-2.37-.96-4.44-2.27-6.21-3.93-1.78-1.66-3.17-3.6-4.18-5.81-1.01-2.21-1.51-4.6-1.51-7.17V0l24.78,14.91Z"/> <path fill="#09090A" d="M39.43,6.41v14.2c0,2.63-.52,5.08-1.56,7.35s-2.48,4.25-4.32,5.96c-1.84,1.71-4,3.05-6.48,4.03-2.48.99-5.13,1.48-7.95,1.48-.37,0-.72,0-1.09-.03,1.25-.8,2.42-1.7,3.49-2.7,2.2-2.06,3.95-4.48,5.24-7.26,1.28-2.78,1.92-5.73,1.92-8.83V0l10.75,6.41Z"/> </svg></div>
+                <p>The region&rsquo;s largest freelance marketplace for hiring specialized talent.</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="nav-actions">
+      <button class="nav-burger" aria-label="Open menu" aria-expanded="false" aria-controls="navDrawer">
+        <span></span><span></span><span></span>
+      </button>
+      <a href="login.html" class="btn btn-ghost">Sign in</a>
+      <a href="#cta" class="btn btn-primary">
+        Book a demo
+        <svg class="arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </div>
+</header>
+
+<div class="nav-drawer-backdrop" id="navBackdrop" aria-hidden="true"></div>
+<div class="nav-drawer" id="navDrawer" aria-hidden="true" aria-label="Main navigation">
+  <div class="nav-drawer-header">
+    <span class="brand">Menu</span>
+    <button class="nav-drawer-close" aria-label="Close menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6L6 18M6 6l12 12"/></svg>
+    </button>
+  </div>
+  <div class="nav-drawer-body">
+    <a href="index.html#suite">The Suite</a>
+    <a href="assistants.html">Assistants</a>
+    <a href="translate.html">Translate</a>
+    <a href="ocr.html">OCR</a>
+    <a href="speech.html">Speech</a>
+    <a href="technology.html">Technology</a>
+    <a href="integrations.html">Integrations</a>
+
+    <div class="nav-drawer-section">
+      <h4>AI &amp; Agentic Tech</h4>
+      <a href="llm.html">Sovereign LLM</a>
+      <a href="agentic-studio.html">Agentic Studio</a>
+      <a href="data-services.html">Data Services</a>
+    </div>
+
+    <div class="nav-drawer-section">
+      <h4>Language &amp; Content</h4>
+      <a href="https://tarjama.com/" target="_blank" rel="noopener">Tarjama</a>
+      <a href="https://cleverso.tarjama.com/" target="_blank" rel="noopener">CleverSo</a>
+      <a href="https://screens.tv/" target="_blank" rel="noopener">Screens.tv</a>
+      <a href="https://contentlab.tarjama.com/" target="_blank" rel="noopener">ContentLab</a>
+    </div>
+
+    <div class="nav-drawer-section">
+      <h4>Professional Services</h4>
+      <a href="https://ureed.com/" target="_blank" rel="noopener">Ureed</a>
+    </div>
+  </div>
+  <div class="nav-drawer-footer">
+    <a href="login.html" class="btn btn-ghost">Sign in</a>
+    <a href="mailto:Contact.us@arabic.ai" class="btn btn-primary">Book a demo</a>
+  </div>
+</div>
+
+<div class="container">
+  <div class="crumbs">
+    <a href="index.html">Arabic.AI</a>
+    <span class="sep">/</span>
+    <span class="current">Academy</span>
+  </div>
+
+  <div class="hero">
+    <span class="hero-eyebrow"><span class="dot"></span>Academy</span>
+    <h1>Build an AI-ready <span class="accent">workforce.</span></h1>
+    <p class="lead">Practical, business-focused AI training for Arabic-speaking professionals. Expert-led programs that get your teams productive with AI from day one &mdash; in their own language.</p>
+    <div class="hero-ctas">
+      <a href="mailto:Contact.us@arabic.ai" class="btn btn-primary btn-lg">
+        Talk to an expert
+        <svg class="arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+      </a>
+      <a href="#curriculum" class="btn btn-ghost btn-lg">See the curriculum</a>
+    </div>
+
+    <div class="stats-strip reveal">
+      <div class="stat-item"><div class="stat-num">Arabic</div><div class="stat-label">First delivery, English support</div></div>
+      <div class="stat-item"><div class="stat-num">6</div><div class="stat-label">Industry tracks</div></div>
+      <div class="stat-item"><div class="stat-num">PhD</div><div class="stat-label">Instructors from industry</div></div>
+      <div class="stat-item"><div class="stat-num">Hands-on</div><div class="stat-label">Real tools, real projects</div></div>
+    </div>
+    </div>
+</div>
+
+<!-- Why Arabic.AI Academy -->
+<section class="sec">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="section-index">/ 01 Why us</div>
+      <div>
+        <h2 class="section-title">Arabic-first training built for enterprise.</h2>
+        <p class="section-intro">Most AI training leaves Arabic-speaking professionals behind. The material is English, the examples are Western, the tools don&rsquo;t speak your language. We flipped that &mdash; expert-led programs designed for the region, delivered in Arabic with full English support, grounded in the work your teams actually do.</p>
+      </div>
+    </div>
+
+    <div class="feat-grid reveal">
+      <div class="feat-card">
+        <div class="icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+        </div>
+        <h3>Built for Arabic speakers</h3>
+        <p>Full Arabic instruction with English resources alongside. No language gap to work around.</p>
+      </div>
+      <div class="feat-card">
+        <div class="icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+        </div>
+        <h3>Learn by doing</h3>
+        <p>Real projects with real tools on real business scenarios. No watch-and-forget videos.</p>
+      </div>
+      <div class="feat-card">
+        <div class="icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+        </div>
+        <h3>Enterprise-ready</h3>
+        <p>Programs that scale with your team size. Department tracks, cohort delivery, admin dashboards.</p>
+      </div>
+      <div class="feat-card">
+        <div class="icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+        </div>
+        <h3>Industry certified</h3>
+        <p>Recognized certificates your teams can put on a CV or LinkedIn &mdash; credibility across the region.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Who it's for -->
+<section class="sec" id="curriculum">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="section-index">/ 02 Who it&rsquo;s for</div>
+      <div>
+        <h2 class="section-title">Six industry tracks.</h2>
+        <p class="section-intro">No technical background required. Every track is built around the workflows that professionals in that industry actually run &mdash; and the Arabic context those workflows live in.</p>
+      </div>
+    </div>
+
+    <div class="feat-grid three reveal">
+      <div class="feat-card">
+        <h3 style="color: var(--purple);">Finance &amp; Banking</h3>
+        <p>Automate financial analysis, fraud detection, and customer personalization with Arabic-native AI.</p>
+      </div>
+      <div class="feat-card">
+        <h3 style="color: var(--purple);">Marketing</h3>
+        <p>AI-driven content creation, sentiment analysis, and campaign optimization tuned for Arabic audiences.</p>
+      </div>
+      <div class="feat-card">
+        <h3 style="color: var(--purple);">Customer Support</h3>
+        <p>Arabic chatbots and response automation that improve both service speed and quality.</p>
+      </div>
+      <div class="feat-card">
+        <h3 style="color: var(--purple);">Healthcare</h3>
+        <p>Arabic AI in diagnostics, patient communication, and medical document processing.</p>
+      </div>
+      <div class="feat-card">
+        <h3 style="color: var(--purple);">Legal</h3>
+        <p>AI tools for legal research, contract analysis, and document automation in Arabic legal contexts.</p>
+      </div>
+      <div class="feat-card">
+        <h3 style="color: var(--purple);">Consulting</h3>
+        <p>Data-driven advisory techniques that give consultants a sharper edge with AI-assisted analysis.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- How success is measured -->
+<section class="sec">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="section-index">/ 03 How you progress</div>
+      <div>
+        <h2 class="section-title">Five checkpoints to certification.</h2>
+        <p class="section-intro">Progress is structured, not assumed. Every track has clear milestones so you and your team know exactly where you are.</p>
+      </div>
+    </div>
+
+    <div class="feat-grid reveal">
+      <div class="feat-card">
+        <h3>Module assessments</h3>
+        <p>After each module, targeted quizzes reinforce what was just covered and surface gaps.</p>
+      </div>
+      <div class="feat-card">
+        <h3>Real-world projects</h3>
+        <p>Apply the skills to a hands-on project drawn from your industry. No toy problems.</p>
+      </div>
+      <div class="feat-card">
+        <h3>Structured homework</h3>
+        <p>Short exercises between sessions keep the material fresh between classes.</p>
+      </div>
+      <div class="feat-card">
+        <h3>Proctored exam</h3>
+        <p>A secure end-of-program assessment to validate knowledge with fairness and integrity.</p>
+      </div>
+    </div>
+
+    <div style="text-align: center; margin-top: 48px;">
+      <div style="display: inline-flex; align-items: center; gap: 12px; padding: 12px 20px; border: 1px solid var(--purple); border-radius: 999px; background: var(--purple-softer); color: var(--purple); font-family: var(--mono); font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase;">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+        Official certificate on completion
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Instructors -->
+<section class="sec">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="section-index">/ 04 Instructors</div>
+      <div>
+        <h2 class="section-title">Learn from practitioners, not academics.</h2>
+        <p class="section-intro">The people teaching our programs have built AI models, led machine learning teams, and shipped real systems. Here are a few of them.</p>
+      </div>
+    </div>
+
+    <div class="feat-grid three reveal">
+      <div class="feat-card">
+        <div style="width: 56px; height: 56px; border-radius: 50%; background: var(--purple); color: #fff; display: grid; place-items: center; font-family: var(--display); font-size: 22px; font-weight: 800; margin-bottom: 16px;">FO</div>
+        <h3>Fayeq Oweis, Ph.D.</h3>
+        <p style="font-size: 12px; color: var(--purple); font-family: var(--mono); letter-spacing: 0.05em; text-transform: uppercase; margin-bottom: 8px;">Arabic NLP lead</p>
+        <p>Founder of Aqlama.AI. Deep expertise in machine learning and Arabic language processing.</p>
+      </div>
+      <div class="feat-card">
+        <div style="width: 56px; height: 56px; border-radius: 50%; background: #0E9488; color: #fff; display: grid; place-items: center; font-family: var(--display); font-size: 22px; font-weight: 800; margin-bottom: 16px;">AH</div>
+        <h3>Abdulkader Haddad</h3>
+        <p style="font-size: 12px; color: var(--purple); font-family: var(--mono); letter-spacing: 0.05em; text-transform: uppercase; margin-bottom: 8px;">Software dev trainer</p>
+        <p>Certified software development trainer with hands-on web application experience.</p>
+      </div>
+      <div class="feat-card">
+        <div style="width: 56px; height: 56px; border-radius: 50%; background: #4F46E5; color: #fff; display: grid; place-items: center; font-family: var(--display); font-size: 22px; font-weight: 800; margin-bottom: 16px;">AK</div>
+        <h3>Abdulrahman Khateeb, Ph.D.</h3>
+        <p style="font-size: 12px; color: var(--purple); font-family: var(--mono); letter-spacing: 0.05em; text-transform: uppercase; margin-bottom: 8px;">Applied AI</p>
+        <p>Four+ years in software and web development alongside extensive teaching experience.</p>
+      </div>
+      <div class="feat-card">
+        <div style="width: 56px; height: 56px; border-radius: 50%; background: #D97706; color: #fff; display: grid; place-items: center; font-family: var(--display); font-size: 22px; font-weight: 800; margin-bottom: 16px;">PC</div>
+        <h3>Paul Consalvo</h3>
+        <p style="font-size: 12px; color: var(--purple); font-family: var(--mono); letter-spacing: 0.05em; text-transform: uppercase; margin-bottom: 8px;">Generative AI expert</p>
+        <p>Seven+ years in operations, four+ in ML. Leads advanced workshops on LLMs and RAG.</p>
+      </div>
+      <div class="feat-card">
+        <div style="width: 56px; height: 56px; border-radius: 50%; background: #B91C3B; color: #fff; display: grid; place-items: center; font-family: var(--display); font-size: 22px; font-weight: 800; margin-bottom: 16px;">AK</div>
+        <h3>Andrii Klyman</h3>
+        <p style="font-size: 12px; color: var(--purple); font-family: var(--mono); letter-spacing: 0.05em; text-transform: uppercase; margin-bottom: 8px;">ML + product</p>
+        <p>Five+ years in B2B tech, three in ML. Bridges product strategy with ML execution.</p>
+      </div>
+      <div class="feat-card">
+        <div style="width: 56px; height: 56px; border-radius: 50%; background: #525B7A; color: #fff; display: grid; place-items: center; font-family: var(--display); font-size: 22px; font-weight: 800; margin-bottom: 16px;">RT</div>
+        <h3>Rida Taleb</h3>
+        <p style="font-size: 12px; color: var(--purple); font-family: var(--mono); letter-spacing: 0.05em; text-transform: uppercase; margin-bottom: 8px;">Principal AI researcher</p>
+        <p>Five+ years leading AI teams, focused on scalable LLMs and measurable real-world impact.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="cta">
+  <div class="cta">
+    <div class="cta-inner">
+      <div>
+        <div class="cta-eyebrow">/ Train your team</div>
+        <h2>Ready to scale AI <span>across your org?</span></h2>
+      </div>
+      <div>
+        <p class="cta-body">Our corporate programs are customizable, Arabic-first, and built to translate into real business impact within a quarter, not a year.</p>
+        <div class="cta-ctas">
+          <a href="mailto:Contact.us@arabic.ai" class="btn btn-light btn-lg">
+            Talk to an expert
+            <svg class="arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+          <a href="about.html" class="btn btn-outline-light btn-lg">Learn about us</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <svg viewBox="0 0 323.09 57.94" xmlns="http://www.w3.org/2000/svg">
+        <g>
+          <path fill="#09090a" d="M54.26,56.73h10.07v-24.93c0-5.48,4.44-9.91,9.91-9.91h6.63v-9.35h-10.07c-9.13,0-16.54,7.4-16.54,16.54v27.65Z"/>
+          <rect fill="#09090a" x="188.87" y="12.55" width="10.07" height="44.11"/>
+          <path fill="#09090a" d="M226.89,20.46c4.48,0,8.15,1.76,10.63,4.55l6.47-6.63c-4.23-4.47-10.39-7.35-17.1-7.35-13.02,0-23.57,10.47-23.57,23.41s10.55,23.49,23.57,23.49c6.47,0,12.31-2.56,16.54-6.87l-6.47-6.55c-2.48,2.48-5.83,4-10.07,4-7.51,0-13.5-6.07-13.5-14.06s5.99-13.98,13.5-13.98Z"/>
+          <path fill="#09090a" d="M119.8,15.27c-3.65-2.54-8.06-4.07-12.83-4.2-.22-.01-.44-.03-.66-.03-.07,0-.14,0-.2.01-.13,0-.25-.01-.38-.01-13.02,0-23.57,10.47-23.57,23.41s10.19,23.1,22.9,23.46c.22,0,.44.03.66.03.07,0,.14,0,.2-.01.13,0,.25.01.38.01,5.03,0,9.68-1.57,13.5-4.23v2.95h10.07V12.55h-10.07v2.72ZM115.81,44.53l-.02-.03c-2.42,2.42-5.68,3.91-9.76,3.98-3.78-.06-6.97-1.38-9.34-3.52-.02-.02-.05-.05-.07-.07-.26-.24-.51-.5-.75-.76-2.26-2.49-3.65-5.87-3.65-9.7s1.52-7.5,3.99-10.01l.02.03c2.42-2.42,5.68-3.91,9.76-3.98,3.78.06,6.97,1.38,9.34,3.52.02.02.05.04.07.07.26.24.51.5.75.77,2.26,2.49,3.65,5.87,3.65,9.7s-1.52,7.5-3.99,10.01Z"/>
+          <path fill="#09090a" d="M296.14,15.27c-3.65-2.54-8.06-4.07-12.83-4.2-.22-.01-.44-.03-.66-.03-.07,0-.14,0-.2.01-.13,0-.25-.01-.38-.01-13.02,0-23.57,10.47-23.57,23.41s10.19,23.1,22.9,23.46c.22,0,.44.03.66.03.07,0,.14,0,.2-.01.13,0,.25.01.38.01,5.03,0,9.68-1.57,13.5-4.23v2.95h10.07V12.55h-10.07v2.72ZM292.15,44.53l-.02-.03c-2.42,2.42-5.68,3.91-9.76,3.98-3.78-.06-6.97-1.38-9.34-3.52-.02-.02-.05-.05-.07-.07-.26-.24-.51-.5-.75-.76-2.26-2.49-3.65-5.87-3.65-9.7s1.52-7.5,3.99-10.01l.02.03c2.42-2.42,5.68-3.91,9.76-3.98,3.78.06,6.97,1.38,9.34,3.52.02.02.05.04.07.07.26.24.51.5.75.77,2.26,2.49,3.65,5.87,3.65,9.7s-1.52,7.5-3.99,10.01Z"/>
+          <path fill="#09090a" d="M160.55,11.03c-.13,0-.25,0-.38.01-.07,0-.14-.01-.2-.01-.22,0-.44.03-.66.03-4.77.13-9.18,1.67-12.83,4.2V.04h-10.07v56.62h10.07v-2.95c3.83,2.66,8.48,4.23,13.5,4.23.13,0,.25,0,.38-.01.07,0,.14.01.2.01.22,0,.44-.03.66-.03,12.71-.36,22.9-10.66,22.9-23.46s-10.55-23.41-23.57-23.41ZM170.41,44.14c-.24.26-.49.52-.75.76-.02.02-.05.05-.07.07-2.36,2.14-5.56,3.46-9.34,3.52-4.09-.07-7.35-1.57-9.76-3.98l-.02.03c-2.47-2.51-3.99-6.03-3.99-10.01s1.39-7.21,3.65-9.7c.24-.26.49-.52.75-.77.02-.02.05-.04.07-.07,2.36-2.14,5.56-3.46,9.34-3.52,4.09.07,7.35,1.57,9.76,3.98l.02-.03c2.47,2.51,3.99,6.03,3.99,10.01s-1.39,7.21-3.65,9.7Z"/>
+          <path fill="#09090a" d="M193.9,10.04c2.77,0,4.99-2.28,4.99-5.06s-2.22-4.99-4.99-4.99-5.06,2.22-5.06,4.99,2.29,5.06,5.06,5.06Z"/>
+          <rect fill="#09090a" x="313.02" y="12.55" width="10.07" height="44.11"/>
+          <path fill="#09090a" d="M318.05,10.04c2.77,0,4.99-2.28,4.99-5.06s-2.22-4.99-4.99-4.99-5.06,2.22-5.06,4.99,2.29,5.06,5.06,5.06Z"/>
+          <path fill="#09090a" d="M248.17,51.68c0-2.77,2.29-4.99,5.06-4.99s4.99,2.22,4.99,4.99-2.22,5.06-4.99,5.06-5.06-2.28-5.06-5.06Z"/>
+          <path fill="#3f1993" d="M37.66,12.55v2.72c-3.66-2.53-8.07-4.06-12.83-4.2-.22-.01-.44-.03-.66-.03-.07,0-.14.01-.2.01-.14-.01-.26-.01-.38-.01C10.55,11.03,0,21.5,0,34.44s10.18,23.1,22.9,23.46c.23,0,.44.03.67.03.07,0,.14-.01.2-.01.12,0,.25.01.38.01,5.02,0,9.68-1.57,13.5-4.23v2.95h10.07V12.55h-10.07ZM32.26,23.23c.32.24.63.49.93.76l.07.07c.26.25.51.5.76.77,1.92,2.13,3.23,4.9,3.55,8.06-6.63-.22-11.97-5.6-12.12-12.26,1.39.14,2.73.46,3.96,1,.66.27,1.27.58,1.84.93.35.2.68.43,1.01.68ZM14.07,24.43l.02.02c.72-.72,1.51-1.36,2.38-1.9.23-.14.46-.27.7-.4.68-.37,1.42-.67,2.19-.92.93-.3,1.9-.51,2.91-.61-.14,6.65-5.49,12.05-12.12,12.26.34-3.35,1.77-6.28,3.92-8.45ZM18.68,47.51l-.58-.24c-.58-.26-1.13-.54-1.64-.86-.69-.43-1.32-.91-1.92-1.45l-.07-.07c-.27-.24-.52-.5-.76-.76-1.94-2.13-3.23-4.92-3.55-8.08,6.65.2,11.99,5.64,12.12,12.32-1.28-.15-2.49-.44-3.6-.87ZM33.67,44.54l-.02-.03c-.91.91-1.94,1.69-3.08,2.31-.29.16-.6.3-.91.45-.29.13-.59.25-.89.37-1.03.37-2.14.63-3.32.76.1-6.69,5.47-12.12,12.13-12.32-.34,3.35-1.78,6.29-3.92,8.48Z"/>
+        </g>
+      </svg>
+        <p>The AI operating layer for Arabic-first enterprises. 700+ clients. 8 markets. One suite.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Technology</h4>
+        <a href="llm.html">Arabic.AI LLM</a>
+        <a href="agentic-studio.html">Agentic Platform</a>
+        <a href="data-services.html">Data Services</a>
+        <a href="technology.html">Technology</a>
+      </div>
+      <div class="footer-col">
+        <h4>Product</h4>
+        <a href="assistants.html">Assistants</a>
+        <a href="translate.html">Translate</a>
+        <a href="ocr.html">OCR</a>
+        <a href="integrations.html">Integrations</a>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <a href="academy.html">Academy</a>
+        <a href="about.html">Who we are</a>
+        <a href="blog.html">Blog</a>
+        <a href="careers.html">Careers</a>
+        <a href="case-studies.html">Case studies</a>
+        <a href="partners.html">Become a partner</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <a href="mailto:Contact.us@arabic.ai">Contact.us@arabic.ai</a>
+        <a href="mailto:Partners@arabic.ai">Partners@arabic.ai</a>
+        <a href="#">Dubai &middot; Riyadh</a>
+        <a href="#">Amman &middot; Doha</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Arabic.AI &middot; Built by Tarjama with love</span>
+      
+    </div>
+  </div>
+</footer>
+
+<script>
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold: 0.1, rootMargin: '0px 0px -60px 0px' });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+</script>
+
+
+<script>
+(function() {
+  var burger = document.querySelector('.nav-burger');
+  var drawer = document.getElementById('navDrawer');
+  var backdrop = document.getElementById('navBackdrop');
+  var closeBtn = document.querySelector('.nav-drawer-close');
+  if (!burger || !drawer || !backdrop) return;
+
+  function open() {
+    burger.classList.add('open');
+    drawer.classList.add('open');
+    backdrop.classList.add('open');
+    burger.setAttribute('aria-expanded', 'true');
+    drawer.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+  }
+  function close() {
+    burger.classList.remove('open');
+    drawer.classList.remove('open');
+    backdrop.classList.remove('open');
+    burger.setAttribute('aria-expanded', 'false');
+    drawer.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+  }
+  function toggle() {
+    if (drawer.classList.contains('open')) close();
+    else open();
+  }
+
+  burger.addEventListener('click', toggle);
+  backdrop.addEventListener('click', close);
+  if (closeBtn) closeBtn.addEventListener('click', close);
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && drawer.classList.contains('open')) close();
+  });
+  // Close drawer when a link is clicked (so navigating feels responsive)
+  drawer.querySelectorAll('a').forEach(function(a) {
+    a.addEventListener('click', close);
+  });
+})();
+</script>
+
+</body>
+</html>
